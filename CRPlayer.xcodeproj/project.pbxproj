@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+extensionTest.h"; sourceTree = "<group>"; };
+		C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+CategoryTest.h"; sourceTree = "<group>"; };
+		C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTVideoPlayer+CategoryTest.m"; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* CRPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +129,9 @@
 				C77D7D9F248F7FD100F1CC5C /* GTVideoCoverCell.m */,
 				C77D7DA1248F80A200F1CC5C /* GTVideoPlayer.h */,
 				C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */,
+				C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */,
+				C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */,
+				C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */,
 				C77D7D72248F7E7100F1CC5C /* Main.storyboard */,
 				C77D7D75248F7E7400F1CC5C /* Assets.xcassets */,
 				C77D7D77248F7E7400F1CC5C /* LaunchScreen.storyboard */,
@@ -289,6 +296,7 @@
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */,
+				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,
 				C77D7D7C248F7E7400F1CC5C /* main.m in Sources */,
 				C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */,
 			);

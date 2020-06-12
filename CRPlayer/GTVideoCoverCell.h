@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
  根据数据布局，封面图&播放 url
  */
 - (void)layoutWithVideoCoverUrl:(NSString *)videoCoverUrl videoUrl:(NSString *)videoUrl;
+
+- (void)fun;
+
 @end
 
 NS_ASSUME_NONNULL_END

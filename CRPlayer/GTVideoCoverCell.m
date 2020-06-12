@@ -24,6 +24,12 @@
 
 @implementation GTVideoCoverCell
 
+
+- (void)fun{
+    NSLog(@"cell-fun");
+    
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
