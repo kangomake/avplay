@@ -1,4 +1,5 @@
 #import "SceneDelegate.h"
+#import "CRSplashView.h"
 
 @interface SceneDelegate ()
 
@@ -8,6 +9,9 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
+    
+    
+    
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
@@ -23,6 +27,12 @@
 
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
+    
+    [self.window addSubview:({
+        CRSplashView *splashView = [[CRSplashView alloc] initWithFrame:self.window.bounds];
+        splashView;
+    })];
+    
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
 }

@@ -93,7 +93,6 @@
     [_avPlayer seekToTime:CMTimeMake(0, 1)];
     [_avPlayer play];
 }
-
 #pragma mark - KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey, id> *)change context:(void *)context {

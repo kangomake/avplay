@@ -11,6 +11,12 @@
 //#import <AppKit/AppKit.h>
 #import <UIKit/UIKit.h>
 
+@interface GTVideoPlayer ()
+
+//@property (nonatomic, copy) NSString *categoryString;
+
+@end
+
 
 @implementation GTVideoPlayer (CategoryTest)
 
