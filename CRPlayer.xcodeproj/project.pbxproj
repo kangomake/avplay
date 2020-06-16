@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */; };
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
+		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
+		C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1F249873D300D66243 /* GTVideoToolbar.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -47,6 +49,10 @@
 		C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTVideoPlayer+CategoryTest.m"; sourceTree = "<group>"; };
 		C73305E224971D5300CF2E7F /* CRSplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSplashView.h; sourceTree = "<group>"; };
 		C73305E324971D5300CF2E7F /* CRSplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSplashView.m; sourceTree = "<group>"; };
+		C733CE1A2498692500D66243 /* CRScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRScreen.h; sourceTree = "<group>"; };
+		C733CE1B2498692500D66243 /* CRScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScreen.m; sourceTree = "<group>"; };
+		C733CE1E249873D300D66243 /* GTVideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolbar.h; sourceTree = "<group>"; };
+		C733CE1F249873D300D66243 /* GTVideoToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolbar.m; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* CRPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,8 +109,23 @@
 			children = (
 				C73305E224971D5300CF2E7F /* CRSplashView.h */,
 				C73305E324971D5300CF2E7F /* CRSplashView.m */,
+				C733CE1A2498692500D66243 /* CRScreen.h */,
+				C733CE1B2498692500D66243 /* CRScreen.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C733CE1D24986ED500D66243 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				C77D7D9E248F7FD100F1CC5C /* GTVideoCoverCell.h */,
+				C77D7D9F248F7FD100F1CC5C /* GTVideoCoverCell.m */,
+				C77D7DA1248F80A200F1CC5C /* GTVideoPlayer.h */,
+				C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */,
+				C733CE1E249873D300D66243 /* GTVideoToolbar.h */,
+				C733CE1F249873D300D66243 /* GTVideoToolbar.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		C77D7D5D248F7E7100F1CC5C = {
@@ -131,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				C73305E124971D0700CF2E7F /* Utils */,
+				C733CE1D24986ED500D66243 /* Video */,
 				C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */,
 				C77D7D69248F7E7100F1CC5C /* AppDelegate.h */,
 				C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */,
@@ -138,10 +160,6 @@
 				C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */,
 				C77D7D6F248F7E7100F1CC5C /* ViewController.h */,
 				C77D7D70248F7E7100F1CC5C /* ViewController.m */,
-				C77D7D9E248F7FD100F1CC5C /* GTVideoCoverCell.h */,
-				C77D7D9F248F7FD100F1CC5C /* GTVideoCoverCell.m */,
-				C77D7DA1248F80A200F1CC5C /* GTVideoPlayer.h */,
-				C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */,
 				C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */,
 				C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */,
 				C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */,
@@ -305,9 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
 				C77D7DA0248F7FD100F1CC5C /* GTVideoCoverCell.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
+				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */,
 				C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */,
 				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,

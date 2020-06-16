@@ -18,6 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-jV-mnL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="KoT-Ad-nqv"/>
+                                    <constraint firstAttribute="height" constant="896" id="o9x-Wl-8Ns"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="梦想从这里开始！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-ie-DFg">
                                 <rect key="frame" x="50" y="144" width="314" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -37,26 +45,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLf-jV-mnL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lLf-jV-mnL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="6xa-VM-C6u"/>
                             <constraint firstItem="3lu-4f-EmK" firstAttribute="top" secondItem="0NO-qR-WP9" secondAttribute="bottom" constant="200" id="Fce-lP-6RD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TKl-jC-wGe" secondAttribute="trailing" constant="30" id="KjF-JY-UDZ"/>
                             <constraint firstItem="TKl-jC-wGe" firstAttribute="top" secondItem="Xkb-ie-DFg" secondAttribute="bottom" constant="20" id="Kq7-He-Kkq"/>
                             <constraint firstItem="0NO-qR-WP9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="Mda-fD-PUm"/>
                             <constraint firstItem="TKl-jC-wGe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="TUa-CH-moO"/>
-                            <constraint firstAttribute="bottom" secondItem="lLf-jV-mnL" secondAttribute="bottom" id="ZhZ-kX-8Ug"/>
                             <constraint firstAttribute="trailingMargin" secondItem="TKl-jC-wGe" secondAttribute="trailing" constant="30" id="aHy-Tj-Btz"/>
-                            <constraint firstItem="lLf-jV-mnL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" symbolic="YES" id="cID-Pe-5hN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xkb-ie-DFg" secondAttribute="trailing" constant="30" id="dqr-Zb-pob"/>
-                            <constraint firstAttribute="trailing" secondItem="lLf-jV-mnL" secondAttribute="trailing" constant="20" symbolic="YES" id="ghm-iu-MFO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0NO-qR-WP9" secondAttribute="trailing" constant="20" id="icA-oB-GRF"/>
-                            <constraint firstItem="lLf-jV-mnL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" symbolic="YES" id="jNo-YR-iHH"/>
                             <constraint firstItem="Xkb-ie-DFg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="l1N-Ue-1oi"/>
                             <constraint firstItem="0NO-qR-WP9" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="mCm-GO-udl"/>
                             <constraint firstItem="Xkb-ie-DFg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="rV6-BH-FvG"/>

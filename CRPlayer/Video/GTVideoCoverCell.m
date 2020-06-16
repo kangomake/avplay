@@ -8,8 +8,8 @@
 
 #import "GTVideoCoverCell.h"
 #import "GTVideoPlayer.h"
-//#import "GTVideoToolbar.h"
-//#import "GTScreen.h"
+#import "GTVideoToolbar.h"
+#import "CRScreen.h"
 
 #define GTVideoToolbarHeight 60
 
@@ -17,7 +17,7 @@
 @property (nonatomic, strong, readwrite) UIImageView *coverView;
 @property (nonatomic, strong, readwrite) UIImageView *playButton;
 @property (nonatomic, copy, readwrite) NSString *videoUrl;
-//@property (nonatomic, strong, readwrite) GTVideoToolbar *toolbar;
+@property (nonatomic, strong, readwrite) GTVideoToolbar *toolbar;
 
 @end
 
@@ -45,10 +45,10 @@
             _playButton;
         })];
 
-//        [self addSubview:({
-//            _toolbar = [[GTVideoToolbar alloc] initWithFrame:CGRectMake(0, _coverView.bounds.size.height, frame.size.width, GTVideoToolbarHeight)];
-//            _toolbar;
-//        })];
+        [self addSubview:({
+            _toolbar = [[GTVideoToolbar alloc] initWithFrame:CGRectMake(0, _coverView.bounds.size.height, frame.size.width, GTVideoToolbarHeight)];
+            _toolbar;
+        })];
 
         //点击全部Item都支持播放
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tapToPlay)];
@@ -65,7 +65,7 @@
 - (void)layoutWithVideoCoverUrl:(NSString *)videoCoverUrl videoUrl:(NSString *)videoUrl {
     _coverView.image = [UIImage imageNamed:videoCoverUrl];
     _videoUrl = videoUrl;
-//    [_toolbar layoutWithModel:nil];
+    [_toolbar layoutWithModel:nil];
 }
 
 #pragma mark - private method
