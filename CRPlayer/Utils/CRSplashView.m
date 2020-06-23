@@ -23,8 +23,12 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.image = [UIImage imageNamed:@"icon.bundle/splash.png"];
-        self.backgroundColor = [UIColor orangeColor];
+//        self.image = [UIImage imageNamed:@"icon.bundle/splash.png"];
+//        self.image = [UIImage imageNamed:@"1242x2208.png"];
+//        self.image = [self getLaunchImage];
+//        self.backgroundColor = [UIColor orangeColor];
+        
+        [self getLaunchViewStoryboard];
         [self addSubview:({
             _button = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-80, 100, 60, 40)];
             _button.backgroundColor = [UIColor lightGrayColor];
@@ -38,10 +42,44 @@
 }
 
 #pragma mark -
+//获取启动页
+- (UIImage *)getLaunchImage {
+    CGSize viewSize = [UIScreen mainScreen].bounds.size;
+    NSString *viewOr = @"Portrait";//垂直
+    NSString *launchImage = nil;
+    NSArray *launchImages = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
 
+    for (NSDictionary *dict in launchImages) {
+        CGSize imageSize = CGSizeFromString(dict[@"UILaunchImageSize"]);
+
+        if (CGSizeEqualToSize(viewSize, imageSize) && [viewOr isEqualToString:dict[@"UILaunchImageOrientation"]]) {
+            launchImage = dict[@"UILaunchImageName"];
+        }
+    }
+//    NSLog(@"launchImage-%@",launchImage);
+    return [UIImage imageNamed:launchImage];
+}
 - (void)_removeSplashView{
     [self removeFromSuperview];
 }
+
+//PS:记得给LaunchScreen.storyboard里的ViewController设置好Storyboard ID
+- (void)getLaunchViewStoryboard{
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:nil] instantiateViewControllerWithIdentifier:@"LaunchScreen"];
+    UIView *launchView = viewController.view;
+    
+    [self addSubview:launchView];
+//    UIWindow *mainWindow = [UIApplication sharedApplication].keyWindow;
+//    launchView.frame = [UIApplication sharedApplication].keyWindow.frame;
+//    [mainWindow addSubview:launchView];
+//    [UIView animateWithDuration:0.6f delay:0.5f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+//        launchView.alpha = 0.0f;
+//        launchView.layer.transform = CATransform3DScale(CATransform3DIdentity, 1.5f, 1.5f, 1.0f);
+//    } completion:^(BOOL finished) {
+//        [launchView removeFromSuperview];
+//    }];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

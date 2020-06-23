@@ -11,6 +11,8 @@
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
 		C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1F249873D300D66243 /* GTVideoToolbar.m */; };
+		C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */; };
+		C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -53,6 +55,8 @@
 		C733CE1B2498692500D66243 /* CRScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScreen.m; sourceTree = "<group>"; };
 		C733CE1E249873D300D66243 /* GTVideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolbar.h; sourceTree = "<group>"; };
 		C733CE1F249873D300D66243 /* GTVideoToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolbar.m; sourceTree = "<group>"; };
+		C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
+		C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2688.png; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* CRPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -128,6 +132,15 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		C76B6F4624A1FF3600EEC7A8 /* imageBundle */ = {
+			isa = PBXGroup;
+			children = (
+				C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */,
+				C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */,
+			);
+			path = imageBundle;
+			sourceTree = "<group>";
+		};
 		C77D7D5D248F7E7100F1CC5C = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
 				C73305E124971D0700CF2E7F /* Utils */,
 				C733CE1D24986ED500D66243 /* Video */,
 				C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */,
@@ -295,7 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */,
+				C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */,
 				C77D7D79248F7E7400F1CC5C /* LaunchScreen.storyboard in Resources */,
+				C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */,
 				C77D7D76248F7E7400F1CC5C /* Assets.xcassets in Resources */,
 				C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */,
 				C77D7D74248F7E7100F1CC5C /* Main.storyboard in Resources */,
