@@ -43,12 +43,41 @@
     
 //    [self performSelector:@selector(fun)];
     
-    [self SwizzlingMethod];
-    [self originalFunction];
-    [self swizzledFunction];
+//    [self SwizzlingMethod];
+//    [self originalFunction];
+//    [self swizzledFunction];
     
+    [self printIvarList];
+    [self printMethodList];
     // Do any additional setup after loading the view.
 }
+
+- (void)printIvarList{
+    unsigned int count;
+    
+    Ivar *ivarList = class_copyIvarList([UIViewController class], &count);
+    for(unsigned int i = 0;i<count;i++){
+        Ivar myIvar = ivarList[i];
+        const char *ivarName = ivar_getName(myIvar);
+        NSLog(@"ivar(%d):%@",i,[NSString stringWithUTF8String:ivarName]);
+    }
+    
+    free(ivarList);
+    
+}
+
+- (void)printMethodList{
+    unsigned int count;
+    
+    Method *methodList = class_copyMethodList([UIViewController class], &count);
+    for(unsigned int i = 0;i<count;i++){
+        Method method = methodList[i];
+        NSLog(@"method(%d):%@",i,NSStringFromSelector(method_getName(method)));
+    }
+    
+    free(methodList);
+}
+
 
 - (void)SwizzlingMethod{
     // 当前类
