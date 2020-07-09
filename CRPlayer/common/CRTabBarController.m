@@ -8,6 +8,7 @@
 
 #import "CRTabBarController.h"
 #import "ViewController.h"
+#import "CRHomeViewController.h"
 
 #define kClassKey  @"rootVCClassString"
 #define kTitleKey  @"title"
@@ -27,7 +28,7 @@
     NSArray *childItemsArray = [[NSArray alloc]init];
 
     childItemsArray = @[
-        @{ kClassKey: @"HRHomeViewController",
+        @{ kClassKey: @"CRHomeViewController",
            kTitleKey: @"主页",
            kImgKey: @"tabbar_home",
            kSelImgKey: @"tabbar_homeHL" },

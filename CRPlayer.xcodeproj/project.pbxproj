@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C727179A24B70C660075B3BA /* CRTabBarController.m */; };
+		C72717A024B71C1C0075B3BA /* CRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C727179F24B71C1C0075B3BA /* CRHomeViewController.m */; };
+		C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72717A224B71C840075B3BA /* CRShopCartViewController.m */; };
 		C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */; };
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
@@ -49,6 +51,10 @@
 /* Begin PBXFileReference section */
 		C727179924B70C660075B3BA /* CRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRTabBarController.h; sourceTree = "<group>"; };
 		C727179A24B70C660075B3BA /* CRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTabBarController.m; sourceTree = "<group>"; };
+		C727179E24B71C1C0075B3BA /* CRHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRHomeViewController.h; sourceTree = "<group>"; };
+		C727179F24B71C1C0075B3BA /* CRHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRHomeViewController.m; sourceTree = "<group>"; };
+		C72717A124B71C840075B3BA /* CRShopCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopCartViewController.h; sourceTree = "<group>"; };
+		C72717A224B71C840075B3BA /* CRShopCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRShopCartViewController.m; sourceTree = "<group>"; };
 		C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+extensionTest.h"; sourceTree = "<group>"; };
 		C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+CategoryTest.h"; sourceTree = "<group>"; };
 		C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTVideoPlayer+CategoryTest.m"; sourceTree = "<group>"; };
@@ -124,6 +130,10 @@
 		C727179D24B718360075B3BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C727179E24B71C1C0075B3BA /* CRHomeViewController.h */,
+				C727179F24B71C1C0075B3BA /* CRHomeViewController.m */,
+				C72717A124B71C840075B3BA /* CRShopCartViewController.h */,
+				C72717A224B71C840075B3BA /* CRShopCartViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -365,6 +375,7 @@
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
 				C77D7DA0248F7FD100F1CC5C /* GTVideoCoverCell.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
+				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
@@ -372,6 +383,7 @@
 				C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */,
 				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,
 				C77D7D7C248F7E7400F1CC5C /* main.m in Sources */,
+				C72717A024B71C1C0075B3BA /* CRHomeViewController.m in Sources */,
 				C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

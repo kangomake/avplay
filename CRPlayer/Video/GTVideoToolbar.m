@@ -113,7 +113,7 @@
 - (void)layoutWithModel:(nullable id)model{
     
     _avatorImageView.image = [UIImage imageNamed:@"icon.bundle/icon.png"];
-    _nickLabel.text = @"时间";
+    _nickLabel.text = @"学习时间";
 
     _commentImageView.image = [UIImage imageNamed:@"comment"];
     _commentLabel.text = @"100";
