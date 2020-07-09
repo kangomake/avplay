@@ -1,6 +1,10 @@
 #import "SceneDelegate.h"
 #import "CRSplashView.h"
 
+
+
+#import "CRTabBarController.h"
+
 @interface SceneDelegate ()
 
 @end
@@ -10,6 +14,16 @@
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     
+    
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    self.window = [[UIWindow alloc]initWithWindowScene:windowScene];
+    self.window.frame = windowScene.coordinateSpace.bounds;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
+    CRTabBarController *tab = [[CRTabBarController alloc]init];
+    self.window.rootViewController = tab;
     
     
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

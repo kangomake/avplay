@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C727179A24B70C660075B3BA /* CRTabBarController.m */; };
 		C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */; };
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C727179924B70C660075B3BA /* CRTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRTabBarController.h; sourceTree = "<group>"; };
+		C727179A24B70C660075B3BA /* CRTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTabBarController.m; sourceTree = "<group>"; };
 		C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+extensionTest.h"; sourceTree = "<group>"; };
 		C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+CategoryTest.h"; sourceTree = "<group>"; };
 		C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTVideoPlayer+CategoryTest.m"; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CRPlayer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C727179824B70C1C0075B3BA /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C727179924B70C660075B3BA /* CRTabBarController.h */,
+				C727179A24B70C660075B3BA /* CRTabBarController.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C727179D24B718360075B3BA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		C73305E124971D0700CF2E7F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,10 +184,13 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */,
 				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
 				C73305E124971D0700CF2E7F /* Utils */,
 				C733CE1D24986ED500D66243 /* Video */,
 				C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */,
+				C727179D24B718360075B3BA /* Home */,
+				C727179824B70C1C0075B3BA /* common */,
 				C77D7D69248F7E7100F1CC5C /* AppDelegate.h */,
 				C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */,
 				C77D7D6C248F7E7100F1CC5C /* SceneDelegate.h */,
@@ -344,6 +367,7 @@
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
+				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
 				C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */,
 				C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */,
 				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,
@@ -517,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNYK9DH23K;
 				INFOPLIST_FILE = CRPlayer/Info.plist;
@@ -535,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNYK9DH23K;
 				INFOPLIST_FILE = CRPlayer/Info.plist;
