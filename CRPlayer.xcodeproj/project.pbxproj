@@ -194,11 +194,10 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */,
-				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
+				C7E4904924D8FC5900BB803E /* Resource */,
+				C7E4904824D8FC1D00BB803E /* FPSView */,
 				C73305E124971D0700CF2E7F /* Utils */,
 				C733CE1D24986ED500D66243 /* Video */,
-				C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */,
 				C727179D24B718360075B3BA /* Home */,
 				C727179824B70C1C0075B3BA /* common */,
 				C77D7D69248F7E7100F1CC5C /* AppDelegate.h */,
@@ -212,6 +211,7 @@
 				C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */,
 				C77D7D72248F7E7100F1CC5C /* Main.storyboard */,
 				C77D7D75248F7E7400F1CC5C /* Assets.xcassets */,
+				C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */,
 				C77D7D77248F7E7400F1CC5C /* LaunchScreen.storyboard */,
 				C77D7D7A248F7E7400F1CC5C /* Info.plist */,
 				C77D7D7B248F7E7400F1CC5C /* main.m */,
@@ -236,6 +236,38 @@
 				C77D7D92248F7E7400F1CC5C /* Info.plist */,
 			);
 			path = CRPlayerUITests;
+			sourceTree = "<group>";
+		};
+		C7E4904824D8FC1D00BB803E /* FPSView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FPSView;
+			sourceTree = "<group>";
+		};
+		C7E4904924D8FC5900BB803E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
+				C7E4904B24D8FC7100BB803E /* Image */,
+				C7E4904A24D8FC6200BB803E /* video */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C7E4904A24D8FC6200BB803E /* video */ = {
+			isa = PBXGroup;
+			children = (
+				C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		C7E4904B24D8FC7100BB803E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
