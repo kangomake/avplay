@@ -10,8 +10,11 @@
 #import "GTVideoCoverCell.h"
 
 #import <objc/runtime.h>
+#import "YYFPSLabel.h"
 
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
+
+@property (nonatomic, strong) YYFPSLabel *fpsLabel;
 
 @end
 
@@ -49,7 +52,19 @@
     
     [self printIvarList];
     [self printMethodList];
+    
+    [self testFPSLabel];
     // Do any additional setup after loading the view.
+}
+
+//FPS帧率测试
+- (void)testFPSLabel{
+    
+    _fpsLabel = [YYFPSLabel new];
+    _fpsLabel.frame = CGRectMake(20, 100, 50, 30);
+    [_fpsLabel sizeToFit];
+    [self.view addSubview:_fpsLabel];
+    
 }
 
 - (void)printIvarList{

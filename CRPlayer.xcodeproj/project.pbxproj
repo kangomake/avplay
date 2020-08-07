@@ -29,6 +29,14 @@
 		C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */; };
 		C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA4248F81C600F1CC5C /* icon.bundle */; };
 		C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */; };
+		C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */; };
+		C7CAE7CE24DBB23C002E00B1 /* baidu.png in Resources */ = {isa = PBXBuildFile; fileRef = C7CAE7CD24DBB23C002E00B1 /* baidu.png */; };
+		C7D0BC5524DD303300157443 /* CRAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5424DD303300157443 /* CRAVPlayer.m */; };
+		C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5824DD426700157443 /* CRVideoComplexControlBar.m */; };
+		C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */; };
+		C7E4905024D9068B00BB803E /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4904D24D9068B00BB803E /* YYFPSLabel.m */; };
+		C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4904F24D9068B00BB803E /* YYWeakProxy.m */; };
+		C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4905324D95F9F00BB803E /* CRFPSLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +98,22 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C7CAE7CA24DBA64A002E00B1 /* CRFoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFoundViewController.h; sourceTree = "<group>"; };
+		C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFoundViewController.m; sourceTree = "<group>"; };
+		C7CAE7CD24DBB23C002E00B1 /* baidu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baidu.png; sourceTree = "<group>"; };
+		C7D0BC5324DD303300157443 /* CRAVPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAVPlayer.h; sourceTree = "<group>"; };
+		C7D0BC5424DD303300157443 /* CRAVPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAVPlayer.m; sourceTree = "<group>"; };
+		C7D0BC5724DD426700157443 /* CRVideoComplexControlBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRVideoComplexControlBar.h; sourceTree = "<group>"; };
+		C7D0BC5824DD426700157443 /* CRVideoComplexControlBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRVideoComplexControlBar.m; sourceTree = "<group>"; };
+		C7D0BC5A24DD428C00157443 /* CRPlayerProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPlayerProgress.h; sourceTree = "<group>"; };
+		C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPlayerProgress.m; sourceTree = "<group>"; };
 		C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CRPlayer.entitlements; sourceTree = "<group>"; };
+		C7E4904C24D9068B00BB803E /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		C7E4904D24D9068B00BB803E /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		C7E4904E24D9068B00BB803E /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		C7E4904F24D9068B00BB803E /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		C7E4905224D95F9F00BB803E /* CRFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFPSLabel.h; sourceTree = "<group>"; };
+		C7E4905324D95F9F00BB803E /* CRFPSLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFPSLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +150,7 @@
 			path = common;
 			sourceTree = "<group>";
 		};
-		C727179D24B718360075B3BA /* Home */ = {
+		C727179D24B718360075B3BA /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				C727179E24B71C1C0075B3BA /* CRHomeViewController.h */,
@@ -135,7 +158,7 @@
 				C72717A124B71C840075B3BA /* CRShopCartViewController.h */,
 				C72717A224B71C840075B3BA /* CRShopCartViewController.m */,
 			);
-			path = Home;
+			path = "Home(首页)";
 			sourceTree = "<group>";
 		};
 		C73305E124971D0700CF2E7F /* Utils */ = {
@@ -194,11 +217,13 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7D0BC5624DD422300157443 /* videoPlayer */,
+				C7CAE7C924DBA613002E00B1 /* Found(发现) */,
 				C7E4904924D8FC5900BB803E /* Resource */,
 				C7E4904824D8FC1D00BB803E /* FPSView */,
 				C73305E124971D0700CF2E7F /* Utils */,
 				C733CE1D24986ED500D66243 /* Video */,
-				C727179D24B718360075B3BA /* Home */,
+				C727179D24B718360075B3BA /* Home(首页) */,
 				C727179824B70C1C0075B3BA /* common */,
 				C77D7D69248F7E7100F1CC5C /* AppDelegate.h */,
 				C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */,
@@ -238,9 +263,37 @@
 			path = CRPlayerUITests;
 			sourceTree = "<group>";
 		};
+		C7CAE7C924DBA613002E00B1 /* Found(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				C7CAE7CA24DBA64A002E00B1 /* CRFoundViewController.h */,
+				C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */,
+			);
+			path = "Found(发现)";
+			sourceTree = "<group>";
+		};
+		C7D0BC5624DD422300157443 /* videoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C7D0BC5324DD303300157443 /* CRAVPlayer.h */,
+				C7D0BC5424DD303300157443 /* CRAVPlayer.m */,
+				C7D0BC5724DD426700157443 /* CRVideoComplexControlBar.h */,
+				C7D0BC5824DD426700157443 /* CRVideoComplexControlBar.m */,
+				C7D0BC5A24DD428C00157443 /* CRPlayerProgress.h */,
+				C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */,
+			);
+			path = videoPlayer;
+			sourceTree = "<group>";
+		};
 		C7E4904824D8FC1D00BB803E /* FPSView */ = {
 			isa = PBXGroup;
 			children = (
+				C7E4904C24D9068B00BB803E /* YYFPSLabel.h */,
+				C7E4904D24D9068B00BB803E /* YYFPSLabel.m */,
+				C7E4905224D95F9F00BB803E /* CRFPSLabel.h */,
+				C7E4905324D95F9F00BB803E /* CRFPSLabel.m */,
+				C7E4904E24D9068B00BB803E /* YYWeakProxy.h */,
+				C7E4904F24D9068B00BB803E /* YYWeakProxy.m */,
 			);
 			path = FPSView;
 			sourceTree = "<group>";
@@ -266,6 +319,7 @@
 		C7E4904B24D8FC7100BB803E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C7CAE7CD24DBB23C002E00B1 /* baidu.png */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -374,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */,
+				C7CAE7CE24DBB23C002E00B1 /* baidu.png in Resources */,
 				C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */,
 				C77D7D79248F7E7400F1CC5C /* LaunchScreen.storyboard in Resources */,
 				C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */,
@@ -404,10 +459,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */,
+				C7E4905024D9068B00BB803E /* YYFPSLabel.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
+				C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */,
 				C77D7DA0248F7FD100F1CC5C /* GTVideoCoverCell.m in Sources */,
+				C7D0BC5524DD303300157443 /* CRAVPlayer.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
+				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
+				C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
@@ -417,6 +478,7 @@
 				C77D7D7C248F7E7400F1CC5C /* main.m in Sources */,
 				C72717A024B71C1C0075B3BA /* CRHomeViewController.m in Sources */,
 				C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */,
+				C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

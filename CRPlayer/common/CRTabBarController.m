@@ -9,6 +9,8 @@
 #import "CRTabBarController.h"
 #import "ViewController.h"
 #import "CRHomeViewController.h"
+#import "CRFoundViewController.h"
+
 
 #define kClassKey  @"rootVCClassString"
 #define kTitleKey  @"title"
@@ -38,7 +40,7 @@
            kImgKey: @"tabbar_message",
            kSelImgKey: @"tabbar_messageHL" },
 
-        @{ kClassKey: @"HRMessageFoundController",
+        @{ kClassKey: @"CRFoundViewController",
            kTitleKey: @"发现",
            kImgKey: @"tabbar_found",
            kSelImgKey: @"tabbar_foundHL" },

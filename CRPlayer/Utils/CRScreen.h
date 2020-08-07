@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define UI(x) UIAdapter(x)
 #define UIRect(x,y,width,height) UIRectAdapter(x,y,width,height)
 
+#define RGB(r,g,b) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1]
+
 
 static inline NSInteger UIAdapter (float x){
     
