@@ -8,6 +8,13 @@
 
 #import "CRFoundViewController.h"
 #import "CRScreen.h"
+#import "CRMenuView.h"
+#import "CRClockView.h"
+#import "CRPersonView.h"
+
+
+
+#define kNaviHeight ()
 
 @interface CRFoundViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -26,6 +33,39 @@
     
     [self.view addSubview:self.customView];
 
+    
+    CGFloat navHeight = 88 ;
+    CGFloat TabbarHeight = 83 ;
+    
+    CRClockView *clock = [[CRClockView alloc]initWithFrame:CGRectMake(0, navHeight, 120, 120)];
+    clock.panViewBlock = ^(UIPanGestureRecognizer * _Nonnull pan) {
+        
+        CGPoint point = [pan translationInView:self.view];
+
+            //该方法返回在横坐标上、纵坐标上拖动了多少像素
+        //    NSLog(@"%f,%f",point.x,point.y);
+            
+            //限制屏幕范围
+            CGPoint newCenter = CGPointMake(pan.view.center.x +point.x, pan.view.center.y + point.y);
+            newCenter.y = MAX(pan.view.frame.size.height/2+navHeight, newCenter.y);
+//            newCenter.y = MIN(kScreenHeight- kTabbarHeight - kNaviHeight -pan.view.frame.size.height/2, newCenter.y);
+            newCenter.y = MIN(kScreenHeight-TabbarHeight -pan.view.frame.size.height/2, newCenter.y);
+
+            newCenter.x = MAX(pan.view.frame.size.width/2, newCenter.x);
+            newCenter.x = MIN(kScreenWidth -pan.view.frame.size.width/2, newCenter.x);
+
+            pan.view.center = newCenter;
+            
+            //pan.view 指的是把pan添加到那个控件上的
+            // 因为拖动起来一直是在递增，所以每次都要用setTranslation:方法制0这样才不至于不受控制般滑动出视图
+            [pan setTranslation:CGPointMake(0, 0) inView:self.view];
+        
+    };
+    [self.view addSubview:clock];
+    
+    
+    CRPersonView *personView = [[CRPersonView alloc]initWithFrame:self.view.bounds];
+//    [self.view addSubview:personView];
     
     // Do any additional setup after loading the view.
 }
@@ -69,6 +109,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self PopAnimationWithlayoutView];
+    
+//    [self showMenuView];
+    
+}
+
+//显示下拉框
+- (void)showMenuView{
+    
+    [CRMenuView initWithItems:@[@"text1",@"text2",@"text3"] picArray:@[@"",@"",@""] width:120 Location:CGPointMake(200, 400) action:^(NSInteger index) {
+        NSLog(@"index-%ld",index);
+    }];
     
 }
 

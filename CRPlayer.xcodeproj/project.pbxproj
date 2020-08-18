@@ -14,8 +14,11 @@
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
 		C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1F249873D300D66243 /* GTVideoToolbar.m */; };
+		C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7589D6924EB8654004E2A7C /* CRPersonView.m */; };
 		C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */; };
 		C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */; };
+		C77493A824EA21D900FE9196 /* CRMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77493A724EA21D900FE9196 /* CRMenuView.m */; };
+		C77493AB24EA597400FE9196 /* CRClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77493AA24EA597400FE9196 /* CRClockView.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -72,8 +75,14 @@
 		C733CE1B2498692500D66243 /* CRScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScreen.m; sourceTree = "<group>"; };
 		C733CE1E249873D300D66243 /* GTVideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolbar.h; sourceTree = "<group>"; };
 		C733CE1F249873D300D66243 /* GTVideoToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolbar.m; sourceTree = "<group>"; };
+		C7589D6824EB8654004E2A7C /* CRPersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPersonView.h; sourceTree = "<group>"; };
+		C7589D6924EB8654004E2A7C /* CRPersonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPersonView.m; sourceTree = "<group>"; };
 		C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
 		C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2688.png; sourceTree = "<group>"; };
+		C77493A624EA21D900FE9196 /* CRMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMenuView.h; sourceTree = "<group>"; };
+		C77493A724EA21D900FE9196 /* CRMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMenuView.m; sourceTree = "<group>"; };
+		C77493A924EA597400FE9196 /* CRClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRClockView.h; sourceTree = "<group>"; };
+		C77493AA24EA597400FE9196 /* CRClockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRClockView.m; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* CRPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -268,6 +277,12 @@
 			children = (
 				C7CAE7CA24DBA64A002E00B1 /* CRFoundViewController.h */,
 				C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */,
+				C77493A624EA21D900FE9196 /* CRMenuView.h */,
+				C77493A724EA21D900FE9196 /* CRMenuView.m */,
+				C77493A924EA597400FE9196 /* CRClockView.h */,
+				C77493AA24EA597400FE9196 /* CRClockView.m */,
+				C7589D6824EB8654004E2A7C /* CRPersonView.h */,
+				C7589D6924EB8654004E2A7C /* CRPersonView.m */,
 			);
 			path = "Found(发现)";
 			sourceTree = "<group>";
@@ -460,9 +475,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */,
+				C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */,
 				C7E4905024D9068B00BB803E /* YYFPSLabel.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
 				C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */,
+				C77493AB24EA597400FE9196 /* CRClockView.m in Sources */,
 				C77D7DA0248F7FD100F1CC5C /* GTVideoCoverCell.m in Sources */,
 				C7D0BC5524DD303300157443 /* CRAVPlayer.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
@@ -473,6 +490,7 @@
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
 				C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */,
+				C77493A824EA21D900FE9196 /* CRMenuView.m in Sources */,
 				C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */,
 				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,
 				C77D7D7C248F7E7400F1CC5C /* main.m in Sources */,

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define ControlBarHeight (40 + ProgressHeight)
 
-
+//控制条
 @interface CRVideoComplexControlBar : UIView
 
 @property (nonatomic, strong) CRPlayerProgress *progress;
