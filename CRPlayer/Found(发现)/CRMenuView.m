@@ -35,8 +35,9 @@ static CGFloat const kCellHeight = 55;
     CRMenuView * menuView = [[CRMenuView alloc] initWithItems:ItemArray picArray:picArray width:width Location:point action:action];
     [menuView show];
     
-    
 }
+
+
 
 
 - (instancetype)initWithItems:(NSArray *)ItemArray

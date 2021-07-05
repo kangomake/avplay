@@ -4,6 +4,7 @@
 
 
 #import "CRTabBarController.h"
+#import "CRTabBarAnimationController.h"
 
 @interface SceneDelegate ()
 
@@ -22,7 +23,7 @@
     [self.window makeKeyAndVisible];
     
     
-    CRTabBarController *tab = [[CRTabBarController alloc]init];
+    CRTabBarAnimationController *tab = [[CRTabBarAnimationController alloc]init];
     self.window.rootViewController = tab;
     
     

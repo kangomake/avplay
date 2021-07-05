@@ -19,7 +19,6 @@
 
 @property (nonatomic, strong) UIView *centerView;
 
-
 @property (nonatomic, strong) UILabel *number_3;
 @property (nonatomic, strong) UILabel *number_6;
 @property (nonatomic, strong) UILabel *number_9;
@@ -29,7 +28,6 @@
 
 
 @end
-
 
 
 @implementation CRClockView
@@ -60,9 +58,13 @@
         
         [self tick];
 
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
-            [self tick];
-        }];
+        if (@available(iOS 10.0, *)) {
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f repeats:YES block:^(NSTimer * _Nonnull timer) {
+                [self tick];
+            }];
+        } else {
+            // Fallback on earlier versions
+        }
         
         //拖动手势
         [self addGestureRecognizer:({
@@ -89,7 +91,7 @@
     self.minuteView.transform = CGAffineTransformMakeRotation(minsAngle);
     self.hourView.transform = CGAffineTransformMakeRotation(hoursAngle);
 
-    NSLog(@"sec-%ld,min-%ld,hour-%ld",(long)componets.second,(long)componets.minute,(long)componets.hour);
+//    NSLog(@"sec-%ld,min-%ld,hour-%ld",(long)componets.second,(long)componets.minute,(long)componets.hour);
     
 }
 
@@ -120,14 +122,16 @@
     if(!_hourView){
         _hourView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 6, self.frame.size.width/2-16)];
         _hourView.backgroundColor = [UIColor blackColor];
+        _hourView.layer.cornerRadius = 3;
     }
     return _hourView;
 }
 
 - (UIView *)minuteView{
     if(!_minuteView){
-        _minuteView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 4, self.frame.size.width/2-12)];
+        _minuteView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 4, self.frame.size.width/2-9)];
         _minuteView.backgroundColor = [UIColor blackColor];
+        _minuteView.layer.cornerRadius = 2;
     }
     return _minuteView;
 }

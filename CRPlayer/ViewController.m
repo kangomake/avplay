@@ -20,6 +20,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -51,7 +52,7 @@
 //    [self swizzledFunction];
     
     [self printIvarList];
-    [self printMethodList];
+    [self printMethodList_view];
     
     [self testFPSLabel];
     // Do any additional setup after loading the view.
@@ -92,6 +93,19 @@
     
     free(methodList);
 }
+
+- (void)printMethodList_view{
+    
+    unsigned int count_;
+    
+    Method *methodList_ = class_copyMethodList([UIView class], &count_);
+    for(unsigned int i = 0;i<count_;i++){
+        Method method = methodList_[i];
+        NSLog(@"view_method(%d):%@",i,NSStringFromSelector(method_getName(method)));
+    }
+    
+}
+
 
 
 - (void)SwizzlingMethod{
@@ -153,6 +167,8 @@
 //    return [super forwardingTargetForSelector:aSelector];
     return nil;
 }
+
+
 
 //获取函数的参数和返回值类型，返回签名
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{

@@ -30,7 +30,7 @@
         
         [self getLaunchViewStoryboard];
         [self addSubview:({
-            _button = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-80, 100, 60, 40)];
+            _button = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth-80, 80, 60, 35)];
             _button.backgroundColor = [UIColor lightGrayColor];
             [_button setTitle:@"跳过" forState:UIControlStateNormal];
             [_button addTarget:self action:@selector(_removeSplashView) forControlEvents:UIControlEventTouchUpInside];

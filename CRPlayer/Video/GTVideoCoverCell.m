@@ -20,7 +20,7 @@
 @property (nonatomic, strong, readwrite) GTVideoToolbar *toolbar;
 
 @property (nonatomic, strong) UIWindow *mainWindow;
-@property (nonatomic,strong) UIView *fullScreenView;
+@property (nonatomic, strong) UIView *fullScreenView;
 
 
 @end

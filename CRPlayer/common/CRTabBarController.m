@@ -45,7 +45,7 @@
            kImgKey: @"tabbar_found",
            kSelImgKey: @"tabbar_foundHL" },
 
-        @{ kClassKey: @"HRResumeViewController",
+        @{ kClassKey: @"CRMineViewController",
            kTitleKey: @"mine",
            kImgKey: @"tabbar_resume",
            kSelImgKey: @"tabbar_resumeHL" } ];
@@ -58,7 +58,7 @@
         //        NSLog(@"class--%@",dict[kClassKey]);
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
-        item.title = dict[kTitleKey];
+//        item.title = dict[kTitleKey];
         item.image = [UIImage imageNamed:dict[kImgKey]];
         item.selectedImage = [[UIImage imageNamed:dict[kSelImgKey]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         [item setTitlePositionAdjustment:UIOffsetMake(0, -3)];       //调整文字位置
