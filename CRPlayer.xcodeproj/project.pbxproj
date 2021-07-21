@@ -82,7 +82,12 @@
 		C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */; };
 		C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA4248F81C600F1CC5C /* icon.bundle */; };
 		C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */; };
+		C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB863B26A67F7900F779D6 /* CRMineViewController.m */; };
+		C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864426A69B5700F779D6 /* MyTableView.m */; };
+		C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */; };
 		C7B4F9C024F8E678000DA3E5 /* CRShopcartFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B4F9BF24F8E678000DA3E5 /* CRShopcartFormat.m */; };
+		C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B9E9B426A7AEAF00CA8094 /* UserBuilder.m */; };
+		C7B9E9BB26A7AEE100CA8094 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B9E9BA26A7AEE100CA8094 /* User.m */; };
 		C7BE86B624F607B100A901BB /* CRShopcartTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BE86B524F607B100A901BB /* CRShopcartTableViewProxy.m */; };
 		C7BE86B924F65F1D00A901BB /* CRShopcartBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BE86B824F65F1D00A901BB /* CRShopcartBottomView.m */; };
 		C7BF81FE2511EFCA007CB539 /* CRNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BF81FD2511EFCA007CB539 /* CRNotifier.m */; };
@@ -258,8 +263,18 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C7AB863A26A67F7900F779D6 /* CRMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMineViewController.h; sourceTree = "<group>"; };
+		C7AB863B26A67F7900F779D6 /* CRMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMineViewController.m; sourceTree = "<group>"; };
+		C7AB864326A69B5700F779D6 /* MyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
+		C7AB864426A69B5700F779D6 /* MyTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
+		C7AB864926A69B8F00F779D6 /* CRTouchTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRTouchTestCell.h; sourceTree = "<group>"; };
+		C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTouchTestCell.m; sourceTree = "<group>"; };
 		C7B4F9BE24F8E678000DA3E5 /* CRShopcartFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopcartFormat.h; sourceTree = "<group>"; };
 		C7B4F9BF24F8E678000DA3E5 /* CRShopcartFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRShopcartFormat.m; sourceTree = "<group>"; };
+		C7B9E9B326A7AEAF00CA8094 /* UserBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserBuilder.h; sourceTree = "<group>"; };
+		C7B9E9B426A7AEAF00CA8094 /* UserBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserBuilder.m; sourceTree = "<group>"; };
+		C7B9E9B926A7AEE100CA8094 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C7B9E9BA26A7AEE100CA8094 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C7BE86B424F607B100A901BB /* CRShopcartTableViewProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopcartTableViewProxy.h; sourceTree = "<group>"; };
 		C7BE86B524F607B100A901BB /* CRShopcartTableViewProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRShopcartTableViewProxy.m; sourceTree = "<group>"; };
 		C7BE86B724F65F1D00A901BB /* CRShopcartBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopcartBottomView.h; sourceTree = "<group>"; };
@@ -579,6 +594,7 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7AB863926A67F5D00F779D6 /* Mine */,
 				C76657E825B974DD0022F404 /* hr认证 */,
 				C76A4CD62546A95900A960BE /* category(分类) */,
 				C7D0BC5624DD422300157443 /* videoPlayer */,
@@ -625,6 +641,31 @@
 				C77D7D92248F7E7400F1CC5C /* Info.plist */,
 			);
 			path = CRPlayerUITests;
+			sourceTree = "<group>";
+		};
+		C7AB863926A67F5D00F779D6 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9E9B226A7AE6400CA8094 /* newModel(创建对象) */,
+				C7AB863A26A67F7900F779D6 /* CRMineViewController.h */,
+				C7AB863B26A67F7900F779D6 /* CRMineViewController.m */,
+				C7AB864326A69B5700F779D6 /* MyTableView.h */,
+				C7AB864426A69B5700F779D6 /* MyTableView.m */,
+				C7AB864926A69B8F00F779D6 /* CRTouchTestCell.h */,
+				C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		C7B9E9B226A7AE6400CA8094 /* newModel(创建对象) */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9E9B326A7AEAF00CA8094 /* UserBuilder.h */,
+				C7B9E9B426A7AEAF00CA8094 /* UserBuilder.m */,
+				C7B9E9B926A7AEE100CA8094 /* User.h */,
+				C7B9E9BA26A7AEE100CA8094 /* User.m */,
+			);
+			path = "newModel(创建对象)";
 			sourceTree = "<group>";
 		};
 		C7BE86B324F6077E00A901BB /* 购物车 */ = {
@@ -910,10 +951,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B9E9BB26A7AEE100CA8094 /* User.m in Sources */,
 				C7CFA18D251AE32200F5E9F4 /* CRPushVCManager.m in Sources */,
 				C71BC37225CFC9C900A764D3 /* YYTextRubyAnnotation.m in Sources */,
 				C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */,
 				C71BC36925CFC9C900A764D3 /* YYTextLine.m in Sources */,
+				C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */,
 				C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */,
 				C7C673F724FDEA5900F84C12 /* CRTagListView.m in Sources */,
 				C7E4905024D9068B00BB803E /* YYFPSLabel.m in Sources */,
@@ -933,6 +976,7 @@
 				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
 				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
 				C7BF81FE2511EFCA007CB539 /* CRNotifier.m in Sources */,
+				C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */,
 				C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
@@ -946,6 +990,7 @@
 				C71BC36625CFC9C900A764D3 /* YYTextEffectWindow.m in Sources */,
 				C71BC36C25CFC9C900A764D3 /* YYTextDebugOption.m in Sources */,
 				C7E0A606251301B90099F418 /* CRNotificationManager.m in Sources */,
+				C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */,
 				C71BC37625CFC9C900A764D3 /* UIPasteboard+YYText.m in Sources */,
 				C71BC36B25CFC9C900A764D3 /* YYTextKeyboardManager.m in Sources */,
 				C7BE86B924F65F1D00A901BB /* CRShopcartBottomView.m in Sources */,
@@ -978,6 +1023,7 @@
 				C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */,
 				C71BC36125CFC9C900A764D3 /* YYFrameImage.m in Sources */,
 				C7B4F9C024F8E678000DA3E5 /* CRShopcartFormat.m in Sources */,
+				C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */,
 				C71BC36025CFC9C900A764D3 /* YYImageCoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
