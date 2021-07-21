@@ -79,16 +79,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
-//    [self showMenuView];
-    
-//    if(indexPath.row % 2 == 0){
-//        [self tabbarItemChangeColor:[UIColor blackColor]];
-//    }else{
-//        [self tabbarItemChangeColor:[UIColor redColor]];
-//    }
-    
+   
 }
 
 
