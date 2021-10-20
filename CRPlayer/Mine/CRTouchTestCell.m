@@ -33,6 +33,15 @@
     
 }
 
+- (void)setFoldModel:(cellFoldModel *)foldModel{
+    
+    _foldModel = foldModel;
+    
+    
+    
+}
+
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     NSLog(@"%s",__FUNCTION__);
 //    NSLog(@"touches-%@,event-%@",touches,event);

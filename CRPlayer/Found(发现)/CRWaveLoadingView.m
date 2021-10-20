@@ -149,6 +149,44 @@
       
 }
 
+//UIBezierPath text
+- (void)waveConfig{
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(100, 100)];
+    [path addLineToPoint:CGPointMake(100, 111)];
+    [path addLineToPoint:CGPointMake(150, 150)];
+    [path moveToPoint:CGPointMake(300, 300)];
+    [path addLineToPoint:CGPointMake(350, 350)];
+    [path addLineToPoint:CGPointMake(400, 400)];
+    
+    [path stroke];
+    
+    
+}
+
+//CABasicAnimation text
+- (void)animationTest{
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transformPath"];
+    CATransform3D scaleTransform = CATransform3DMakeScale(1.2, 1.2, 1);
+    animation.toValue = [NSValue valueWithCATransform3D:scaleTransform];
+    animation.duration = 0.5;
+    animation.repeatCount = HUGE_VALF;
+    animation.autoreverses = YES;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    [self.layer addAnimation:animation forKey:@"animationScaleKey"];
+    
+    
+    CABasicAnimation *animation_ = [CABasicAnimation animationWithKeyPath:@"transformPath"];
+    CATransform3D scaleTransform_ = CATransform3DMakeScale(1.2, 1.2, 1);
+    animation_.toValue = [NSValue valueWithCATransform3D:scaleTransform_];
+    animation_.repeatCount = HUGE_VALF;
+}
+
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

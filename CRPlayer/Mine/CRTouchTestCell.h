@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "cellFoldModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CRTouchTestCell : UITableViewCell
+
+@property (nonatomic, strong) cellFoldModel *foldModel;
 
 @end
 

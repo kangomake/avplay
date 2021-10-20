@@ -8,37 +8,33 @@
 
 #import "CRVideoComplexControlBar.h"
 
-@implementation CRVideoComplexControlBar{
-    
+@implementation CRVideoComplexControlBar
+{
     UIView *_backView;
     UIButton *_playBtn;
     UILabel *_playTimeLabel;
-    
+
     BOOL _pauseProgress;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame{
-    
-    if(self = [super initWithFrame:frame]){
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
         [self initUI];
     }
     return self;
 }
 
-- (void)initUI{
-    
+- (void)initUI {
     _progress = [[CRPlayerProgress alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, ProgressHeight)];
     _progress.seekToSecondBlock = ^(float second) {
-        
     };
     [self addSubview:_progress];
-    
-    
+
     float margin = 10;
     float btnHeight = ControlBarHeight - ProgressHeight - margin;
-    
+
     float viewY = ProgressHeight;
-    
+
     _playBtn = [[UIButton alloc]initWithFrame:CGRectMake(margin, viewY, btnHeight, btnHeight)];
     _playBtn.showsTouchWhenHighlighted = true;
 //    [_playBtn addTarget:self action:@selector(playBtnMethod:) forControlEvents:UIControlEventTouchUpInside];
@@ -46,17 +42,9 @@
     [_playBtn setImage:[UIImage imageNamed:@"btn_pause_nomal"] forState:UIControlStateNormal];
     [_playBtn setImage:[UIImage imageNamed:@"btn_play_nomal"] forState:UIControlStateSelected];
     [self addSubview:_playBtn];
-    
-    
-    
-    
 }
 
-
-- (void)playBtnMethod:(UIButton *)sender{
-    
-    
-    
+- (void)playBtnMethod:(UIButton *)sender {
 }
 
 /*

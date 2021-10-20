@@ -11,6 +11,7 @@
 #import "MyTableView.h"
 #import "CRTouchTestCell.h"
 
+
 @interface CRMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
 @property (nonatomic, strong) MyTableView *tableView;
 
@@ -29,9 +30,41 @@
     
     // Do any additional setup after loading the view.
 }
+
+
+- (void)regularExpression{
+    
+    NSError *error = nil;
+    
+    NSString *regularExpStr = @"";
+    NSRegularExpression *regularExp = [[NSRegularExpression alloc]initWithPattern:regularExpStr options:NSRegularExpressionCaseInsensitive error:&error];
+    NSString *contentStr = @"";
+    NSMutableString *resultStrM = [NSMutableString stringWithFormat:@"结果:\n"];
+    
+    if(!regularExp){
+
+    }else{
+        NSArray <NSTextCheckingResult *> *resultArray = [regularExp matchesInString:contentStr options:NSMatchingReportProgress range:NSMakeRange(0, contentStr.length)];
+
+    }
+    
+    
+    [regularExp enumerateMatchesInString:contentStr options:NSMatchingReportProgress range:NSMakeRange(0, contentStr.length) usingBlock:^(NSTextCheckingResult * _Nullable result, NSMatchingFlags flags, BOOL * _Nonnull stop) {
+       
+        if(result){
+            NSString *subStr = [contentStr substringWithRange:result.range];
+            [resultStrM appendString:subStr];
+        }
+        
+    }];
+    
+}
+
+
+//解决手势冲突的问题
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
     
-    if([NSStringFromClass([touch.view class]) isEqualToString:@"CRTouchTestCell"]){
+    if([NSStringFromClass([touch.view class]) isEqualToString:@"UITableViewCellContentView"]){
         return NO;
     }
     return YES;

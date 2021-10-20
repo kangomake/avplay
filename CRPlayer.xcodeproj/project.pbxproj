@@ -67,6 +67,7 @@
 		C76A4CDC2546A9E500A960BE /* UIColor+CRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */; };
 		C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */; };
 		C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */; };
+		C76DF6BF2718041C00DEA7C4 /* UIImage+MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C76DF6BE2718041C00DEA7C4 /* UIImage+MyImage.m */; };
 		C77493A824EA21D900FE9196 /* CRMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77493A724EA21D900FE9196 /* CRMenuView.m */; };
 		C77493AB24EA597400FE9196 /* CRClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77493AA24EA597400FE9196 /* CRClockView.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
@@ -104,6 +105,7 @@
 		C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */; };
 		C7D31EE9250733B000189D3E /* CRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D31EE8250733B000189D3E /* CRButton.m */; };
 		C7E0A606251301B90099F418 /* CRNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0A605251301B90099F418 /* CRNotificationManager.m */; };
+		C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E2648D26A93DA30087869E /* cellFoldModel.m */; };
 		C7E4905024D9068B00BB803E /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4904D24D9068B00BB803E /* YYFPSLabel.m */; };
 		C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4904F24D9068B00BB803E /* YYWeakProxy.m */; };
 		C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E4905324D95F9F00BB803E /* CRFPSLabel.m */; };
@@ -235,6 +237,8 @@
 		C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRAddtion.m"; sourceTree = "<group>"; };
 		C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
 		C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2688.png; sourceTree = "<group>"; };
+		C76DF6BD2718041C00DEA7C4 /* UIImage+MyImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MyImage.h"; sourceTree = "<group>"; };
+		C76DF6BE2718041C00DEA7C4 /* UIImage+MyImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MyImage.m"; sourceTree = "<group>"; };
 		C77493A624EA21D900FE9196 /* CRMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMenuView.h; sourceTree = "<group>"; };
 		C77493A724EA21D900FE9196 /* CRMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMenuView.m; sourceTree = "<group>"; };
 		C77493A924EA597400FE9196 /* CRClockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRClockView.h; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 		C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CRPlayer.entitlements; sourceTree = "<group>"; };
 		C7E0A604251301B90099F418 /* CRNotificationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRNotificationManager.h; sourceTree = "<group>"; };
 		C7E0A605251301B90099F418 /* CRNotificationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRNotificationManager.m; sourceTree = "<group>"; };
+		C7E2648C26A93DA30087869E /* cellFoldModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cellFoldModel.h; sourceTree = "<group>"; };
+		C7E2648D26A93DA30087869E /* cellFoldModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cellFoldModel.m; sourceTree = "<group>"; };
 		C7E4904C24D9068B00BB803E /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		C7E4904D24D9068B00BB803E /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		C7E4904E24D9068B00BB803E /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
@@ -544,18 +550,13 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
-		C76657E825B974DD0022F404 /* hr认证 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "hr认证";
-			sourceTree = "<group>";
-		};
 		C76A4CD62546A95900A960BE /* category(分类) */ = {
 			isa = PBXGroup;
 			children = (
 				C76A4CDA2546A9E500A960BE /* UIColor+CRAddtion.h */,
 				C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */,
+				C76DF6BD2718041C00DEA7C4 /* UIImage+MyImage.h */,
+				C76DF6BE2718041C00DEA7C4 /* UIImage+MyImage.m */,
 			);
 			path = "category(分类)";
 			sourceTree = "<group>";
@@ -595,7 +596,6 @@
 			isa = PBXGroup;
 			children = (
 				C7AB863926A67F5D00F779D6 /* Mine */,
-				C76657E825B974DD0022F404 /* hr认证 */,
 				C76A4CD62546A95900A960BE /* category(分类) */,
 				C7D0BC5624DD422300157443 /* videoPlayer */,
 				C7CAE7C924DBA613002E00B1 /* Found(发现) */,
@@ -620,7 +620,6 @@
 				C77D7D77248F7E7400F1CC5C /* LaunchScreen.storyboard */,
 				C77D7D7A248F7E7400F1CC5C /* Info.plist */,
 				C77D7D7B248F7E7400F1CC5C /* main.m */,
-				C77D7DA4248F81C600F1CC5C /* icon.bundle */,
 			);
 			path = CRPlayer;
 			sourceTree = "<group>";
@@ -646,6 +645,7 @@
 		C7AB863926A67F5D00F779D6 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				C7E2648B26A93D620087869E /* foldModel */,
 				C7B9E9B226A7AE6400CA8094 /* newModel(创建对象) */,
 				C7AB863A26A67F7900F779D6 /* CRMineViewController.h */,
 				C7AB863B26A67F7900F779D6 /* CRMineViewController.m */,
@@ -724,6 +724,15 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		C7E2648B26A93D620087869E /* foldModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7E2648C26A93DA30087869E /* cellFoldModel.h */,
+				C7E2648D26A93DA30087869E /* cellFoldModel.m */,
+			);
+			path = foldModel;
+			sourceTree = "<group>";
+		};
 		C7E4904824D8FC1D00BB803E /* FPSView */ = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +749,7 @@
 		C7E4904924D8FC5900BB803E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C77D7DA4248F81C600F1CC5C /* icon.bundle */,
 				C71BC30E25CFC99D00A764D3 /* YYkit */,
 				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
 				C7E4904B24D8FC7100BB803E /* Image */,
@@ -996,6 +1006,7 @@
 				C7BE86B924F65F1D00A901BB /* CRShopcartBottomView.m in Sources */,
 				C71BC37125CFC9C900A764D3 /* YYTextArchiver.m in Sources */,
 				C71BC37825CFC9C900A764D3 /* UIView+YYText.m in Sources */,
+				C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */,
 				C71BC37725CFC9C900A764D3 /* YYTextTransaction.m in Sources */,
 				C77493A824EA21D900FE9196 /* CRMenuView.m in Sources */,
 				C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */,
@@ -1019,6 +1030,7 @@
 				C71BC36225CFC9C900A764D3 /* YYAnimatedImageView.m in Sources */,
 				C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */,
 				C71BC36725CFC9C900A764D3 /* YYTextInput.m in Sources */,
+				C76DF6BF2718041C00DEA7C4 /* UIImage+MyImage.m in Sources */,
 				C71BC36E25CFC9C900A764D3 /* YYTextRunDelegate.m in Sources */,
 				C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */,
 				C71BC36125CFC9C900A764D3 /* YYFrameImage.m in Sources */,

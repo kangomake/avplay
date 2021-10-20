@@ -41,9 +41,74 @@
     
 //    [self.view addSubview:self.goShoppingButton];
     
+    //shiti
+//    dispatch_queue_t serialqueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+//    dispatch_async(serialqueue, ^{
+//
+//        dispatch_sync(serialqueue, ^{
+//            NSLog(@"1");
+//        });
+//
+//    });
+//    NSLog(@"2");
+//    dispatch_async(serialqueue, ^{
+//        NSLog(@"3");
+//    });
+//    NSLog(@"4");
+//    dispatch_sync(serialqueue, ^{
+//        NSLog(@"5");
+//    });
+//    NSLog(@"6");
+    
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_enter(group);
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_group_leave(group);
+    });
+
+    //0.6 + 0.45 + 0.8 + 0.3*0.37 + 0.28
+    
     // Do any additional setup after loading the view.
 }
 
+#pragma mark ---semaphore 信号量练习
+//当信号量的当前值小于初始化，释放信号量时，会导致崩溃，简而言之就是，signal的调用次数一定要大于等于wait的调用次数，否则导致崩溃。
+- (void)semaphore_test_willCrash{
+    
+    dispatch_semaphore_t semp = dispatch_semaphore_create(1);
+      dispatch_block_t block = ^{
+          dispatch_semaphore_signal(semp);
+          NSLog(@"signal");
+      };
+
+//      NSMutableArray *array = [NSMutableArray array];
+      for (NSInteger i = 0; i < 4; i++) {
+          NSLog(@"wait");
+          dispatch_semaphore_wait(semp, DISPATCH_TIME_FOREVER);
+          if (i > 2) {//当I大于2时，只执行 wait ，没执行signal
+              break;
+          }else{ //当I小于等于2时，signal与wait是配对的
+              block();
+          }
+      }
+    
+}
+
+- (void)semaphore_test_withDispatch_group{
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    for (int i = 0; i < 100; i++)
+    {
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_group_async(group, queue, ^{
+            NSLog(@"%@-%i",[NSThread currentThread],i);
+            sleep(1);
+            dispatch_semaphore_signal(semaphore);
+        });
+    }
+    dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+}
 
 
 
