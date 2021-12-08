@@ -77,6 +77,9 @@ static inline CGRect UIRectAdapter(x,y,width,height){
 
 //...其它机型
 
++ (CGFloat)statusBarHeight;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

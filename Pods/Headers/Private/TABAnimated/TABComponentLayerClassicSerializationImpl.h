@@ -1,0 +1,1 @@
+../../../TABAnimated/TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABComponentLayerClassicSerializationImpl.h

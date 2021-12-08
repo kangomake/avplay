@@ -1,0 +1,1834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 780231E0D67E4FF02F54141BA6F79A6A /* MASLayoutConstraint.m */; };
+		0240196FD81F187A787CF4EFAA53CB69 /* TABComponentLayerClassicSerializationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FCEC345BA879E50B4E64D5E0B0CE07 /* TABComponentLayerClassicSerializationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		025C1EB5DD55A4C18B4AC57DF19EA843 /* TABAnimatedProductHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA54E3D0E45FFD93B9352606C4E320D /* TABAnimatedProductHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0362D6F9FFFE4724A3DD8ABBC7345177 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E4485099C2B25C841D6AB4F3AA3174 /* UIProgressView+AFNetworking.m */; };
+		09BA287C90B471968660BAF8B5747DA1 /* TABAnimatedProductDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C72792035E5A603C835E271FA745BB8 /* TABAnimatedProductDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		09E958D4C1C8B62D0A18B1B3F6E6297E /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70BC1C8B1E9586E1F17CAD1083C7341 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C3116AC6F275D5C06A89AC357CCCEAF /* TABClassicAnimationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7B098DD3212C765BFB32C185D37ADF /* TABClassicAnimationImpl.m */; };
+		0CCF5878EA61DD56C85170DF74652612 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C473167EACBB46631721E1E900F70832 /* SDImageCache.m */; };
+		0DD5197FE356065BC338B911BC93035C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8C0E0C890F812876C2787C3B028458 /* AFURLRequestSerialization.m */; };
+		0ECDF21DA9F226F0BA091E97E3E2DF3D /* TABClassicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ACA668B6262065D2FE5E3536D343C0 /* TABClassicAnimation.m */; };
+		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1B699E4FE215A17912F3E9CB4C6068 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		127117CC35B95391CB31F5C3840B9D1D /* TABAnimationManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCEAD271FF38CEB8D9C8CCC45B338E4 /* TABAnimationManagerImpl.m */; };
+		1631E842664B8680F38F602F7DFE0A1E /* SDWebImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CB439B674984C56871707B036B79F661 /* SDWebImageCoderHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16B2B4A252698342651259F6B3E23B5F /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DD21B5155306BFFC267E76A587F864 /* AFImageDownloader.m */; };
+		16D694EE6D0B70BA2F36F0ABACDD5CFE /* TABAnimatedNormalViewProductImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6365A1927B3B7D099567C66FEF86E2DC /* TABAnimatedNormalViewProductImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1709839ADC5854954B8A95D56EB57E28 /* TABViewAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8A366D367E43C5EBD01E14A37ACEB8 /* TABViewAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1755177738D6F76381C9999427850312 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8F059FED613A00906481215F43A6A0 /* NSButton+WebCache.m */; };
+		19D58082E795C97857E3DC04247F406F /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 679582A2D7CB91D23A445B052E379135 /* SDWebImageGIFCoder.m */; };
+		1C2902B4AAF4635316A1E88E50D47809 /* SDWebImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DEDEEB4AA5EAF826BE1A6A6C2A2C56 /* SDWebImageFrame.m */; };
+		1D5C81BCBA94A68A49CE7CAEEAB502D4 /* TABAnimatedDarkModeManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A13E523D09D657286077073C24753A /* TABAnimatedDarkModeManagerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D9810A70E811E359BFB5E9D0C8A0A10 /* Pods-CRPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A28369EF0BB304F0078247470E4E1 /* Pods-CRPlayer-dummy.m */; };
+		1E29CA63E58E94BED663D8638392D7BC /* TABAnimatedPullLoadingComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = FD8DC10AED0EBBAD1223201F0A3E3432 /* TABAnimatedPullLoadingComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F375876E92B3411D9DFFDEDBB7C55 /* MASConstraintMaker.m */; };
+		1E6904A86932F48DB44E6319120368FD /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 043676EA57A4210818A945F6838DD5C6 /* UIImage+ForceDecode.m */; };
+		1F9D1E402825AE5D2B0198CBFF3EE47E /* TABAnimationMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FC21776941FF5406D1571D2BA73AB7 /* TABAnimationMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		202C24BAC05AEDEA4A3620307E0E5FA6 /* TABAnimatedChainManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B8970058B087BCE1E81C0B5DA21B974E /* TABAnimatedChainManagerImpl.m */; };
+		22B81E123FE8D3543A5B1EE95E81AB22 /* TABBaseComponent+TABDropAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FB33B492D427B83A718DF9DEA9CCE17 /* TABBaseComponent+TABDropAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24EB071B76D24646A4FA07DB213757F5 /* TABAnimatedDocumentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = F4DB1E0475B04B93C3FD48453292B055 /* TABAnimatedDocumentMethod.m */; };
+		25BDE68C15F69C0BA1B719A9993E8A81 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DA2883ABD02EC4082FD9969C01C835 /* AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25D83DFE20B101F6015BDDF6128BB3D5 /* UIScrollView+TABExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D572E8F74CA033AF3FCBE28402AB386 /* UIScrollView+TABExtension.m */; };
+		2A4586473C09CB0CD00BC81C4490C58C /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B64075E4813DA1C7376B0F9EABC72A /* SDWebImagePrefetcher.m */; };
+		2BA1B6BF6EE6A744C814BB874D466F50 /* TABAnimatedCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C92C1091B19A867D04AD8E06B869479 /* TABAnimatedCacheManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2CE4C61D814C2403D6F21D11695AACC9 /* NSArray+TABDropAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 84AB011BBC64A3F04A28B946FAE11680 /* NSArray+TABDropAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2CF40E58CA3070F2203187427FF7F0A9 /* SDWebImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 22630A68C77FB94AFD86E13269E6130E /* SDWebImageCoderHelper.m */; };
+		2EAFEA09E62A014B4205F6A15EC51D5F /* TABDropAnimationDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3727D7120D83FF564E86629823296B53 /* TABDropAnimationDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EB0AAECDCDE9EE94AC70B4FC4F08617 /* TABAnimatedProductImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEC801190231CB05F4C324C0C95606B /* TABAnimatedProductImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FD7388B09EDB2F2170499B781C678AE /* TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F011ACC880C46F3CB08BA2BC1D7259 /* TABAnimated.m */; };
+		3047F6A454607FDAF7B63ED8C811A272 /* TABClassicAnimationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = FC1D56F75683807A83957D6B18207804 /* TABClassicAnimationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3143EBBD70E176B1D1F89D44E2507E34 /* TABWeakDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C90881F3E7AE8D27777A8EFF1FB954 /* TABWeakDelegateManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37943E5D5324E27B55CF3B45C5937A9C /* TABAnimationMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A1517C79B2C344D394DAF17E5EE5BD /* TABAnimationMethod.m */; };
+		37FFE933E50E2D3C4920BC07C537DB4F /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F71FEEC05119D98C80E5D99E52975E1 /* UIView+WebCacheOperation.m */; };
+		399136CF0D081316DA081AD72FA660C6 /* TABAnimatedPullLoadingComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E301EC9F1596CF4E767D3052F7E7177 /* TABAnimatedPullLoadingComponent.m */; };
+		3A6E5D4182DC44657A7218493AD57CC2 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C169E9B6D9987F1B611EF18ADAB56C /* NSImage+WebCache.m */; };
+		3AB36A3F113A52012A4B3E040B7AA71F /* TABAnimatedCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FD20EBF12AF63765410FB7C1818C48 /* TABAnimatedCacheManager.m */; };
+		3AD215D2CC1E7B87E79FE2A13AE9E402 /* TABShimmerAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 399DC885E4B43B162CA70ABEFD19C20C /* TABShimmerAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B207457D4728F943B9A2AE743442D8D /* UIScrollView+TABAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = C95C975F1F568CF8E08B3655C646B21F /* UIScrollView+TABAnimated.m */; };
+		3D5B8A386D000DD939A977C880461EE8 /* NSArray+TABAnimatedChain.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0C4E973B21DBD5CC3F8278D0FEA3E /* NSArray+TABAnimatedChain.m */; };
+		3E5D2116666B5BBF7003B4DF1F2B8E70 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D63A77D31D4F6936BE382E3496D038A9 /* AFURLResponseSerialization.m */; };
+		3E810B450F5776164ED2B2136F376988 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B93FF29C083FE15AFC57F5F499892D6 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F1DF58050306DA8C4A534ADAE820601 /* TABAnimatedProduction.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E147A815D2735FAB73C65FCD4068D4 /* TABAnimatedProduction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F61F42D45E81580CC76022854C4A62B /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4826E282A82F0F5D52C30D7587F7CF /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4021466D6AF723CF3AAC3CAF65338992 /* TABComponentLayerDropSerializationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE318D0F1F4E4CD597BC916EE81FA37 /* TABComponentLayerDropSerializationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		427E03FBB7F5978384C6C10FD9EEF2E1 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 225DF7469898FBFE059FD5BEDBA86FE7 /* UIImageView+HighlightedWebCache.m */; };
+		428C01DB6FB4200D794CC8257AA37FAD /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 112D93C3509DEE027A96FC2D0EC44F46 /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A467D838BBC063A32FEE081A055DF1EC /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4546D8FA8BEB9D956EF7439EC5209C7C /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D586E181C9770384A09B2E0C0243402 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 70687C1636E4AC4505E81977F24E6886 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48D0E03B68301745982A5810AF047AFD /* UIView+TABControlAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 76018D7D90B145BE9F394D89F3B4242C /* UIView+TABControlAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B72EDFADB98E6B9CBD5BF921E20C29A /* TABAnimatedDarkModeImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE40E319F2864D1A2F76CA54827CC8D /* TABAnimatedDarkModeImpl.m */; };
+		4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5CC702194E009BC27299C4D3FA022B /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4D27FB346BFC05998346D89E6DDF6D3F /* TABAnimated-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C40888D72E9B3977873E7B04294D92 /* TABAnimated-dummy.m */; };
+		4DB92E8CE6E0817BCE4656C5DE7A46F6 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF60A0CE8E5AC9E4200070D4C640E24 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E18F997D510BDBDBBDA1072907CF22E /* TABFormAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CC68D7B2019B830058E9DDD019F62D /* TABFormAnimated.m */; };
+		508908F5D1679AD6DD06A17A1F307211 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4660D8451FADC57367888BDE529D0A99 /* UIImageView+AFNetworking.m */; };
+		517C94804E88443C3EFD518C9762FE81 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2582C8691212D6FE17EE0F7D924BB806 /* AFNetworkActivityIndicatorManager.m */; };
+		538DEEF083E2649D010770A08F43FC24 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 611CCECE592AB5A907A14AD0A5FC714A /* UIImage+MultiFormat.m */; };
+		5431BE152514CA17008870B34EE8F5FE /* TABShimmerAnimationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5FCF519D933F8B6E80DF76646F578D /* TABShimmerAnimationImpl.m */; };
+		54C6ED5D0B3F088A737F93BF2B955F94 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B95BF4FDD502D113F35081F2889FC3C6 /* AFAutoPurgingImageCache.m */; };
+		56868D2C124DC00081C00B04E3869D7A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BD364EF76374B08472ABC3C9C80C3C0D /* UIImage+GIF.m */; };
+		56AD56D65FD9A0F9267BEB83A866D441 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8DD24C1A15FBDF93A34AE8BB0C484A /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56C022169B9D21A4E4DDB653617DB29E /* WKWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C228600678DE14E21696F41601CECB /* WKWebView+AFNetworking.m */; };
+		56F7756A56038F0035C6E9D46A195A68 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F82B5964F27D4359DEFF23873D07F9 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 850B4B27792559131127A1E2A5F32191 /* MASViewConstraint.m */; };
+		584E9C85848136ED5E7FC4A089E366E4 /* NSArray+TABDropAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A492F9B809A25797D1A18711BB5F8E /* NSArray+TABDropAnimation.m */; };
+		58F2C97BF41C46D02527FEAA6C8B4046 /* TABAnimatedChainDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 388EF3B3573FAB3168DF69E20C104FC7 /* TABAnimatedChainDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9800BDB353D8F8B474AE69531C322F86 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		5BFE139049E51141F6F6D43C3C6499F9 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC88D043CA99A4BDB211D1B9B126B86 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5D739DA677862596551DC42A1E128D83 /* TABTableAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 9803B68397D38975BBD05A37F04CE1EF /* TABTableAnimated.m */; };
+		5FD9274EB113A9AFFDA4D0AF72B2292B /* SDWebImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 890AF317801DA55EEC505D7757A8A890 /* SDWebImageCodersManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 54145571D45442D1501AAE4D94B8E4B1 /* MASCompositeConstraint.m */; };
+		643AB8AE861AEE30E1B4A767DCDB49A6 /* TABAnimatedProductInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C87A05181892D0C9B779A7BCBBB1CB /* TABAnimatedProductInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		645AA5322EAFE0A3235CFBD0D59A178E /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 648E6C18A846C3A4996523CD59E4A9B1 /* SDImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6489864538701F2CDB770A7D9E6E8AC9 /* TABAnimatedCacheModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FEFAFCA66381876E481B7856BE8360D /* TABAnimatedCacheModel.m */; };
+		64A03BF6EB4B5ABD8338D8A1D31346AC /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = D7E19AFB8651C91B3731F881685D7CF8 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 85234B844E48F18F0410935DD5398AE2 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6903194E14099A00B304C1F279AD69B4 /* TABAnimatedDarkModeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CB568DD68ACCB44B52F0805C6785DB /* TABAnimatedDarkModeInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B1959F15EFBC7F2D2928BC7AD07478B /* TABComponentLayer+TABClassicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4D5074676BE1E578F8A3FDC93B69BA /* TABComponentLayer+TABClassicAnimation.m */; };
+		6BC51D233DEF9C1206F507A95C807A58 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CA6FEB0E6C57BE441AB710AD1D8A234 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D551050B30B68817982EC3234AEB284 /* TABBaseComponent+TABDropAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2946F536157E014A452FCB3630E2BC05 /* TABBaseComponent+TABDropAnimation.m */; };
+		703EDC28A8CDF23D85A1DC97907D5CFF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FC5193AC06FFF5103E9560247240EF /* AFNetworkReachabilityManager.m */; };
+		712E7D2D5AFE5BA7F97563F58B4F5721 /* TABComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA70C373810AC8216FCA7A89CC2E29A /* TABComponentManager.m */; };
+		74F798EE545DBB3B4750835024510EB6 /* SDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6870E310C0434C437E3ACE9D0665DFA9 /* SDWebImageCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		760E1899AEAA102651CB096F14BE60AA /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BD58C416E2A855A27890599CC078E7ED /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		78B8B9D26D424BCB7AAA706BACA45687 /* TABViewAnimatedDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E4CEEFD952A129089C2D0CB825070CD /* TABViewAnimatedDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C48EEC8930F7EE9E2F51226D06F72D0 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ADA02CF4E943C9C83CE91D125BEBCFE /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F71D26131EB40F5271F5BFC307A8F61 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D73E9E8A0A3BF967338154A01671297 /* TABAnimatedDarkModeImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AAA075B4F12B5763B4C6E616C84DAC9 /* TABAnimatedDarkModeImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DEE05613957AB564750D40734A5E442 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 829639CB81EE5A1948459BD709D6EF51 /* SDWebImageDownloader.m */; };
+		7DF256979F4D77AB89B2EE794C9BDB69 /* TABDropAnimationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D0DAA9848FF44C4BE07E4127E0A6F3 /* TABDropAnimationImpl.m */; };
+		7EEE631D9BD4D313E33EFB77F4873726 /* TABBinAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E14E0251CBDE81A59868AC989EB1989 /* TABBinAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		802C96C5B5771663F9EBA1FD2F5877E3 /* TABAnimatedConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B35A1C8048F7617FEBAE6C59FC1711FD /* TABAnimatedConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81620800E2063ACD76D93B5A92506866 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C695921EC5C8705F13E51C7D4E4EB82 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA594CB5732C25AA5102F38DA0FA767 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8256CD7DA28445DE06F267010264B32A /* UIScrollView+TABAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D4C90C4248D97EF2489803D83E8794 /* UIScrollView+TABAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		845F20A47689099022F550EA07B2F7AA /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 068A1349D09322864C6DA6FE7A9F8573 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84B33099E9FB1D869454E79EFD211AA0 /* SDWebImageImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C1512C259F40853073C2D08C02566F2E /* SDWebImageImageIOCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84F90E3012A7158B7156C4B8F98EE131 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = AF87BA92202BE2DB7B29A50B7A95BE07 /* NSData+ImageContentType.m */; };
+		86EA955E7F9B22DCD3E5572CA5953CFB /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D56564B317742C5B1DAB0EFB77B0DC /* SDWebImage-dummy.m */; };
+		876A075D6329669E89B4D2C54F2CD32D /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = F0630C29D363E387D907EF26D7AAC907 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		88057CCCC40C5DA6B1FD3EB99F1F019B /* UIView+TABAnimatedProduction.m in Sources */ = {isa = PBXBuildFile; fileRef = 3033BA2C1BEED6CCCF80F675D6BA68B3 /* UIView+TABAnimatedProduction.m */; };
+		8957AA7B1A07DF7E81A0117D57E9A2A9 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CB7FF75F4CB7F48C49076F91AD1BD7F5 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		89F78066144CFDBD90D296CFF193744C /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA96B7E378ABDC0B7FF817FBB278FDC /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DF4032BB63C481B67DF596DCCB81521 /* TABDropAnimationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D27EB01E55D1439BF7ED3DBBBAC2710 /* TABDropAnimationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E5A46521570CBA695B44A8DA38A76DC /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF37550079BB410491E0F191D44EB3 /* SDAnimatedImageRep.m */; };
+		8EEBE63DB02D88EB72B5077E527334BA /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FFA974C47F0982CDA625C94968456E /* SDWebImageTransition.m */; };
+		8FDB85FB21FC47EC794745DDDA1A504D /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BB02E26AD31B6364D578055AF5510FFA /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90D15A815F91BD2F4A29FC456D6AC303 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0380908F831512E45AFDCEFDCDCBED8D /* AFNetworking-dummy.m */; };
+		91359F90FD03D28F86855A1710AF5E37 /* TABBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A57228725E2AF7663BF852B929921A /* TABBaseComponent.m */; };
+		916D22EBD4F60EAE1707D37AB585EB54 /* TABComponentLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C406F4EB2FB84BC967F2C12176DF9635 /* TABComponentLayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		916FDDDCB87B81742115613B3BF0CDEC /* TABAnimatedChainManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 12517C5B88F8BACC52F16FFCBD1BA676 /* TABAnimatedChainManagerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCE5C5259C37E8090BEE58A50B21395 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92251CB6DCE5D95D4200AF8EE6223A74 /* UIView+TABAnimatedProduction.h in Headers */ = {isa = PBXBuildFile; fileRef = AA41F19D36F772B8032828EBD2F38EE1 /* UIView+TABAnimatedProduction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 229472CDC592E42BC4795B80C0FE8E25 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		934369FF599DDA35F12D1B9718CFB789 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C9C877E1C223FF546AD1A677BD9AC8 /* AFSecurityPolicy.m */; };
+		93FA26AA00D38C7FC5F94698FAF024D6 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A34995C3BE32CB9784F0230F28E0C9C /* SDWebImageManager.m */; };
+		96602D2C3236C1EBC844C699A5CA02BA /* TABAnimatedProductHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD4C50F4E9393D2142FCD27D0CC014 /* TABAnimatedProductHelper.m */; };
+		98917C0F8BF71644792F9D357A1CF9ED /* TABAnimatedDarkModeManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 54381038CA3E8934AB83761BA62166D2 /* TABAnimatedDarkModeManagerInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BAFB511F8DB9B24B6808B8DF6FF3331 /* TABAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = FF37763872542C98F4D1CC9A8385D127 /* TABAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F0A4FF9BB0174E88AE1827A22863206 /* UIView+TABControlModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3F455A760252EA899151F8602E303E /* UIView+TABControlModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0C124A1B9C474735CFCEC5EE202CADF /* TABAnimationManagerImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E03E8C7081AC99343EA214C0E1ADEDC /* TABAnimationManagerImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0DE26E18A4ACDADC485BC5B42695542 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0571EB6DAA4A1F83FB677146F6D8A935 /* UIButton+AFNetworking.m */; };
+		A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EA8497098F5F2A8651E275AF21810D /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A541645929C6CF221DE06A16140DFC43 /* TABClassicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F961E7B3F7180858030C0DCF87B44D5 /* TABClassicAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A58D961B3131B67678B39D582FF72B46 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09094194D442FBF204288CB3B37CBFC7 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A680460579AA00CC7428E09EBC195E06 /* TABAnimatedChainManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = C83B53B5E2498596B4783E67F597206F /* TABAnimatedChainManagerInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A693E7C90C6AC5D000CAED3CF677AF36 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 813C9D928C01BBB2139A9C872E6B0C71 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7DF4D54F08603578AB29DDE77384857 /* TABAnimatedCacheModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 933958FEB6CA9FEFC38B893CECE4877A /* TABAnimatedCacheModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A833E130A32E2F81A3B12A4AE2A07A91 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8D3F703FE0FEE37687ECEF7F2BDD49 /* SDImageCacheConfig.m */; };
+		A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DE928165B58350B097F1B60A8AB575 /* MASViewAttribute.m */; };
+		A8D8C7C9427CCC26344A333F0D25B555 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 36286BBA7F7122F2FCCE715B106AAAE6 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A92753F7164F054D95C1E78F6ACF26B5 /* TABAnimatedDocumentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 1854C0A60057698742E08235FBE961AF /* TABAnimatedDocumentMethod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB4D7E7FA582DD9FCE1D71A1008333F3 /* TABAnimationManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A749985AAECD429CA6CBA7AFCF3170A /* TABAnimationManagerInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE04A83C2429EEAF7CD4C9819B54C751 /* UIView+TABExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D06B1F420C301A78F7742098BB50C24 /* UIView+TABExtension.m */; };
+		AE0BF85E646E78648C1478118CB86598 /* TABAnimatedDecorateInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0C529DB89C742467D257A54306D63A /* TABAnimatedDecorateInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE61AA85AAD231E222F5909DB17F9681 /* TABSentryView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFAA8A123E3A60C0C0700D02750B3348 /* TABSentryView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE94DAB4B05DA80F741A66228D106901 /* TABComponentLayerDropSerializationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E0C8D13A39C44299C23D9AD7C96E45 /* TABComponentLayerDropSerializationImpl.m */; };
+		B039C1BC1FA93D9A26FF5F2990AE6999 /* TABAnimatedDarkModeManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D34AED744ED91A36F5B0848258CD53E4 /* TABAnimatedDarkModeManagerImpl.m */; };
+		B0911033BEDC0129A3AC0D5F4C6F36DB /* TABBinAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDD676E7D52524721FF2095D7BF8E07 /* TABBinAnimation.m */; };
+		B0B49927B17AC342DBA71B97959CE53D /* TABAnimatedNormalViewProductImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CFCC339B3D0FC5466CCA39FE9F287F /* TABAnimatedNormalViewProductImpl.m */; };
+		B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C470B463CAE98866F093A2568D596E8 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B28F9B5E2675892254C7B0D4E1BD2EDB /* TABComponentLayer+TABDropAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = C9630CE1F63966C546A34AB996052E32 /* TABComponentLayer+TABDropAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B33F6A04EDA3B1C6FA5DD6F6A2C5DB2A /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B414A77F6B841AF165513C7EA1690045 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B371D7E62B43EEDABCA8402415C25B4F /* SDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1100B5A14BA311BBE09CE894F683CBC7 /* SDWebImageCoder.m */; };
+		B41DD3CC2F3F9FF94B9188F7EE565153 /* TABShimmerAnimationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFAFEB6A3FAB0487896B2776DCACDA8 /* TABShimmerAnimationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B4EB038535AA6946BF1DE5B71EC00E2E /* TABComponentLayerClassicSerializationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = C431E9632B31F5B74F32F91B038F222E /* TABComponentLayerClassicSerializationImpl.m */; };
+		B51DCD24B5320DB68066BD964637CE2F /* TABCollectionAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4A64FEA0A9336EF929F42EB6FD2D8F /* TABCollectionAnimated.m */; };
+		B6D8C1B434059278384511986DC87A4B /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF3B7CF770959644469D1F4F304A65D /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B79BAF8AB415530340A21889D4EF5655 /* TABDropAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A1CCAFA9CF3219E9A2C9CF9F80C7A /* TABDropAnimation.m */; };
+		B7B82E12541B71F6BCADF0129AF754C9 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D24F507C6E88D62CBACA3462FA76A12 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B866622FCF22B732D54DB1FE57535419 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 507FE43C889517DA6BCC613FDFE6F1C1 /* UIView+WebCache.m */; };
+		B912784B041A1FA093269EB66862873D /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 673B809C0829669924ABC235E87F7444 /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B849A2B74ACB81B4638FE96AB7669D6 /* NSArray+MASAdditions.m */; };
+		B94E7773C4096DE2E56869AF65ECC07A /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E9946AE48F9364DB43D16851052441 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA575740B77696CFFA157A58D53C73C2 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 26640BDC16C6563A0C15A9B1F12B8729 /* UIButton+WebCache.m */; };
+		BB575F75E5B2DD4EC0ADBA58AFB1B745 /* TABAnimatedProductImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AA70D2C6B593B5F76467A64166183E /* TABAnimatedProductImpl.m */; };
+		BB619605FB157552F118C1935AE588A0 /* TABFormAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB1215289FDBC0FE00DE3E732AE1FD8 /* TABFormAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC71ADFAE509F6DE8C73D33CCC920ACB /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EA80FA1DED11672DBFE04923485681C /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC87ECEF2A61A5D9C1C6A12C1423B0DF /* TABComponentLayer+TABClassicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 624D22F8D2508008BE46436D20CCD483 /* TABComponentLayer+TABClassicAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD07E140D72BC6853C14C76B525E4763 /* SDWebImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F1665F710CBDF30A7C8AC347B5DB103 /* SDWebImageGIFCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE824078490815CE186E4C951E950AA0 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C67FD351695F4F159D5F52B06612A49C /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF98B57B0C16FB7ED1ED822BFC9E58C0 /* TABAnimatedDarkModeDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = AD6587D184500DC7A1E832314BAFA8AA /* TABAnimatedDarkModeDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BFBE4844F6F405451C6CCF59D61D315 /* ViewController+MASAdditions.m */; };
+		C08D40AB04A0B794103B6ADC7C21816F /* TABComponentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E7CE6F4EDAF6DA7A80FB692CA0F36B /* TABComponentLayer.m */; };
+		C08D61263EF65CDBBAE8BBB5277A5702 /* UIView+TABControlAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A641ADC8261A0E5A11840006D88FF0BF /* UIView+TABControlAnimation.m */; };
+		C1AD020D7E0089850DDC6CE9FE5D1525 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 262C71CACA02C9A581AEA11CA2EDAF9E /* UIImageView+WebCache.m */; };
+		C20ADA847EC860298A65844D8B7C9FED /* TABAnimatedInjectionIIIHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D9FC463C41D4DCF529F0F11D6FE038 /* TABAnimatedInjectionIIIHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2B6EF4677DC524065B1D3F810AB0D4E /* TABComponentLayerSerializationInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = CF87DCCCB21D9A7F0B149A2664932958 /* TABComponentLayerSerializationInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3ED9828D3E4F1F584D883F6EE4FFB95 /* TABBaseComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F0F81D758C625DDE3EDF5491967618 /* TABBaseComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4C06A6682BA6ABD2B27E6D2F0D4CA3F /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C2BC4AD9B5F712291D576D85CC9338 /* UIImage+MemoryCacheCost.m */; };
+		C52BC8785004D11896D2958B6FB3CB0C /* TABWeakDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B518CF9A55A53276F00A18361DB21 /* TABWeakDelegateManager.m */; };
+		C53724481EDE8B6D88B45CE0B587AEFC /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7340BAA2B5E4B964DD4C7FC23F4EB82D /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C65CC4DB0A793D35EE4F9B6EAA7F2213 /* TABCollectionAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = F99B87067E3AC56455CD5379D3860C5F /* TABCollectionAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D7D20190759DC381252971FCDB666D /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DBED2E81266E8147D4A5113B91553E /* View+MASAdditions.m */; };
+		C7A0D23130888736803A712FB8E1919C /* TABSentryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA45DD9D88B5141D44F3461A922840 /* TABSentryView.m */; };
+		CAB09959CEF5E3A10E28CB2B9F4F211A /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BF148744001D717365FE290E866CAAE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAF8580D6ED4980C7ADF9DE194F85650 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B2937E5BF6275F6DFF4CB9B3DB699BF0 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC4718FB1BFB356A02492A7A5579C3F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EFEB3B5FB99E147D37FE683CFD1044 /* UIActivityIndicatorView+AFNetworking.m */; };
+		CDD69FEBDEE062E1A45F3A0E1160EE7B /* TABShimmerAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD75F33B2A892A73DA27DBED890ECECE /* TABShimmerAnimation.m */; };
+		CFB9931FE66624FC33403E677834ADCA /* UIView+TABExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E053B0CCE67AF810842015F8A89967 /* UIView+TABExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1A9D6C3F98D4D5ADE1B882E5F83B369 /* UIScrollView+TABExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C16DD33FFD8586183A526384602C23E /* UIScrollView+TABExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D42439DE1BAA17AC1E4AF83B38427C24 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5A94DC2C313DEF3DCBA4DD1D0A44EC /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D72849B1031F5DFCB8B038FAF9897276 /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F9BCBBAC8F2A2F2F9498007AFAEA2D /* SDWebImageCodersManager.m */; };
+		D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFB3B326B992A76E1766D1F07525292 /* Masonry-dummy.m */; };
+		D73A65AFD60B81D6BA47B8338D830A43 /* SDWebImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CE85F6F49F71D3217AF13D5873A777 /* SDWebImageFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7A644E667989A1602312D4F113B6332 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1099523490D97F156AED9B5E9DE344 /* SDWebImageDownloaderOperation.m */; };
+		D874625DCDB755BA99EA0B48C9D09307 /* TABComponentLayer+TABDropAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9403061C4C5D4EB32FFEE6A3F1A7D4 /* TABComponentLayer+TABDropAnimation.m */; };
+		DAE09D6C865FED913B9A85E6B361A835 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = B86A0966F4C94933F124188472A9EB1F /* TABViewAnimated.m */; };
+		DB0655DAD96116B8A1AC35DD984C14E6 /* TABTableAnimated.h in Headers */ = {isa = PBXBuildFile; fileRef = 06F2745DD11CA1017509A32BCE6C7099 /* TABTableAnimated.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB6219C37A71EF717732C8857942A6C3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2202763A8078647353FC72EF32B99BFF /* UIRefreshControl+AFNetworking.m */; };
+		DB92D9FED443141DF9093D19A17F0918 /* TABDropAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E815B6F46CC46EF85D4EFE2CAC9C5102 /* TABDropAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DCF282850AD8FBF863F6431D72C85B2B /* UIView+TABControlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E847BFCE9FF0EE578F67C5F48A1865 /* UIView+TABControlModel.m */; };
+		DDA09D4C8D1559D493911B825FCE4D8B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7539E7F8E085993C82CB828F15FA0CB3 /* AFHTTPSessionManager.m */; };
+		DEE3CBDA2426FB23A0FFC4D00CFDFF23 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E866DB078DEDB3F063D5E66F5713E4E4 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E249E83E634EF9A2CB5475CC235EED62 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADF0F2BE5090D7727E775BD5D265891 /* SDWebImageCompat.m */; };
+		E5CB5D873EE0E259DA28CBF9C8EC78DA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A609D789138FCB4B62339422B086ED74 /* AFURLSessionManager.m */; };
+		E700D209497E847267E64DAF010E04CB /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A22D9F5460AE12723F362FAEA1AD548 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B68A77C9FD8905346A19E1F719CC6B57 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EA41C1EF111D650056748B689D4B72DE /* TABShimmerAnimationDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE1AD37A30A177DDBB757C2F6FC623A /* TABShimmerAnimationDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB4BCE72AA45B992BC184DAD6C3410B2 /* TABBaseComponent+TABClassicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CF9980A87B49699D3B5881955F9D56 /* TABBaseComponent+TABClassicAnimation.m */; };
+		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BB58DE98DE521BB98B6FAAFFF1055B /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED19552EEEA44864572081170C8CDDDA /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F90DC7AF52AAF2C916F7DE13CB569759 /* SDWebImageImageIOCoder.m */; };
+		EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1788E9C7450A6F5EC12ECEB4D96747 /* MASConstraint.m */; };
+		F014364E33B405EC23FE915808F74442 /* TABBinAnimationImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA13838A1A01365598A508E600EC797 /* TABBinAnimationImpl.m */; };
+		F03B276745F37E505667479C9DE0C7F2 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1EE734E226002D96FE66DE3054EA99 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0957F353CBCD258D610A4EEC4685C9E /* TABBaseComponent+TABClassicAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 51758E968405806EA6AEC91C41AD4BE2 /* TABBaseComponent+TABClassicAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DCED6D616910336638BA5958F6E2B59E /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F35C59BAA919BFF201A78E656C7560CA /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F82A9F7BE7C22E711084A423B6B879 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3A9F03636E3336CB460582CB197E5F0 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B56C8369A4AB032DD50176CD47B2521 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F4C5738C416432782C824F50DA8CDFE1 /* TABComponentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F6CD5BC4DE178715E135702FE773B814 /* TABComponentManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F6A2FC6DD5FD0536E76197383863FD23 /* NSArray+TABAnimatedChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC807C5FD6219481F4D15BD35219054 /* NSArray+TABAnimatedChain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F73073FA133ADF13F93FAF116BFAD543 /* TABAnimatedProduction.m in Sources */ = {isa = PBXBuildFile; fileRef = 316583BB07603523BB1C4C705A0FD9B7 /* TABAnimatedProduction.m */; };
+		F84089FFB0E784CC90097E8639AA7157 /* TABAnimatedInjectionIIIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7019948E22ABDA6C6FF87B9497437C71 /* TABAnimatedInjectionIIIHelper.m */; };
+		FF78E320EC426CCC2E49A7D7A36A63FB /* TABBinAnimationImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8F90D9595820BA07BCBF8FEBA827A5 /* TABBinAnimationImpl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44A814C1180C9F8FB64A6D5B6480517C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B226767C94EFDDF6183068991A028098;
+			remoteInfo = TABAnimated;
+		};
+		B4AA0B88BB1CB9F7D25D378222BD1715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		B547E803F7613694050309CBFCA3ED95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
+		BCCDEB17DFA349ED53FD79716D0FC5AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022A444683A30A9D32C4F68B2C2612F5 /* Pods-CRPlayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CRPlayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0380908F831512E45AFDCEFDCDCBED8D /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		043676EA57A4210818A945F6838DD5C6 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
+		0571EB6DAA4A1F83FB677146F6D8A935 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		068A1349D09322864C6DA6FE7A9F8573 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		06F2745DD11CA1017509A32BCE6C7099 /* TABTableAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABTableAnimated.h; path = TABAnimatedDemo/TABAnimated/Control/Include/TABTableAnimated.h; sourceTree = "<group>"; };
+		09094194D442FBF204288CB3B37CBFC7 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0BFA45DD9D88B5141D44F3461A922840 /* TABSentryView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABSentryView.m; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABSentryView.m; sourceTree = "<group>"; };
+		0C72792035E5A603C835E271FA745BB8 /* TABAnimatedProductDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProductDefines.h; path = TABAnimatedDemo/TABAnimated/Product/Include/TABAnimatedProductDefines.h; sourceTree = "<group>"; };
+		0E1EE734E226002D96FE66DE3054EA99 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0EA96B7E378ABDC0B7FF817FBB278FDC /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		1100B5A14BA311BBE09CE894F683CBC7 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
+		112D93C3509DEE027A96FC2D0EC44F46 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
+		12517C5B88F8BACC52F16FFCBD1BA676 /* TABAnimatedChainManagerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedChainManagerImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABAnimatedChainManagerImpl.h; sourceTree = "<group>"; };
+		16FCEC345BA879E50B4E64D5E0B0CE07 /* TABComponentLayerClassicSerializationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABComponentLayerClassicSerializationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABComponentLayerClassicSerializationImpl.h; sourceTree = "<group>"; };
+		17C87A05181892D0C9B779A7BCBBB1CB /* TABAnimatedProductInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProductInterface.h; path = TABAnimatedDemo/TABAnimated/Product/Include/TABAnimatedProductInterface.h; sourceTree = "<group>"; };
+		1854C0A60057698742E08235FBE961AF /* TABAnimatedDocumentMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDocumentMethod.h; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedDocumentMethod.h; sourceTree = "<group>"; };
+		1B2A1CCAFA9CF3219E9A2C9CF9F80C7A /* TABDropAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABDropAnimation.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABDropAnimation.m; sourceTree = "<group>"; };
+		1B56C8369A4AB032DD50176CD47B2521 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		1D5D66B1D7573083A392FD0B354846A2 /* libTABAnimated.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTABAnimated.a; path = libTABAnimated.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D9403061C4C5D4EB32FFEE6A3F1A7D4 /* TABComponentLayer+TABDropAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TABComponentLayer+TABDropAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABComponentLayer+TABDropAnimation.m"; sourceTree = "<group>"; };
+		1F961E7B3F7180858030C0DCF87B44D5 /* TABClassicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABClassicAnimation.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABClassicAnimation.h; sourceTree = "<group>"; };
+		1FFAFEB6A3FAB0487896B2776DCACDA8 /* TABShimmerAnimationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABShimmerAnimationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Shimmer/TABShimmerAnimationImpl.h; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D7D20190759DC381252971FCDB666D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		20FFA974C47F0982CDA625C94968456E /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
+		2202763A8078647353FC72EF32B99BFF /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		225DF7469898FBFE059FD5BEDBA86FE7 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		22630A68C77FB94AFD86E13269E6130E /* SDWebImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoderHelper.m; path = SDWebImage/SDWebImageCoderHelper.m; sourceTree = "<group>"; };
+		229472CDC592E42BC4795B80C0FE8E25 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		22FC5193AC06FFF5103E9560247240EF /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		2582C8691212D6FE17EE0F7D924BB806 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		262C71CACA02C9A581AEA11CA2EDAF9E /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		26640BDC16C6563A0C15A9B1F12B8729 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		2946F536157E014A452FCB3630E2BC05 /* TABBaseComponent+TABDropAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TABBaseComponent+TABDropAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABBaseComponent+TABDropAnimation.m"; sourceTree = "<group>"; };
+		2A1F375876E92B3411D9DFFDEDBB7C55 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		2AC88D043CA99A4BDB211D1B9B126B86 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		2B849A2B74ACB81B4638FE96AB7669D6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2B93FF29C083FE15AFC57F5F499892D6 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		2C470B463CAE98866F093A2568D596E8 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		2C92C1091B19A867D04AD8E06B869479 /* TABAnimatedCacheManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedCacheManager.h; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedCacheManager.h; sourceTree = "<group>"; };
+		3033BA2C1BEED6CCCF80F675D6BA68B3 /* UIView+TABAnimatedProduction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TABAnimatedProduction.m"; path = "TABAnimatedDemo/TABAnimated/Product/UIView+TABAnimatedProduction.m"; sourceTree = "<group>"; };
+		30C2BC4AD9B5F712291D576D85CC9338 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
+		316583BB07603523BB1C4C705A0FD9B7 /* TABAnimatedProduction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedProduction.m; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProduction.m; sourceTree = "<group>"; };
+		31E053B0CCE67AF810842015F8A89967 /* UIView+TABExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TABExtension.h"; path = "TABAnimatedDemo/TABAnimated/PullLoading/Include/UIView+TABExtension.h"; sourceTree = "<group>"; };
+		33CE85F6F49F71D3217AF13D5873A777 /* SDWebImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageFrame.h; path = SDWebImage/SDWebImageFrame.h; sourceTree = "<group>"; };
+		33D56564B317742C5B1DAB0EFB77B0DC /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		36286BBA7F7122F2FCCE715B106AAAE6 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		3727D7120D83FF564E86629823296B53 /* TABDropAnimationDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABDropAnimationDefines.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABDropAnimationDefines.h; sourceTree = "<group>"; };
+		388EF3B3573FAB3168DF69E20C104FC7 /* TABAnimatedChainDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedChainDefines.h; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/Include/TABAnimatedChainDefines.h; sourceTree = "<group>"; };
+		399DC885E4B43B162CA70ABEFD19C20C /* TABShimmerAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABShimmerAnimation.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Shimmer/TABShimmerAnimation.h; sourceTree = "<group>"; };
+		3AEC801190231CB05F4C324C0C95606B /* TABAnimatedProductImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProductImpl.h; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProductImpl.h; sourceTree = "<group>"; };
+		3B4A64FEA0A9336EF929F42EB6FD2D8F /* TABCollectionAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABCollectionAnimated.m; path = TABAnimatedDemo/TABAnimated/Control/TABCollectionAnimated.m; sourceTree = "<group>"; };
+		3B5FCF519D933F8B6E80DF76646F578D /* TABShimmerAnimationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABShimmerAnimationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Shimmer/TABShimmerAnimationImpl.m; sourceTree = "<group>"; };
+		3BDD676E7D52524721FF2095D7BF8E07 /* TABBinAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABBinAnimation.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Bin/TABBinAnimation.m; sourceTree = "<group>"; };
+		3C5A28369EF0BB304F0078247470E4E1 /* Pods-CRPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CRPlayer-dummy.m"; sourceTree = "<group>"; };
+		3D06B1F420C301A78F7742098BB50C24 /* UIView+TABExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TABExtension.m"; path = "TABAnimatedDemo/TABAnimated/PullLoading/UIView+TABExtension.m"; sourceTree = "<group>"; };
+		3D24F507C6E88D62CBACA3462FA76A12 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		3D27EB01E55D1439BF7ED3DBBBAC2710 /* TABDropAnimationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABDropAnimationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABDropAnimationImpl.h; sourceTree = "<group>"; };
+		3EFB3B326B992A76E1766D1F07525292 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		3FB33B492D427B83A718DF9DEA9CCE17 /* TABBaseComponent+TABDropAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TABBaseComponent+TABDropAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABBaseComponent+TABDropAnimation.h"; sourceTree = "<group>"; };
+		3FEFAFCA66381876E481B7856BE8360D /* TABAnimatedCacheModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedCacheModel.m; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedCacheModel.m; sourceTree = "<group>"; };
+		40F82B5964F27D4359DEFF23873D07F9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		41D9FC463C41D4DCF529F0F11D6FE038 /* TABAnimatedInjectionIIIHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedInjectionIIIHelper.h; path = TABAnimatedDemo/TABAnimated/Util/TABAnimatedInjectionIIIHelper.h; sourceTree = "<group>"; };
+		42CF37550079BB410491E0F191D44EB3 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
+		4660D8451FADC57367888BDE529D0A99 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		4A749985AAECD429CA6CBA7AFCF3170A /* TABAnimationManagerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimationManagerInterface.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Include/TABAnimationManagerInterface.h; sourceTree = "<group>"; };
+		4AA70C373810AC8216FCA7A89CC2E29A /* TABComponentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABComponentManager.m; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABComponentManager.m; sourceTree = "<group>"; };
+		4AAA075B4F12B5763B4C6E616C84DAC9 /* TABAnimatedDarkModeImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDarkModeImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABAnimatedDarkModeImpl.h; sourceTree = "<group>"; };
+		4C4826E282A82F0F5D52C30D7587F7CF /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
+		4CB18116BD2CB52AB4838607EDEAC38E /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
+		4DCE5C5259C37E8090BEE58A50B21395 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		4DDAA70FE285D2FC69CE44DDAA17DF9C /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		4E03E8C7081AC99343EA214C0E1ADEDC /* TABAnimationManagerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimationManagerImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/TABAnimationManagerImpl.h; sourceTree = "<group>"; };
+		4F1665F710CBDF30A7C8AC347B5DB103 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
+		4F4D5074676BE1E578F8A3FDC93B69BA /* TABComponentLayer+TABClassicAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TABComponentLayer+TABClassicAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABComponentLayer+TABClassicAnimation.m"; sourceTree = "<group>"; };
+		507FE43C889517DA6BCC613FDFE6F1C1 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
+		50AA70D2C6B593B5F76467A64166183E /* TABAnimatedProductImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedProductImpl.m; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProductImpl.m; sourceTree = "<group>"; };
+		511BD6BB93C2129EDF36E2B57C6CEF21 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		51758E968405806EA6AEC91C41AD4BE2 /* TABBaseComponent+TABClassicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TABBaseComponent+TABClassicAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABBaseComponent+TABClassicAnimation.h"; sourceTree = "<group>"; };
+		51A1517C79B2C344D394DAF17E5EE5BD /* TABAnimationMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimationMethod.m; path = TABAnimatedDemo/TABAnimated/Util/TABAnimationMethod.m; sourceTree = "<group>"; };
+		52CFCC339B3D0FC5466CCA39FE9F287F /* TABAnimatedNormalViewProductImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedNormalViewProductImpl.m; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedNormalViewProductImpl.m; sourceTree = "<group>"; };
+		54145571D45442D1501AAE4D94B8E4B1 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		54381038CA3E8934AB83761BA62166D2 /* TABAnimatedDarkModeManagerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDarkModeManagerInterface.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/Include/TABAnimatedDarkModeManagerInterface.h; sourceTree = "<group>"; };
+		54E9946AE48F9364DB43D16851052441 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
+		5A22D9F5460AE12723F362FAEA1AD548 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		5A8F059FED613A00906481215F43A6A0 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
+		5AA594CB5732C25AA5102F38DA0FA767 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		5B8DD24C1A15FBDF93A34AE8BB0C484A /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		5BA13838A1A01365598A508E600EC797 /* TABBinAnimationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABBinAnimationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Bin/TABBinAnimationImpl.m; sourceTree = "<group>"; };
+		5D3F455A760252EA899151F8602E303E /* UIView+TABControlModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TABControlModel.h"; path = "TABAnimatedDemo/TABAnimated/Control/Include/UIView+TABControlModel.h"; sourceTree = "<group>"; };
+		5E4CEEFD952A129089C2D0CB825070CD /* TABViewAnimatedDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABViewAnimatedDefines.h; path = TABAnimatedDemo/TABAnimated/Control/Include/TABViewAnimatedDefines.h; sourceTree = "<group>"; };
+		5EA80FA1DED11672DBFE04923485681C /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		5EE1AD37A30A177DDBB757C2F6FC623A /* TABShimmerAnimationDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABShimmerAnimationDefines.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Shimmer/TABShimmerAnimationDefines.h; sourceTree = "<group>"; };
+		5FBFCAD3464B090B312EA20572239115 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		6050CA167799A1729934DA9A952070DF /* Pods-CRPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CRPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		60A57228725E2AF7663BF852B929921A /* TABBaseComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABBaseComponent.m; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABBaseComponent.m; sourceTree = "<group>"; };
+		611CCECE592AB5A907A14AD0A5FC714A /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		624D22F8D2508008BE46436D20CCD483 /* TABComponentLayer+TABClassicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TABComponentLayer+TABClassicAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABComponentLayer+TABClassicAnimation.h"; sourceTree = "<group>"; };
+		6365A1927B3B7D099567C66FEF86E2DC /* TABAnimatedNormalViewProductImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedNormalViewProductImpl.h; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedNormalViewProductImpl.h; sourceTree = "<group>"; };
+		63B64075E4813DA1C7376B0F9EABC72A /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		648E6C18A846C3A4996523CD59E4A9B1 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		673B809C0829669924ABC235E87F7444 /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+AFNetworking.h"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		679582A2D7CB91D23A445B052E379135 /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
+		6870E310C0434C437E3ACE9D0665DFA9 /* SDWebImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoder.h; path = SDWebImage/SDWebImageCoder.h; sourceTree = "<group>"; };
+		6AB1215289FDBC0FE00DE3E732AE1FD8 /* TABFormAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABFormAnimated.h; path = TABAnimatedDemo/TABAnimated/Control/TABFormAnimated.h; sourceTree = "<group>"; };
+		6BFF9F3773FB1AEB1D2FA69C57F32AE0 /* TABAnimated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABAnimated.debug.xcconfig; sourceTree = "<group>"; };
+		6E301EC9F1596CF4E767D3052F7E7177 /* TABAnimatedPullLoadingComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedPullLoadingComponent.m; path = TABAnimatedDemo/TABAnimated/PullLoading/TABAnimatedPullLoadingComponent.m; sourceTree = "<group>"; };
+		6F71FEEC05119D98C80E5D99E52975E1 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		7019948E22ABDA6C6FF87B9497437C71 /* TABAnimatedInjectionIIIHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedInjectionIIIHelper.m; path = TABAnimatedDemo/TABAnimated/Util/TABAnimatedInjectionIIIHelper.m; sourceTree = "<group>"; };
+		70687C1636E4AC4505E81977F24E6886 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		70ACA668B6262065D2FE5E3536D343C0 /* TABClassicAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABClassicAnimation.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABClassicAnimation.m; sourceTree = "<group>"; };
+		7340BAA2B5E4B964DD4C7FC23F4EB82D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		73F011ACC880C46F3CB08BA2BC1D7259 /* TABAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimated.m; path = TABAnimatedDemo/TABAnimated/TABAnimated.m; sourceTree = "<group>"; };
+		7539E7F8E085993C82CB828F15FA0CB3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		76018D7D90B145BE9F394D89F3B4242C /* UIView+TABControlAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TABControlAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Control/Include/UIView+TABControlAnimation.h"; sourceTree = "<group>"; };
+		76DE928165B58350B097F1B60A8AB575 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		774FA20113547101290EDEA838EF14BC /* Pods-CRPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CRPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		77C9C877E1C223FF546AD1A677BD9AC8 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		780231E0D67E4FF02F54141BA6F79A6A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		7A34995C3BE32CB9784F0230F28E0C9C /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		7BF148744001D717365FE290E866CAAE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		7C16DD33FFD8586183A526384602C23E /* UIScrollView+TABExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TABExtension.h"; path = "TABAnimatedDemo/TABAnimated/Util/UIScrollView+TABExtension.h"; sourceTree = "<group>"; };
+		7CA6FEB0E6C57BE441AB710AD1D8A234 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		7D572E8F74CA033AF3FCBE28402AB386 /* UIScrollView+TABExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TABExtension.m"; path = "TABAnimatedDemo/TABAnimated/Util/UIScrollView+TABExtension.m"; sourceTree = "<group>"; };
+		7D586E181C9770384A09B2E0C0243402 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		813C9D928C01BBB2139A9C872E6B0C71 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		829639CB81EE5A1948459BD709D6EF51 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		82E847BFCE9FF0EE578F67C5F48A1865 /* UIView+TABControlModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TABControlModel.m"; path = "TABAnimatedDemo/TABAnimated/Control/UIView+TABControlModel.m"; sourceTree = "<group>"; };
+		83CB568DD68ACCB44B52F0805C6785DB /* TABAnimatedDarkModeInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDarkModeInterface.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/Include/TABAnimatedDarkModeInterface.h; sourceTree = "<group>"; };
+		84AB011BBC64A3F04A28B946FAE11680 /* NSArray+TABDropAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+TABDropAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/NSArray+TABDropAnimation.h"; sourceTree = "<group>"; };
+		850B4B27792559131127A1E2A5F32191 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		85234B844E48F18F0410935DD5398AE2 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		86CF9980A87B49699D3B5881955F9D56 /* TABBaseComponent+TABClassicAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TABBaseComponent+TABClassicAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABBaseComponent+TABClassicAnimation.m"; sourceTree = "<group>"; };
+		890AF317801DA55EEC505D7757A8A890 /* SDWebImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCodersManager.h; path = SDWebImage/SDWebImageCodersManager.h; sourceTree = "<group>"; };
+		8AC807C5FD6219481F4D15BD35219054 /* NSArray+TABAnimatedChain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+TABAnimatedChain.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Chain/NSArray+TABAnimatedChain.h"; sourceTree = "<group>"; };
+		8B0C529DB89C742467D257A54306D63A /* TABAnimatedDecorateInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDecorateInterface.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Include/TABAnimatedDecorateInterface.h; sourceTree = "<group>"; };
+		8B365F31C6C894F75E107B6FC9A1B822 /* Pods-CRPlayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CRPlayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C695921EC5C8705F13E51C7D4E4EB82 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		8CBD4C50F4E9393D2142FCD27D0CC014 /* TABAnimatedProductHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedProductHelper.m; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProductHelper.m; sourceTree = "<group>"; };
+		8F71D26131EB40F5271F5BFC307A8F61 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		933958FEB6CA9FEFC38B893CECE4877A /* TABAnimatedCacheModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedCacheModel.h; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedCacheModel.h; sourceTree = "<group>"; };
+		95D4C90C4248D97EF2489803D83E8794 /* UIScrollView+TABAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TABAnimated.h"; path = "TABAnimatedDemo/TABAnimated/PullLoading/Include/UIScrollView+TABAnimated.h"; sourceTree = "<group>"; };
+		95FC21776941FF5406D1571D2BA73AB7 /* TABAnimationMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimationMethod.h; path = TABAnimatedDemo/TABAnimated/Util/TABAnimationMethod.h; sourceTree = "<group>"; };
+		97F9BCBBAC8F2A2F2F9498007AFAEA2D /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
+		9800BDB353D8F8B474AE69531C322F86 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		9803B68397D38975BBD05A37F04CE1EF /* TABTableAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABTableAnimated.m; path = TABAnimatedDemo/TABAnimated/Control/TABTableAnimated.m; sourceTree = "<group>"; };
+		99E0C8D13A39C44299C23D9AD7C96E45 /* TABComponentLayerDropSerializationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABComponentLayerDropSerializationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABComponentLayerDropSerializationImpl.m; sourceTree = "<group>"; };
+		9ADA02CF4E943C9C83CE91D125BEBCFE /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		9ADF0F2BE5090D7727E775BD5D265891 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		9B8C0E0C890F812876C2787C3B028458 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9BE40E319F2864D1A2F76CA54827CC8D /* TABAnimatedDarkModeImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedDarkModeImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABAnimatedDarkModeImpl.m; sourceTree = "<group>"; };
+		9BFBE4844F6F405451C6CCF59D61D315 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E14E0251CBDE81A59868AC989EB1989 /* TABBinAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABBinAnimation.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Bin/TABBinAnimation.h; sourceTree = "<group>"; };
+		A1C90881F3E7AE8D27777A8EFF1FB954 /* TABWeakDelegateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABWeakDelegateManager.h; path = TABAnimatedDemo/TABAnimated/Util/TABWeakDelegateManager.h; sourceTree = "<group>"; };
+		A467D838BBC063A32FEE081A055DF1EC /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A609D789138FCB4B62339422B086ED74 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		A641ADC8261A0E5A11840006D88FF0BF /* UIView+TABControlAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TABControlAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Control/UIView+TABControlAnimation.m"; sourceTree = "<group>"; };
+		A6D0DAA9848FF44C4BE07E4127E0A6F3 /* TABDropAnimationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABDropAnimationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABDropAnimationImpl.m; sourceTree = "<group>"; };
+		A7A13E523D09D657286077073C24753A /* TABAnimatedDarkModeManagerImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDarkModeManagerImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABAnimatedDarkModeManagerImpl.h; sourceTree = "<group>"; };
+		A7FD20EBF12AF63765410FB7C1818C48 /* TABAnimatedCacheManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedCacheManager.m; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedCacheManager.m; sourceTree = "<group>"; };
+		A9E147A815D2735FAB73C65FCD4068D4 /* TABAnimatedProduction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProduction.h; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProduction.h; sourceTree = "<group>"; };
+		AA41F19D36F772B8032828EBD2F38EE1 /* UIView+TABAnimatedProduction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TABAnimatedProduction.h"; path = "TABAnimatedDemo/TABAnimated/Product/UIView+TABAnimatedProduction.h"; sourceTree = "<group>"; };
+		AA5CC702194E009BC27299C4D3FA022B /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		AA7B098DD3212C765BFB32C185D37ADF /* TABClassicAnimationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABClassicAnimationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABClassicAnimationImpl.m; sourceTree = "<group>"; };
+		ABCEEC7437985DBC87B02A2AF015F578 /* TABAnimated-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABAnimated-prefix.pch"; sourceTree = "<group>"; };
+		AD6587D184500DC7A1E832314BAFA8AA /* TABAnimatedDarkModeDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedDarkModeDefines.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/Include/TABAnimatedDarkModeDefines.h; sourceTree = "<group>"; };
+		AF5A94DC2C313DEF3DCBA4DD1D0A44EC /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		AF87BA92202BE2DB7B29A50B7A95BE07 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDWebImage.a; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2937E5BF6275F6DFF4CB9B3DB699BF0 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		B35A1C8048F7617FEBAE6C59FC1711FD /* TABAnimatedConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedConfig.h; path = TABAnimatedDemo/TABAnimated/Config/TABAnimatedConfig.h; sourceTree = "<group>"; };
+		B3E4485099C2B25C841D6AB4F3AA3174 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		B414A77F6B841AF165513C7EA1690045 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
+		B68A77C9FD8905346A19E1F719CC6B57 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		B70BC1C8B1E9586E1F17CAD1083C7341 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		B7DD21B5155306BFFC267E76A587F864 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		B86A0966F4C94933F124188472A9EB1F /* TABViewAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABViewAnimated.m; path = TABAnimatedDemo/TABAnimated/Control/TABViewAnimated.m; sourceTree = "<group>"; };
+		B8970058B087BCE1E81C0B5DA21B974E /* TABAnimatedChainManagerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedChainManagerImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABAnimatedChainManagerImpl.m; sourceTree = "<group>"; };
+		B95BF4FDD502D113F35081F2889FC3C6 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		BA821306CF74272DE339CE55056DBC2F /* libPods-CRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CRPlayer.a"; path = "libPods-CRPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB02E26AD31B6364D578055AF5510FFA /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BBA54E3D0E45FFD93B9352606C4E320D /* TABAnimatedProductHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedProductHelper.h; path = TABAnimatedDemo/TABAnimated/Product/TABAnimatedProductHelper.h; sourceTree = "<group>"; };
+		BD364EF76374B08472ABC3C9C80C3C0D /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		BD58C416E2A855A27890599CC078E7ED /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		BD75F33B2A892A73DA27DBED890ECECE /* TABShimmerAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABShimmerAnimation.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Shimmer/TABShimmerAnimation.m; sourceTree = "<group>"; };
+		BD8F90D9595820BA07BCBF8FEBA827A5 /* TABBinAnimationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABBinAnimationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Bin/TABBinAnimationImpl.h; sourceTree = "<group>"; };
+		BEF0C4E973B21DBD5CC3F8278D0FEA3E /* NSArray+TABAnimatedChain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TABAnimatedChain.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Chain/NSArray+TABAnimatedChain.m"; sourceTree = "<group>"; };
+		BFAA8A123E3A60C0C0700D02750B3348 /* TABSentryView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABSentryView.h; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABSentryView.h; sourceTree = "<group>"; };
+		C1512C259F40853073C2D08C02566F2E /* SDWebImageImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageImageIOCoder.h; path = SDWebImage/SDWebImageImageIOCoder.h; sourceTree = "<group>"; };
+		C1C169E9B6D9987F1B611EF18ADAB56C /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
+		C2C228600678DE14E21696F41601CECB /* WKWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+AFNetworking.m"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		C35B94775DE5F6E218257BE6B7C7BD07 /* SDWebImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.release.xcconfig; sourceTree = "<group>"; };
+		C3BB58DE98DE521BB98B6FAAFFF1055B /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		C406F4EB2FB84BC967F2C12176DF9635 /* TABComponentLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABComponentLayer.h; path = TABAnimatedDemo/TABAnimated/Product/TABComponentLayer.h; sourceTree = "<group>"; };
+		C431E9632B31F5B74F32F91B038F222E /* TABComponentLayerClassicSerializationImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABComponentLayerClassicSerializationImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABComponentLayerClassicSerializationImpl.m; sourceTree = "<group>"; };
+		C473167EACBB46631721E1E900F70832 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		C4A492F9B809A25797D1A18711BB5F8E /* NSArray+TABDropAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+TABDropAnimation.m"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/NSArray+TABDropAnimation.m"; sourceTree = "<group>"; };
+		C4DA2883ABD02EC4082FD9969C01C835 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		C67B518CF9A55A53276F00A18361DB21 /* TABWeakDelegateManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABWeakDelegateManager.m; path = TABAnimatedDemo/TABAnimated/Util/TABWeakDelegateManager.m; sourceTree = "<group>"; };
+		C67FD351695F4F159D5F52B06612A49C /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
+		C6DEDEEB4AA5EAF826BE1A6A6C2A2C56 /* SDWebImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageFrame.m; path = SDWebImage/SDWebImageFrame.m; sourceTree = "<group>"; };
+		C83B53B5E2498596B4783E67F597206F /* TABAnimatedChainManagerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedChainManagerInterface.h; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/Include/TABAnimatedChainManagerInterface.h; sourceTree = "<group>"; };
+		C95C975F1F568CF8E08B3655C646B21F /* UIScrollView+TABAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TABAnimated.m"; path = "TABAnimatedDemo/TABAnimated/PullLoading/UIScrollView+TABAnimated.m"; sourceTree = "<group>"; };
+		C9630CE1F63966C546A34AB996052E32 /* TABComponentLayer+TABDropAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TABComponentLayer+TABDropAnimation.h"; path = "TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABComponentLayer+TABDropAnimation.h"; sourceTree = "<group>"; };
+		CB439B674984C56871707B036B79F661 /* SDWebImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoderHelper.h; path = SDWebImage/SDWebImageCoderHelper.h; sourceTree = "<group>"; };
+		CB7FF75F4CB7F48C49076F91AD1BD7F5 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		CBCEAD271FF38CEB8D9C8CCC45B338E4 /* TABAnimationManagerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimationManagerImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/TABAnimationManagerImpl.m; sourceTree = "<group>"; };
+		CCDD5738F9AE7DFB675CFDC64FAE7718 /* SDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.debug.xcconfig; sourceTree = "<group>"; };
+		CF87DCCCB21D9A7F0B149A2664932958 /* TABComponentLayerSerializationInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABComponentLayerSerializationInterface.h; path = TABAnimatedDemo/TABAnimated/Product/Include/TABComponentLayerSerializationInterface.h; sourceTree = "<group>"; };
+		D1EFEB3B5FB99E147D37FE683CFD1044 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		D34AED744ED91A36F5B0848258CD53E4 /* TABAnimatedDarkModeManagerImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedDarkModeManagerImpl.m; path = TABAnimatedDemo/TABAnimated/Decorate/DarkMode/TABAnimatedDarkModeManagerImpl.m; sourceTree = "<group>"; };
+		D4A82E62150AC468D150FD3A44BEBF6C /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
+		D4ADBBC1F79DA96563322444D534CA95 /* TABAnimated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABAnimated.release.xcconfig; sourceTree = "<group>"; };
+		D63A77D31D4F6936BE382E3496D038A9 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		D7E19AFB8651C91B3731F881685D7CF8 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
+		D8F0F81D758C625DDE3EDF5491967618 /* TABBaseComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABBaseComponent.h; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABBaseComponent.h; sourceTree = "<group>"; };
+		D9F82A9F7BE7C22E711084A423B6B879 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
+		DAE318D0F1F4E4CD597BC916EE81FA37 /* TABComponentLayerDropSerializationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABComponentLayerDropSerializationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABComponentLayerDropSerializationImpl.h; sourceTree = "<group>"; };
+		DC1099523490D97F156AED9B5E9DE344 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		DCED6D616910336638BA5958F6E2B59E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		DCF3B7CF770959644469D1F4F304A65D /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		DD8A366D367E43C5EBD01E14A37ACEB8 /* TABViewAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABViewAnimated.h; path = TABAnimatedDemo/TABAnimated/Control/Include/TABViewAnimated.h; sourceTree = "<group>"; };
+		DE8D3F703FE0FEE37687ECEF7F2BDD49 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
+		DF1788E9C7450A6F5EC12ECEB4D96747 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		E21457D6DD022C075AD5A7708357D1BE /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		E4EA8497098F5F2A8651E275AF21810D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		E5E7CE6F4EDAF6DA7A80FB692CA0F36B /* TABComponentLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABComponentLayer.m; path = TABAnimatedDemo/TABAnimated/Product/TABComponentLayer.m; sourceTree = "<group>"; };
+		E815B6F46CC46EF85D4EFE2CAC9C5102 /* TABDropAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABDropAnimation.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Drop/TABDropAnimation.h; sourceTree = "<group>"; };
+		E866DB078DEDB3F063D5E66F5713E4E4 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		E8CC68D7B2019B830058E9DDD019F62D /* TABFormAnimated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABFormAnimated.m; path = TABAnimatedDemo/TABAnimated/Control/TABFormAnimated.m; sourceTree = "<group>"; };
+		EF6D118DF10C338500C10C5BE475A4A9 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		F0630C29D363E387D907EF26D7AAC907 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		F0C40888D72E9B3977873E7B04294D92 /* TABAnimated-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABAnimated-dummy.m"; sourceTree = "<group>"; };
+		F4DB1E0475B04B93C3FD48453292B055 /* TABAnimatedDocumentMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TABAnimatedDocumentMethod.m; path = TABAnimatedDemo/TABAnimated/Cache/TABAnimatedDocumentMethod.m; sourceTree = "<group>"; };
+		F6CD5BC4DE178715E135702FE773B814 /* TABComponentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABComponentManager.h; path = TABAnimatedDemo/TABAnimated/Decorate/Chain/TABComponentManager.h; sourceTree = "<group>"; };
+		F6DBED2E81266E8147D4A5113B91553E /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		F90DC7AF52AAF2C916F7DE13CB569759 /* SDWebImageImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageImageIOCoder.m; path = SDWebImage/SDWebImageImageIOCoder.m; sourceTree = "<group>"; };
+		F99B87067E3AC56455CD5379D3860C5F /* TABCollectionAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABCollectionAnimated.h; path = TABAnimatedDemo/TABAnimated/Control/Include/TABCollectionAnimated.h; sourceTree = "<group>"; };
+		FA1B699E4FE215A17912F3E9CB4C6068 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		FBF60A0CE8E5AC9E4200070D4C640E24 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
+		FC1D56F75683807A83957D6B18207804 /* TABClassicAnimationImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABClassicAnimationImpl.h; path = TABAnimatedDemo/TABAnimated/Decorate/Animation/Classic/TABClassicAnimationImpl.h; sourceTree = "<group>"; };
+		FD8DC10AED0EBBAD1223201F0A3E3432 /* TABAnimatedPullLoadingComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimatedPullLoadingComponent.h; path = TABAnimatedDemo/TABAnimated/PullLoading/Include/TABAnimatedPullLoadingComponent.h; sourceTree = "<group>"; };
+		FF37763872542C98F4D1CC9A8385D127 /* TABAnimated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TABAnimated.h; path = TABAnimatedDemo/TABAnimated/TABAnimated.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56010F82DCF8418E579FA7835727DCF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DB1FBE373354D0714284083F6DE10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5F9962FE2823EC54E1ECD215E9A126 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1819AAA20EFB295AE9F86E336C4CE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EB192C78994DC15565E789F243B9D7A /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				813C9D928C01BBB2139A9C872E6B0C71 /* AFURLRequestSerialization.h */,
+				9B8C0E0C890F812876C2787C3B028458 /* AFURLRequestSerialization.m */,
+				BB02E26AD31B6364D578055AF5510FFA /* AFURLResponseSerialization.h */,
+				D63A77D31D4F6936BE382E3496D038A9 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		40DC94D997A5AC67B38864C37AB72069 /* TABAnimated */ = {
+			isa = PBXGroup;
+			children = (
+				8AC807C5FD6219481F4D15BD35219054 /* NSArray+TABAnimatedChain.h */,
+				BEF0C4E973B21DBD5CC3F8278D0FEA3E /* NSArray+TABAnimatedChain.m */,
+				84AB011BBC64A3F04A28B946FAE11680 /* NSArray+TABDropAnimation.h */,
+				C4A492F9B809A25797D1A18711BB5F8E /* NSArray+TABDropAnimation.m */,
+				FF37763872542C98F4D1CC9A8385D127 /* TABAnimated.h */,
+				73F011ACC880C46F3CB08BA2BC1D7259 /* TABAnimated.m */,
+				2C92C1091B19A867D04AD8E06B869479 /* TABAnimatedCacheManager.h */,
+				A7FD20EBF12AF63765410FB7C1818C48 /* TABAnimatedCacheManager.m */,
+				933958FEB6CA9FEFC38B893CECE4877A /* TABAnimatedCacheModel.h */,
+				3FEFAFCA66381876E481B7856BE8360D /* TABAnimatedCacheModel.m */,
+				388EF3B3573FAB3168DF69E20C104FC7 /* TABAnimatedChainDefines.h */,
+				12517C5B88F8BACC52F16FFCBD1BA676 /* TABAnimatedChainManagerImpl.h */,
+				B8970058B087BCE1E81C0B5DA21B974E /* TABAnimatedChainManagerImpl.m */,
+				C83B53B5E2498596B4783E67F597206F /* TABAnimatedChainManagerInterface.h */,
+				B35A1C8048F7617FEBAE6C59FC1711FD /* TABAnimatedConfig.h */,
+				AD6587D184500DC7A1E832314BAFA8AA /* TABAnimatedDarkModeDefines.h */,
+				4AAA075B4F12B5763B4C6E616C84DAC9 /* TABAnimatedDarkModeImpl.h */,
+				9BE40E319F2864D1A2F76CA54827CC8D /* TABAnimatedDarkModeImpl.m */,
+				83CB568DD68ACCB44B52F0805C6785DB /* TABAnimatedDarkModeInterface.h */,
+				A7A13E523D09D657286077073C24753A /* TABAnimatedDarkModeManagerImpl.h */,
+				D34AED744ED91A36F5B0848258CD53E4 /* TABAnimatedDarkModeManagerImpl.m */,
+				54381038CA3E8934AB83761BA62166D2 /* TABAnimatedDarkModeManagerInterface.h */,
+				8B0C529DB89C742467D257A54306D63A /* TABAnimatedDecorateInterface.h */,
+				1854C0A60057698742E08235FBE961AF /* TABAnimatedDocumentMethod.h */,
+				F4DB1E0475B04B93C3FD48453292B055 /* TABAnimatedDocumentMethod.m */,
+				41D9FC463C41D4DCF529F0F11D6FE038 /* TABAnimatedInjectionIIIHelper.h */,
+				7019948E22ABDA6C6FF87B9497437C71 /* TABAnimatedInjectionIIIHelper.m */,
+				6365A1927B3B7D099567C66FEF86E2DC /* TABAnimatedNormalViewProductImpl.h */,
+				52CFCC339B3D0FC5466CCA39FE9F287F /* TABAnimatedNormalViewProductImpl.m */,
+				0C72792035E5A603C835E271FA745BB8 /* TABAnimatedProductDefines.h */,
+				BBA54E3D0E45FFD93B9352606C4E320D /* TABAnimatedProductHelper.h */,
+				8CBD4C50F4E9393D2142FCD27D0CC014 /* TABAnimatedProductHelper.m */,
+				3AEC801190231CB05F4C324C0C95606B /* TABAnimatedProductImpl.h */,
+				50AA70D2C6B593B5F76467A64166183E /* TABAnimatedProductImpl.m */,
+				17C87A05181892D0C9B779A7BCBBB1CB /* TABAnimatedProductInterface.h */,
+				A9E147A815D2735FAB73C65FCD4068D4 /* TABAnimatedProduction.h */,
+				316583BB07603523BB1C4C705A0FD9B7 /* TABAnimatedProduction.m */,
+				FD8DC10AED0EBBAD1223201F0A3E3432 /* TABAnimatedPullLoadingComponent.h */,
+				6E301EC9F1596CF4E767D3052F7E7177 /* TABAnimatedPullLoadingComponent.m */,
+				4E03E8C7081AC99343EA214C0E1ADEDC /* TABAnimationManagerImpl.h */,
+				CBCEAD271FF38CEB8D9C8CCC45B338E4 /* TABAnimationManagerImpl.m */,
+				4A749985AAECD429CA6CBA7AFCF3170A /* TABAnimationManagerInterface.h */,
+				95FC21776941FF5406D1571D2BA73AB7 /* TABAnimationMethod.h */,
+				51A1517C79B2C344D394DAF17E5EE5BD /* TABAnimationMethod.m */,
+				D8F0F81D758C625DDE3EDF5491967618 /* TABBaseComponent.h */,
+				60A57228725E2AF7663BF852B929921A /* TABBaseComponent.m */,
+				51758E968405806EA6AEC91C41AD4BE2 /* TABBaseComponent+TABClassicAnimation.h */,
+				86CF9980A87B49699D3B5881955F9D56 /* TABBaseComponent+TABClassicAnimation.m */,
+				3FB33B492D427B83A718DF9DEA9CCE17 /* TABBaseComponent+TABDropAnimation.h */,
+				2946F536157E014A452FCB3630E2BC05 /* TABBaseComponent+TABDropAnimation.m */,
+				9E14E0251CBDE81A59868AC989EB1989 /* TABBinAnimation.h */,
+				3BDD676E7D52524721FF2095D7BF8E07 /* TABBinAnimation.m */,
+				BD8F90D9595820BA07BCBF8FEBA827A5 /* TABBinAnimationImpl.h */,
+				5BA13838A1A01365598A508E600EC797 /* TABBinAnimationImpl.m */,
+				1F961E7B3F7180858030C0DCF87B44D5 /* TABClassicAnimation.h */,
+				70ACA668B6262065D2FE5E3536D343C0 /* TABClassicAnimation.m */,
+				FC1D56F75683807A83957D6B18207804 /* TABClassicAnimationImpl.h */,
+				AA7B098DD3212C765BFB32C185D37ADF /* TABClassicAnimationImpl.m */,
+				F99B87067E3AC56455CD5379D3860C5F /* TABCollectionAnimated.h */,
+				3B4A64FEA0A9336EF929F42EB6FD2D8F /* TABCollectionAnimated.m */,
+				C406F4EB2FB84BC967F2C12176DF9635 /* TABComponentLayer.h */,
+				E5E7CE6F4EDAF6DA7A80FB692CA0F36B /* TABComponentLayer.m */,
+				624D22F8D2508008BE46436D20CCD483 /* TABComponentLayer+TABClassicAnimation.h */,
+				4F4D5074676BE1E578F8A3FDC93B69BA /* TABComponentLayer+TABClassicAnimation.m */,
+				C9630CE1F63966C546A34AB996052E32 /* TABComponentLayer+TABDropAnimation.h */,
+				1D9403061C4C5D4EB32FFEE6A3F1A7D4 /* TABComponentLayer+TABDropAnimation.m */,
+				16FCEC345BA879E50B4E64D5E0B0CE07 /* TABComponentLayerClassicSerializationImpl.h */,
+				C431E9632B31F5B74F32F91B038F222E /* TABComponentLayerClassicSerializationImpl.m */,
+				DAE318D0F1F4E4CD597BC916EE81FA37 /* TABComponentLayerDropSerializationImpl.h */,
+				99E0C8D13A39C44299C23D9AD7C96E45 /* TABComponentLayerDropSerializationImpl.m */,
+				CF87DCCCB21D9A7F0B149A2664932958 /* TABComponentLayerSerializationInterface.h */,
+				F6CD5BC4DE178715E135702FE773B814 /* TABComponentManager.h */,
+				4AA70C373810AC8216FCA7A89CC2E29A /* TABComponentManager.m */,
+				E815B6F46CC46EF85D4EFE2CAC9C5102 /* TABDropAnimation.h */,
+				1B2A1CCAFA9CF3219E9A2C9CF9F80C7A /* TABDropAnimation.m */,
+				3727D7120D83FF564E86629823296B53 /* TABDropAnimationDefines.h */,
+				3D27EB01E55D1439BF7ED3DBBBAC2710 /* TABDropAnimationImpl.h */,
+				A6D0DAA9848FF44C4BE07E4127E0A6F3 /* TABDropAnimationImpl.m */,
+				6AB1215289FDBC0FE00DE3E732AE1FD8 /* TABFormAnimated.h */,
+				E8CC68D7B2019B830058E9DDD019F62D /* TABFormAnimated.m */,
+				BFAA8A123E3A60C0C0700D02750B3348 /* TABSentryView.h */,
+				0BFA45DD9D88B5141D44F3461A922840 /* TABSentryView.m */,
+				399DC885E4B43B162CA70ABEFD19C20C /* TABShimmerAnimation.h */,
+				BD75F33B2A892A73DA27DBED890ECECE /* TABShimmerAnimation.m */,
+				5EE1AD37A30A177DDBB757C2F6FC623A /* TABShimmerAnimationDefines.h */,
+				1FFAFEB6A3FAB0487896B2776DCACDA8 /* TABShimmerAnimationImpl.h */,
+				3B5FCF519D933F8B6E80DF76646F578D /* TABShimmerAnimationImpl.m */,
+				06F2745DD11CA1017509A32BCE6C7099 /* TABTableAnimated.h */,
+				9803B68397D38975BBD05A37F04CE1EF /* TABTableAnimated.m */,
+				DD8A366D367E43C5EBD01E14A37ACEB8 /* TABViewAnimated.h */,
+				B86A0966F4C94933F124188472A9EB1F /* TABViewAnimated.m */,
+				5E4CEEFD952A129089C2D0CB825070CD /* TABViewAnimatedDefines.h */,
+				A1C90881F3E7AE8D27777A8EFF1FB954 /* TABWeakDelegateManager.h */,
+				C67B518CF9A55A53276F00A18361DB21 /* TABWeakDelegateManager.m */,
+				95D4C90C4248D97EF2489803D83E8794 /* UIScrollView+TABAnimated.h */,
+				C95C975F1F568CF8E08B3655C646B21F /* UIScrollView+TABAnimated.m */,
+				7C16DD33FFD8586183A526384602C23E /* UIScrollView+TABExtension.h */,
+				7D572E8F74CA033AF3FCBE28402AB386 /* UIScrollView+TABExtension.m */,
+				AA41F19D36F772B8032828EBD2F38EE1 /* UIView+TABAnimatedProduction.h */,
+				3033BA2C1BEED6CCCF80F675D6BA68B3 /* UIView+TABAnimatedProduction.m */,
+				76018D7D90B145BE9F394D89F3B4242C /* UIView+TABControlAnimation.h */,
+				A641ADC8261A0E5A11840006D88FF0BF /* UIView+TABControlAnimation.m */,
+				5D3F455A760252EA899151F8602E303E /* UIView+TABControlModel.h */,
+				82E847BFCE9FF0EE578F67C5F48A1865 /* UIView+TABControlModel.m */,
+				31E053B0CCE67AF810842015F8A89967 /* UIView+TABExtension.h */,
+				3D06B1F420C301A78F7742098BB50C24 /* UIView+TABExtension.m */,
+				805BA9EEF666914A31CF6193763E720F /* Support Files */,
+			);
+			name = TABAnimated;
+			path = TABAnimated;
+			sourceTree = "<group>";
+		};
+		4266CF4A90DB1E506C5E0BCC78458CF8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A39C6133BB9B33C1AB607F3C2121540 /* Pods-CRPlayer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		52472D79FA19C4C03689910008AF89D5 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				83647B090071B7107233D94808370535 /* Core */,
+				94037E6734788F1AEBEC16E5CEAF1F74 /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		66DE4F51E42B343BD792252FEE05CBFC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C4DA2883ABD02EC4082FD9969C01C835 /* AFNetworking.h */,
+				F9A1CCB24ECD2A429FB11C9D88262785 /* NSURLSession */,
+				F9A6CBCC2C3F8E943BECFBE32B49D7C8 /* Reachability */,
+				B729916D9D1CC04ED0194294E61CE015 /* Security */,
+				3EB192C78994DC15565E789F243B9D7A /* Serialization */,
+				D14AE96D9F8B10FFD5BA4564016DD65D /* Support Files */,
+				EB7DA11C36589636FCC1D2DE8F7897A4 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		805BA9EEF666914A31CF6193763E720F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0C40888D72E9B3977873E7B04294D92 /* TABAnimated-dummy.m */,
+				ABCEEC7437985DBC87B02A2AF015F578 /* TABAnimated-prefix.pch */,
+				6BFF9F3773FB1AEB1D2FA69C57F32AE0 /* TABAnimated.debug.xcconfig */,
+				D4ADBBC1F79DA96563322444D534CA95 /* TABAnimated.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TABAnimated";
+			sourceTree = "<group>";
+		};
+		83647B090071B7107233D94808370535 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D9F82A9F7BE7C22E711084A423B6B879 /* NSButton+WebCache.h */,
+				5A8F059FED613A00906481215F43A6A0 /* NSButton+WebCache.m */,
+				9ADA02CF4E943C9C83CE91D125BEBCFE /* NSData+ImageContentType.h */,
+				AF87BA92202BE2DB7B29A50B7A95BE07 /* NSData+ImageContentType.m */,
+				112D93C3509DEE027A96FC2D0EC44F46 /* NSImage+WebCache.h */,
+				C1C169E9B6D9987F1B611EF18ADAB56C /* NSImage+WebCache.m */,
+				D7E19AFB8651C91B3731F881685D7CF8 /* SDAnimatedImageRep.h */,
+				42CF37550079BB410491E0F191D44EB3 /* SDAnimatedImageRep.m */,
+				648E6C18A846C3A4996523CD59E4A9B1 /* SDImageCache.h */,
+				C473167EACBB46631721E1E900F70832 /* SDImageCache.m */,
+				C67FD351695F4F159D5F52B06612A49C /* SDImageCacheConfig.h */,
+				DE8D3F703FE0FEE37687ECEF7F2BDD49 /* SDImageCacheConfig.m */,
+				6870E310C0434C437E3ACE9D0665DFA9 /* SDWebImageCoder.h */,
+				1100B5A14BA311BBE09CE894F683CBC7 /* SDWebImageCoder.m */,
+				CB439B674984C56871707B036B79F661 /* SDWebImageCoderHelper.h */,
+				22630A68C77FB94AFD86E13269E6130E /* SDWebImageCoderHelper.m */,
+				890AF317801DA55EEC505D7757A8A890 /* SDWebImageCodersManager.h */,
+				97F9BCBBAC8F2A2F2F9498007AFAEA2D /* SDWebImageCodersManager.m */,
+				5B8DD24C1A15FBDF93A34AE8BB0C484A /* SDWebImageCompat.h */,
+				9ADF0F2BE5090D7727E775BD5D265891 /* SDWebImageCompat.m */,
+				F0630C29D363E387D907EF26D7AAC907 /* SDWebImageDownloader.h */,
+				829639CB81EE5A1948459BD709D6EF51 /* SDWebImageDownloader.m */,
+				068A1349D09322864C6DA6FE7A9F8573 /* SDWebImageDownloaderOperation.h */,
+				DC1099523490D97F156AED9B5E9DE344 /* SDWebImageDownloaderOperation.m */,
+				33CE85F6F49F71D3217AF13D5873A777 /* SDWebImageFrame.h */,
+				C6DEDEEB4AA5EAF826BE1A6A6C2A2C56 /* SDWebImageFrame.m */,
+				4F1665F710CBDF30A7C8AC347B5DB103 /* SDWebImageGIFCoder.h */,
+				679582A2D7CB91D23A445B052E379135 /* SDWebImageGIFCoder.m */,
+				C1512C259F40853073C2D08C02566F2E /* SDWebImageImageIOCoder.h */,
+				F90DC7AF52AAF2C916F7DE13CB569759 /* SDWebImageImageIOCoder.m */,
+				1B56C8369A4AB032DD50176CD47B2521 /* SDWebImageManager.h */,
+				7A34995C3BE32CB9784F0230F28E0C9C /* SDWebImageManager.m */,
+				40F82B5964F27D4359DEFF23873D07F9 /* SDWebImageOperation.h */,
+				7CA6FEB0E6C57BE441AB710AD1D8A234 /* SDWebImagePrefetcher.h */,
+				63B64075E4813DA1C7376B0F9EABC72A /* SDWebImagePrefetcher.m */,
+				54E9946AE48F9364DB43D16851052441 /* SDWebImageTransition.h */,
+				20FFA974C47F0982CDA625C94968456E /* SDWebImageTransition.m */,
+				8C695921EC5C8705F13E51C7D4E4EB82 /* UIButton+WebCache.h */,
+				26640BDC16C6563A0C15A9B1F12B8729 /* UIButton+WebCache.m */,
+				FBF60A0CE8E5AC9E4200070D4C640E24 /* UIImage+ForceDecode.h */,
+				043676EA57A4210818A945F6838DD5C6 /* UIImage+ForceDecode.m */,
+				DCF3B7CF770959644469D1F4F304A65D /* UIImage+GIF.h */,
+				BD364EF76374B08472ABC3C9C80C3C0D /* UIImage+GIF.m */,
+				4C4826E282A82F0F5D52C30D7587F7CF /* UIImage+MemoryCacheCost.h */,
+				30C2BC4AD9B5F712291D576D85CC9338 /* UIImage+MemoryCacheCost.m */,
+				B70BC1C8B1E9586E1F17CAD1083C7341 /* UIImage+MultiFormat.h */,
+				611CCECE592AB5A907A14AD0A5FC714A /* UIImage+MultiFormat.m */,
+				2AC88D043CA99A4BDB211D1B9B126B86 /* UIImageView+HighlightedWebCache.h */,
+				225DF7469898FBFE059FD5BEDBA86FE7 /* UIImageView+HighlightedWebCache.m */,
+				7D586E181C9770384A09B2E0C0243402 /* UIImageView+WebCache.h */,
+				262C71CACA02C9A581AEA11CA2EDAF9E /* UIImageView+WebCache.m */,
+				B414A77F6B841AF165513C7EA1690045 /* UIView+WebCache.h */,
+				507FE43C889517DA6BCC613FDFE6F1C1 /* UIView+WebCache.m */,
+				36286BBA7F7122F2FCCE715B106AAAE6 /* UIView+WebCacheOperation.h */,
+				6F71FEEC05119D98C80E5D99E52975E1 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		84F28990496263E3F71BC34883332741 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				229472CDC592E42BC4795B80C0FE8E25 /* MASCompositeConstraint.h */,
+				54145571D45442D1501AAE4D94B8E4B1 /* MASCompositeConstraint.m */,
+				C3BB58DE98DE521BB98B6FAAFFF1055B /* MASConstraint.h */,
+				DF1788E9C7450A6F5EC12ECEB4D96747 /* MASConstraint.m */,
+				AA5CC702194E009BC27299C4D3FA022B /* MASConstraint+Private.h */,
+				4DCE5C5259C37E8090BEE58A50B21395 /* MASConstraintMaker.h */,
+				2A1F375876E92B3411D9DFFDEDBB7C55 /* MASConstraintMaker.m */,
+				8F71D26131EB40F5271F5BFC307A8F61 /* MASLayoutConstraint.h */,
+				780231E0D67E4FF02F54141BA6F79A6A /* MASLayoutConstraint.m */,
+				2C470B463CAE98866F093A2568D596E8 /* Masonry.h */,
+				85234B844E48F18F0410935DD5398AE2 /* MASUtilities.h */,
+				A467D838BBC063A32FEE081A055DF1EC /* MASViewAttribute.h */,
+				76DE928165B58350B097F1B60A8AB575 /* MASViewAttribute.m */,
+				FA1B699E4FE215A17912F3E9CB4C6068 /* MASViewConstraint.h */,
+				850B4B27792559131127A1E2A5F32191 /* MASViewConstraint.m */,
+				DCED6D616910336638BA5958F6E2B59E /* NSArray+MASAdditions.h */,
+				2B849A2B74ACB81B4638FE96AB7669D6 /* NSArray+MASAdditions.m */,
+				5AA594CB5732C25AA5102F38DA0FA767 /* NSArray+MASShorthandAdditions.h */,
+				20D7D20190759DC381252971FCDB666D /* NSLayoutConstraint+MASDebugAdditions.h */,
+				9800BDB353D8F8B474AE69531C322F86 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				70687C1636E4AC4505E81977F24E6886 /* View+MASAdditions.h */,
+				F6DBED2E81266E8147D4A5113B91553E /* View+MASAdditions.m */,
+				E4EA8497098F5F2A8651E275AF21810D /* View+MASShorthandAdditions.h */,
+				B68A77C9FD8905346A19E1F719CC6B57 /* ViewController+MASAdditions.h */,
+				9BFBE4844F6F405451C6CCF59D61D315 /* ViewController+MASAdditions.m */,
+				9FF40A65AAAA6FD19837FBECFE767B03 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		8A39C6133BB9B33C1AB607F3C2121540 /* Pods-CRPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				022A444683A30A9D32C4F68B2C2612F5 /* Pods-CRPlayer-acknowledgements.markdown */,
+				8B365F31C6C894F75E107B6FC9A1B822 /* Pods-CRPlayer-acknowledgements.plist */,
+				3C5A28369EF0BB304F0078247470E4E1 /* Pods-CRPlayer-dummy.m */,
+				774FA20113547101290EDEA838EF14BC /* Pods-CRPlayer.debug.xcconfig */,
+				6050CA167799A1729934DA9A952070DF /* Pods-CRPlayer.release.xcconfig */,
+			);
+			name = "Pods-CRPlayer";
+			path = "Target Support Files/Pods-CRPlayer";
+			sourceTree = "<group>";
+		};
+		94037E6734788F1AEBEC16E5CEAF1F74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				33D56564B317742C5B1DAB0EFB77B0DC /* SDWebImage-dummy.m */,
+				5FBFCAD3464B090B312EA20572239115 /* SDWebImage-prefix.pch */,
+				CCDD5738F9AE7DFB675CFDC64FAE7718 /* SDWebImage.debug.xcconfig */,
+				C35B94775DE5F6E218257BE6B7C7BD07 /* SDWebImage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		9D8D264AB6778BA851A134ACBC1A9FC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66DE4F51E42B343BD792252FEE05CBFC /* AFNetworking */,
+				84F28990496263E3F71BC34883332741 /* Masonry */,
+				52472D79FA19C4C03689910008AF89D5 /* SDWebImage */,
+				40DC94D997A5AC67B38864C37AB72069 /* TABAnimated */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FF40A65AAAA6FD19837FBECFE767B03 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EFB3B326B992A76E1766D1F07525292 /* Masonry-dummy.m */,
+				EF6D118DF10C338500C10C5BE475A4A9 /* Masonry-prefix.pch */,
+				4DDAA70FE285D2FC69CE44DDAA17DF9C /* Masonry.debug.xcconfig */,
+				E21457D6DD022C075AD5A7708357D1BE /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		B729916D9D1CC04ED0194294E61CE015 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				7340BAA2B5E4B964DD4C7FC23F4EB82D /* AFSecurityPolicy.h */,
+				77C9C877E1C223FF546AD1A677BD9AC8 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		B7E7540DD370490F7D6937FD577CB91A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */,
+				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
+				BA821306CF74272DE339CE55056DBC2F /* libPods-CRPlayer.a */,
+				B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */,
+				1D5D66B1D7573083A392FD0B354846A2 /* libTABAnimated.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9D8D264AB6778BA851A134ACBC1A9FC4 /* Pods */,
+				B7E7540DD370490F7D6937FD577CB91A /* Products */,
+				4266CF4A90DB1E506C5E0BCC78458CF8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D14AE96D9F8B10FFD5BA4564016DD65D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0380908F831512E45AFDCEFDCDCBED8D /* AFNetworking-dummy.m */,
+				511BD6BB93C2129EDF36E2B57C6CEF21 /* AFNetworking-prefix.pch */,
+				D4A82E62150AC468D150FD3A44BEBF6C /* AFNetworking.debug.xcconfig */,
+				4CB18116BD2CB52AB4838607EDEAC38E /* AFNetworking.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB7DA11C36589636FCC1D2DE8F7897A4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2B93FF29C083FE15AFC57F5F499892D6 /* AFAutoPurgingImageCache.h */,
+				B95BF4FDD502D113F35081F2889FC3C6 /* AFAutoPurgingImageCache.m */,
+				3D24F507C6E88D62CBACA3462FA76A12 /* AFImageDownloader.h */,
+				B7DD21B5155306BFFC267E76A587F864 /* AFImageDownloader.m */,
+				B2937E5BF6275F6DFF4CB9B3DB699BF0 /* AFNetworkActivityIndicatorManager.h */,
+				2582C8691212D6FE17EE0F7D924BB806 /* AFNetworkActivityIndicatorManager.m */,
+				0EA96B7E378ABDC0B7FF817FBB278FDC /* UIActivityIndicatorView+AFNetworking.h */,
+				D1EFEB3B5FB99E147D37FE683CFD1044 /* UIActivityIndicatorView+AFNetworking.m */,
+				CB7FF75F4CB7F48C49076F91AD1BD7F5 /* UIButton+AFNetworking.h */,
+				0571EB6DAA4A1F83FB677146F6D8A935 /* UIButton+AFNetworking.m */,
+				E866DB078DEDB3F063D5E66F5713E4E4 /* UIImageView+AFNetworking.h */,
+				4660D8451FADC57367888BDE529D0A99 /* UIImageView+AFNetworking.m */,
+				7BF148744001D717365FE290E866CAAE /* UIKit+AFNetworking.h */,
+				AF5A94DC2C313DEF3DCBA4DD1D0A44EC /* UIProgressView+AFNetworking.h */,
+				B3E4485099C2B25C841D6AB4F3AA3174 /* UIProgressView+AFNetworking.m */,
+				5A22D9F5460AE12723F362FAEA1AD548 /* UIRefreshControl+AFNetworking.h */,
+				2202763A8078647353FC72EF32B99BFF /* UIRefreshControl+AFNetworking.m */,
+				673B809C0829669924ABC235E87F7444 /* WKWebView+AFNetworking.h */,
+				C2C228600678DE14E21696F41601CECB /* WKWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		F9A1CCB24ECD2A429FB11C9D88262785 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				BD58C416E2A855A27890599CC078E7ED /* AFCompatibilityMacros.h */,
+				0E1EE734E226002D96FE66DE3054EA99 /* AFHTTPSessionManager.h */,
+				7539E7F8E085993C82CB828F15FA0CB3 /* AFHTTPSessionManager.m */,
+				5EA80FA1DED11672DBFE04923485681C /* AFURLSessionManager.h */,
+				A609D789138FCB4B62339422B086ED74 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		F9A6CBCC2C3F8E943BECFBE32B49D7C8 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				09094194D442FBF204288CB3B37CBFC7 /* AFNetworkReachabilityManager.h */,
+				22FC5193AC06FFF5103E9560247240EF /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2697A8D6B2989B073B236F7B4BF67F30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */,
+				4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */,
+				EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */,
+				9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */,
+				7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */,
+				B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */,
+				65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */,
+				42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */,
+				115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */,
+				F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */,
+				81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */,
+				C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */,
+				A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */,
+				E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADA92D15C8AF2ACE79818E39603FA41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3026FF60D117B2702840BEB614961D28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A2FC6DD5FD0536E76197383863FD23 /* NSArray+TABAnimatedChain.h in Headers */,
+				2CE4C61D814C2403D6F21D11695AACC9 /* NSArray+TABDropAnimation.h in Headers */,
+				9BAFB511F8DB9B24B6808B8DF6FF3331 /* TABAnimated.h in Headers */,
+				2BA1B6BF6EE6A744C814BB874D466F50 /* TABAnimatedCacheManager.h in Headers */,
+				A7DF4D54F08603578AB29DDE77384857 /* TABAnimatedCacheModel.h in Headers */,
+				58F2C97BF41C46D02527FEAA6C8B4046 /* TABAnimatedChainDefines.h in Headers */,
+				916FDDDCB87B81742115613B3BF0CDEC /* TABAnimatedChainManagerImpl.h in Headers */,
+				A680460579AA00CC7428E09EBC195E06 /* TABAnimatedChainManagerInterface.h in Headers */,
+				802C96C5B5771663F9EBA1FD2F5877E3 /* TABAnimatedConfig.h in Headers */,
+				BF98B57B0C16FB7ED1ED822BFC9E58C0 /* TABAnimatedDarkModeDefines.h in Headers */,
+				7D73E9E8A0A3BF967338154A01671297 /* TABAnimatedDarkModeImpl.h in Headers */,
+				6903194E14099A00B304C1F279AD69B4 /* TABAnimatedDarkModeInterface.h in Headers */,
+				1D5C81BCBA94A68A49CE7CAEEAB502D4 /* TABAnimatedDarkModeManagerImpl.h in Headers */,
+				98917C0F8BF71644792F9D357A1CF9ED /* TABAnimatedDarkModeManagerInterface.h in Headers */,
+				AE0BF85E646E78648C1478118CB86598 /* TABAnimatedDecorateInterface.h in Headers */,
+				A92753F7164F054D95C1E78F6ACF26B5 /* TABAnimatedDocumentMethod.h in Headers */,
+				C20ADA847EC860298A65844D8B7C9FED /* TABAnimatedInjectionIIIHelper.h in Headers */,
+				16D694EE6D0B70BA2F36F0ABACDD5CFE /* TABAnimatedNormalViewProductImpl.h in Headers */,
+				09BA287C90B471968660BAF8B5747DA1 /* TABAnimatedProductDefines.h in Headers */,
+				025C1EB5DD55A4C18B4AC57DF19EA843 /* TABAnimatedProductHelper.h in Headers */,
+				2EB0AAECDCDE9EE94AC70B4FC4F08617 /* TABAnimatedProductImpl.h in Headers */,
+				643AB8AE861AEE30E1B4A767DCDB49A6 /* TABAnimatedProductInterface.h in Headers */,
+				3F1DF58050306DA8C4A534ADAE820601 /* TABAnimatedProduction.h in Headers */,
+				1E29CA63E58E94BED663D8638392D7BC /* TABAnimatedPullLoadingComponent.h in Headers */,
+				A0C124A1B9C474735CFCEC5EE202CADF /* TABAnimationManagerImpl.h in Headers */,
+				AB4D7E7FA582DD9FCE1D71A1008333F3 /* TABAnimationManagerInterface.h in Headers */,
+				1F9D1E402825AE5D2B0198CBFF3EE47E /* TABAnimationMethod.h in Headers */,
+				F0957F353CBCD258D610A4EEC4685C9E /* TABBaseComponent+TABClassicAnimation.h in Headers */,
+				22B81E123FE8D3543A5B1EE95E81AB22 /* TABBaseComponent+TABDropAnimation.h in Headers */,
+				C3ED9828D3E4F1F584D883F6EE4FFB95 /* TABBaseComponent.h in Headers */,
+				7EEE631D9BD4D313E33EFB77F4873726 /* TABBinAnimation.h in Headers */,
+				FF78E320EC426CCC2E49A7D7A36A63FB /* TABBinAnimationImpl.h in Headers */,
+				A541645929C6CF221DE06A16140DFC43 /* TABClassicAnimation.h in Headers */,
+				3047F6A454607FDAF7B63ED8C811A272 /* TABClassicAnimationImpl.h in Headers */,
+				C65CC4DB0A793D35EE4F9B6EAA7F2213 /* TABCollectionAnimated.h in Headers */,
+				BC87ECEF2A61A5D9C1C6A12C1423B0DF /* TABComponentLayer+TABClassicAnimation.h in Headers */,
+				B28F9B5E2675892254C7B0D4E1BD2EDB /* TABComponentLayer+TABDropAnimation.h in Headers */,
+				916D22EBD4F60EAE1707D37AB585EB54 /* TABComponentLayer.h in Headers */,
+				0240196FD81F187A787CF4EFAA53CB69 /* TABComponentLayerClassicSerializationImpl.h in Headers */,
+				4021466D6AF723CF3AAC3CAF65338992 /* TABComponentLayerDropSerializationImpl.h in Headers */,
+				C2B6EF4677DC524065B1D3F810AB0D4E /* TABComponentLayerSerializationInterface.h in Headers */,
+				F4C5738C416432782C824F50DA8CDFE1 /* TABComponentManager.h in Headers */,
+				DB92D9FED443141DF9093D19A17F0918 /* TABDropAnimation.h in Headers */,
+				2EAFEA09E62A014B4205F6A15EC51D5F /* TABDropAnimationDefines.h in Headers */,
+				8DF4032BB63C481B67DF596DCCB81521 /* TABDropAnimationImpl.h in Headers */,
+				BB619605FB157552F118C1935AE588A0 /* TABFormAnimated.h in Headers */,
+				AE61AA85AAD231E222F5909DB17F9681 /* TABSentryView.h in Headers */,
+				3AD215D2CC1E7B87E79FE2A13AE9E402 /* TABShimmerAnimation.h in Headers */,
+				EA41C1EF111D650056748B689D4B72DE /* TABShimmerAnimationDefines.h in Headers */,
+				B41DD3CC2F3F9FF94B9188F7EE565153 /* TABShimmerAnimationImpl.h in Headers */,
+				DB0655DAD96116B8A1AC35DD984C14E6 /* TABTableAnimated.h in Headers */,
+				1709839ADC5854954B8A95D56EB57E28 /* TABViewAnimated.h in Headers */,
+				78B8B9D26D424BCB7AAA706BACA45687 /* TABViewAnimatedDefines.h in Headers */,
+				3143EBBD70E176B1D1F89D44E2507E34 /* TABWeakDelegateManager.h in Headers */,
+				8256CD7DA28445DE06F267010264B32A /* UIScrollView+TABAnimated.h in Headers */,
+				D1A9D6C3F98D4D5ADE1B882E5F83B369 /* UIScrollView+TABExtension.h in Headers */,
+				92251CB6DCE5D95D4200AF8EE6223A74 /* UIView+TABAnimatedProduction.h in Headers */,
+				48D0E03B68301745982A5810AF047AFD /* UIView+TABControlAnimation.h in Headers */,
+				9F0A4FF9BB0174E88AE1827A22863206 /* UIView+TABControlModel.h in Headers */,
+				CFB9931FE66624FC33403E677834ADCA /* UIView+TABExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC67CFC362D32BD2615E7842794AEC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E810B450F5776164ED2B2136F376988 /* AFAutoPurgingImageCache.h in Headers */,
+				760E1899AEAA102651CB096F14BE60AA /* AFCompatibilityMacros.h in Headers */,
+				F03B276745F37E505667479C9DE0C7F2 /* AFHTTPSessionManager.h in Headers */,
+				B7B82E12541B71F6BCADF0129AF754C9 /* AFImageDownloader.h in Headers */,
+				CAF8580D6ED4980C7ADF9DE194F85650 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				25BDE68C15F69C0BA1B719A9993E8A81 /* AFNetworking.h in Headers */,
+				A58D961B3131B67678B39D582FF72B46 /* AFNetworkReachabilityManager.h in Headers */,
+				C53724481EDE8B6D88B45CE0B587AEFC /* AFSecurityPolicy.h in Headers */,
+				A693E7C90C6AC5D000CAED3CF677AF36 /* AFURLRequestSerialization.h in Headers */,
+				8FDB85FB21FC47EC794745DDDA1A504D /* AFURLResponseSerialization.h in Headers */,
+				BC71ADFAE509F6DE8C73D33CCC920ACB /* AFURLSessionManager.h in Headers */,
+				89F78066144CFDBD90D296CFF193744C /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				8957AA7B1A07DF7E81A0117D57E9A2A9 /* UIButton+AFNetworking.h in Headers */,
+				DEE3CBDA2426FB23A0FFC4D00CFDFF23 /* UIImageView+AFNetworking.h in Headers */,
+				CAB09959CEF5E3A10E28CB2B9F4F211A /* UIKit+AFNetworking.h in Headers */,
+				D42439DE1BAA17AC1E4AF83B38427C24 /* UIProgressView+AFNetworking.h in Headers */,
+				E700D209497E847267E64DAF010E04CB /* UIRefreshControl+AFNetworking.h in Headers */,
+				B912784B041A1FA093269EB66862873D /* WKWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6909F05BA7EB1535EF422FEA6DEC62B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F35C59BAA919BFF201A78E656C7560CA /* NSButton+WebCache.h in Headers */,
+				7C48EEC8930F7EE9E2F51226D06F72D0 /* NSData+ImageContentType.h in Headers */,
+				428C01DB6FB4200D794CC8257AA37FAD /* NSImage+WebCache.h in Headers */,
+				64A03BF6EB4B5ABD8338D8A1D31346AC /* SDAnimatedImageRep.h in Headers */,
+				645AA5322EAFE0A3235CFBD0D59A178E /* SDImageCache.h in Headers */,
+				BE824078490815CE186E4C951E950AA0 /* SDImageCacheConfig.h in Headers */,
+				74F798EE545DBB3B4750835024510EB6 /* SDWebImageCoder.h in Headers */,
+				1631E842664B8680F38F602F7DFE0A1E /* SDWebImageCoderHelper.h in Headers */,
+				5FD9274EB113A9AFFDA4D0AF72B2292B /* SDWebImageCodersManager.h in Headers */,
+				56AD56D65FD9A0F9267BEB83A866D441 /* SDWebImageCompat.h in Headers */,
+				876A075D6329669E89B4D2C54F2CD32D /* SDWebImageDownloader.h in Headers */,
+				845F20A47689099022F550EA07B2F7AA /* SDWebImageDownloaderOperation.h in Headers */,
+				D73A65AFD60B81D6BA47B8338D830A43 /* SDWebImageFrame.h in Headers */,
+				BD07E140D72BC6853C14C76B525E4763 /* SDWebImageGIFCoder.h in Headers */,
+				84B33099E9FB1D869454E79EFD211AA0 /* SDWebImageImageIOCoder.h in Headers */,
+				F3A9F03636E3336CB460582CB197E5F0 /* SDWebImageManager.h in Headers */,
+				56F7756A56038F0035C6E9D46A195A68 /* SDWebImageOperation.h in Headers */,
+				6BC51D233DEF9C1206F507A95C807A58 /* SDWebImagePrefetcher.h in Headers */,
+				B94E7773C4096DE2E56869AF65ECC07A /* SDWebImageTransition.h in Headers */,
+				81620800E2063ACD76D93B5A92506866 /* UIButton+WebCache.h in Headers */,
+				4DB92E8CE6E0817BCE4656C5DE7A46F6 /* UIImage+ForceDecode.h in Headers */,
+				B6D8C1B434059278384511986DC87A4B /* UIImage+GIF.h in Headers */,
+				3F61F42D45E81580CC76022854C4A62B /* UIImage+MemoryCacheCost.h in Headers */,
+				09E958D4C1C8B62D0A18B1B3F6E6297E /* UIImage+MultiFormat.h in Headers */,
+				5BFE139049E51141F6F6D43C3C6499F9 /* UIImageView+HighlightedWebCache.h in Headers */,
+				4546D8FA8BEB9D956EF7439EC5209C7C /* UIImageView+WebCache.h in Headers */,
+				B33F6A04EDA3B1C6FA5DD6F6A2C5DB2A /* UIView+WebCache.h in Headers */,
+				A8D8C7C9427CCC26344A333F0D25B555 /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B9D905D41931C2FE6F12321B7C8C39 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				4BC67CFC362D32BD2615E7842794AEC3 /* Headers */,
+				651634E6E7907FC0B356AF2233E81444 /* Sources */,
+				B2DB1FBE373354D0714284083F6DE10D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3847153A6E5EEFB86565BA840768F429 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71AB6472704509F0C26E38DA84FCC5AC /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				6909F05BA7EB1535EF422FEA6DEC62B9 /* Headers */,
+				FDB64F02F0C0D83EB94CC3C104E300F4 /* Sources */,
+				56010F82DCF8418E579FA7835727DCF9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = B0B214D775196BA7CA8E17E53048A493 /* libSDWebImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				2697A8D6B2989B073B236F7B4BF67F30 /* Headers */,
+				8C28688BF2BD730285E2F5DE30F8C021 /* Sources */,
+				01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7376C5943C2C1C7E94ADE2B7B336945B /* Pods-CRPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD4CE6F340637F4869252666E40AA31 /* Build configuration list for PBXNativeTarget "Pods-CRPlayer" */;
+			buildPhases = (
+				2ADA92D15C8AF2ACE79818E39603FA41 /* Headers */,
+				E0542CB9501C50DE7950933D59FDD4CE /* Sources */,
+				DF5F9962FE2823EC54E1ECD215E9A126 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AFEDFCB4B5490390146B4A47F5A82F7 /* PBXTargetDependency */,
+				028332DE355CAB498B4616C707E294C3 /* PBXTargetDependency */,
+				A0E98190A7F99F5201BE1BDB8AA5F3C2 /* PBXTargetDependency */,
+				2BF4F375C447D88A95560D9F18AA2869 /* PBXTargetDependency */,
+			);
+			name = "Pods-CRPlayer";
+			productName = "Pods-CRPlayer";
+			productReference = BA821306CF74272DE339CE55056DBC2F /* libPods-CRPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B226767C94EFDDF6183068991A028098 /* TABAnimated */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49E6E930E171339349C52883A15290C /* Build configuration list for PBXNativeTarget "TABAnimated" */;
+			buildPhases = (
+				3026FF60D117B2702840BEB614961D28 /* Headers */,
+				2D919BE6B13387A85021C3C29AA6B284 /* Sources */,
+				E1819AAA20EFB295AE9F86E336C4CE52 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TABAnimated;
+			productName = TABAnimated;
+			productReference = 1D5D66B1D7573083A392FD0B354846A2 /* libTABAnimated.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B7E7540DD370490F7D6937FD577CB91A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				7376C5943C2C1C7E94ADE2B7B336945B /* Pods-CRPlayer */,
+				3847153A6E5EEFB86565BA840768F429 /* SDWebImage */,
+				B226767C94EFDDF6183068991A028098 /* TABAnimated */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D919BE6B13387A85021C3C29AA6B284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5B8A386D000DD939A977C880461EE8 /* NSArray+TABAnimatedChain.m in Sources */,
+				584E9C85848136ED5E7FC4A089E366E4 /* NSArray+TABDropAnimation.m in Sources */,
+				4D27FB346BFC05998346D89E6DDF6D3F /* TABAnimated-dummy.m in Sources */,
+				2FD7388B09EDB2F2170499B781C678AE /* TABAnimated.m in Sources */,
+				3AB36A3F113A52012A4B3E040B7AA71F /* TABAnimatedCacheManager.m in Sources */,
+				6489864538701F2CDB770A7D9E6E8AC9 /* TABAnimatedCacheModel.m in Sources */,
+				202C24BAC05AEDEA4A3620307E0E5FA6 /* TABAnimatedChainManagerImpl.m in Sources */,
+				4B72EDFADB98E6B9CBD5BF921E20C29A /* TABAnimatedDarkModeImpl.m in Sources */,
+				B039C1BC1FA93D9A26FF5F2990AE6999 /* TABAnimatedDarkModeManagerImpl.m in Sources */,
+				24EB071B76D24646A4FA07DB213757F5 /* TABAnimatedDocumentMethod.m in Sources */,
+				F84089FFB0E784CC90097E8639AA7157 /* TABAnimatedInjectionIIIHelper.m in Sources */,
+				B0B49927B17AC342DBA71B97959CE53D /* TABAnimatedNormalViewProductImpl.m in Sources */,
+				96602D2C3236C1EBC844C699A5CA02BA /* TABAnimatedProductHelper.m in Sources */,
+				BB575F75E5B2DD4EC0ADBA58AFB1B745 /* TABAnimatedProductImpl.m in Sources */,
+				F73073FA133ADF13F93FAF116BFAD543 /* TABAnimatedProduction.m in Sources */,
+				399136CF0D081316DA081AD72FA660C6 /* TABAnimatedPullLoadingComponent.m in Sources */,
+				127117CC35B95391CB31F5C3840B9D1D /* TABAnimationManagerImpl.m in Sources */,
+				37943E5D5324E27B55CF3B45C5937A9C /* TABAnimationMethod.m in Sources */,
+				EB4BCE72AA45B992BC184DAD6C3410B2 /* TABBaseComponent+TABClassicAnimation.m in Sources */,
+				6D551050B30B68817982EC3234AEB284 /* TABBaseComponent+TABDropAnimation.m in Sources */,
+				91359F90FD03D28F86855A1710AF5E37 /* TABBaseComponent.m in Sources */,
+				B0911033BEDC0129A3AC0D5F4C6F36DB /* TABBinAnimation.m in Sources */,
+				F014364E33B405EC23FE915808F74442 /* TABBinAnimationImpl.m in Sources */,
+				0ECDF21DA9F226F0BA091E97E3E2DF3D /* TABClassicAnimation.m in Sources */,
+				0C3116AC6F275D5C06A89AC357CCCEAF /* TABClassicAnimationImpl.m in Sources */,
+				B51DCD24B5320DB68066BD964637CE2F /* TABCollectionAnimated.m in Sources */,
+				6B1959F15EFBC7F2D2928BC7AD07478B /* TABComponentLayer+TABClassicAnimation.m in Sources */,
+				D874625DCDB755BA99EA0B48C9D09307 /* TABComponentLayer+TABDropAnimation.m in Sources */,
+				C08D40AB04A0B794103B6ADC7C21816F /* TABComponentLayer.m in Sources */,
+				B4EB038535AA6946BF1DE5B71EC00E2E /* TABComponentLayerClassicSerializationImpl.m in Sources */,
+				AE94DAB4B05DA80F741A66228D106901 /* TABComponentLayerDropSerializationImpl.m in Sources */,
+				712E7D2D5AFE5BA7F97563F58B4F5721 /* TABComponentManager.m in Sources */,
+				B79BAF8AB415530340A21889D4EF5655 /* TABDropAnimation.m in Sources */,
+				7DF256979F4D77AB89B2EE794C9BDB69 /* TABDropAnimationImpl.m in Sources */,
+				4E18F997D510BDBDBBDA1072907CF22E /* TABFormAnimated.m in Sources */,
+				C7A0D23130888736803A712FB8E1919C /* TABSentryView.m in Sources */,
+				CDD69FEBDEE062E1A45F3A0E1160EE7B /* TABShimmerAnimation.m in Sources */,
+				5431BE152514CA17008870B34EE8F5FE /* TABShimmerAnimationImpl.m in Sources */,
+				5D739DA677862596551DC42A1E128D83 /* TABTableAnimated.m in Sources */,
+				DAE09D6C865FED913B9A85E6B361A835 /* TABViewAnimated.m in Sources */,
+				C52BC8785004D11896D2958B6FB3CB0C /* TABWeakDelegateManager.m in Sources */,
+				3B207457D4728F943B9A2AE743442D8D /* UIScrollView+TABAnimated.m in Sources */,
+				25D83DFE20B101F6015BDDF6128BB3D5 /* UIScrollView+TABExtension.m in Sources */,
+				88057CCCC40C5DA6B1FD3EB99F1F019B /* UIView+TABAnimatedProduction.m in Sources */,
+				C08D61263EF65CDBBAE8BBB5277A5702 /* UIView+TABControlAnimation.m in Sources */,
+				DCF282850AD8FBF863F6431D72C85B2B /* UIView+TABControlModel.m in Sources */,
+				AE04A83C2429EEAF7CD4C9819B54C751 /* UIView+TABExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651634E6E7907FC0B356AF2233E81444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C6ED5D0B3F088A737F93BF2B955F94 /* AFAutoPurgingImageCache.m in Sources */,
+				DDA09D4C8D1559D493911B825FCE4D8B /* AFHTTPSessionManager.m in Sources */,
+				16B2B4A252698342651259F6B3E23B5F /* AFImageDownloader.m in Sources */,
+				517C94804E88443C3EFD518C9762FE81 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				90D15A815F91BD2F4A29FC456D6AC303 /* AFNetworking-dummy.m in Sources */,
+				703EDC28A8CDF23D85A1DC97907D5CFF /* AFNetworkReachabilityManager.m in Sources */,
+				934369FF599DDA35F12D1B9718CFB789 /* AFSecurityPolicy.m in Sources */,
+				0DD5197FE356065BC338B911BC93035C /* AFURLRequestSerialization.m in Sources */,
+				3E5D2116666B5BBF7003B4DF1F2B8E70 /* AFURLResponseSerialization.m in Sources */,
+				E5CB5D873EE0E259DA28CBF9C8EC78DA /* AFURLSessionManager.m in Sources */,
+				CC4718FB1BFB356A02492A7A5579C3F4 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				A0DE26E18A4ACDADC485BC5B42695542 /* UIButton+AFNetworking.m in Sources */,
+				508908F5D1679AD6DD06A17A1F307211 /* UIImageView+AFNetworking.m in Sources */,
+				0362D6F9FFFE4724A3DD8ABBC7345177 /* UIProgressView+AFNetworking.m in Sources */,
+				DB6219C37A71EF717732C8857942A6C3 /* UIRefreshControl+AFNetworking.m in Sources */,
+				56C022169B9D21A4E4DDB653617DB29E /* WKWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28688BF2BD730285E2F5DE30F8C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */,
+				EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */,
+				1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */,
+				0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */,
+				D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */,
+				A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */,
+				572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */,
+				B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */,
+				59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */,
+				C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0542CB9501C50DE7950933D59FDD4CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9810A70E811E359BFB5E9D0C8A0A10 /* Pods-CRPlayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB64F02F0C0D83EB94CC3C104E300F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1755177738D6F76381C9999427850312 /* NSButton+WebCache.m in Sources */,
+				84F90E3012A7158B7156C4B8F98EE131 /* NSData+ImageContentType.m in Sources */,
+				3A6E5D4182DC44657A7218493AD57CC2 /* NSImage+WebCache.m in Sources */,
+				8E5A46521570CBA695B44A8DA38A76DC /* SDAnimatedImageRep.m in Sources */,
+				0CCF5878EA61DD56C85170DF74652612 /* SDImageCache.m in Sources */,
+				A833E130A32E2F81A3B12A4AE2A07A91 /* SDImageCacheConfig.m in Sources */,
+				86EA955E7F9B22DCD3E5572CA5953CFB /* SDWebImage-dummy.m in Sources */,
+				B371D7E62B43EEDABCA8402415C25B4F /* SDWebImageCoder.m in Sources */,
+				2CF40E58CA3070F2203187427FF7F0A9 /* SDWebImageCoderHelper.m in Sources */,
+				D72849B1031F5DFCB8B038FAF9897276 /* SDWebImageCodersManager.m in Sources */,
+				E249E83E634EF9A2CB5475CC235EED62 /* SDWebImageCompat.m in Sources */,
+				7DEE05613957AB564750D40734A5E442 /* SDWebImageDownloader.m in Sources */,
+				D7A644E667989A1602312D4F113B6332 /* SDWebImageDownloaderOperation.m in Sources */,
+				1C2902B4AAF4635316A1E88E50D47809 /* SDWebImageFrame.m in Sources */,
+				19D58082E795C97857E3DC04247F406F /* SDWebImageGIFCoder.m in Sources */,
+				ED19552EEEA44864572081170C8CDDDA /* SDWebImageImageIOCoder.m in Sources */,
+				93FA26AA00D38C7FC5F94698FAF024D6 /* SDWebImageManager.m in Sources */,
+				2A4586473C09CB0CD00BC81C4490C58C /* SDWebImagePrefetcher.m in Sources */,
+				8EEBE63DB02D88EB72B5077E527334BA /* SDWebImageTransition.m in Sources */,
+				BA575740B77696CFFA157A58D53C73C2 /* UIButton+WebCache.m in Sources */,
+				1E6904A86932F48DB44E6319120368FD /* UIImage+ForceDecode.m in Sources */,
+				56868D2C124DC00081C00B04E3869D7A /* UIImage+GIF.m in Sources */,
+				C4C06A6682BA6ABD2B27E6D2F0D4CA3F /* UIImage+MemoryCacheCost.m in Sources */,
+				538DEEF083E2649D010770A08F43FC24 /* UIImage+MultiFormat.m in Sources */,
+				427E03FBB7F5978384C6C10FD9EEF2E1 /* UIImageView+HighlightedWebCache.m in Sources */,
+				C1AD020D7E0089850DDC6CE9FE5D1525 /* UIImageView+WebCache.m in Sources */,
+				B866622FCF22B732D54DB1FE57535419 /* UIView+WebCache.m in Sources */,
+				37FFE933E50E2D3C4920BC07C537DB4F /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		028332DE355CAB498B4616C707E294C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = BCCDEB17DFA349ED53FD79716D0FC5AA /* PBXContainerItemProxy */;
+		};
+		0AFEDFCB4B5490390146B4A47F5A82F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = B4AA0B88BB1CB9F7D25D378222BD1715 /* PBXContainerItemProxy */;
+		};
+		2BF4F375C447D88A95560D9F18AA2869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TABAnimated;
+			target = B226767C94EFDDF6183068991A028098 /* TABAnimated */;
+			targetProxy = 44A814C1180C9F8FB64A6D5B6480517C /* PBXContainerItemProxy */;
+		};
+		A0E98190A7F99F5201BE1BDB8AA5F3C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = B547E803F7613694050309CBFCA3ED95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1723B4EB2B2059981AFFC9651BF20BFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4ADBBC1F79DA96563322444D534CA95 /* TABAnimated.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TABAnimated/TABAnimated-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TABAnimated;
+				PRODUCT_NAME = TABAnimated;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24540FC1FB4FA39EF7ECB412EFD97470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774FA20113547101290EDEA838EF14BC /* Pods-CRPlayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4052F041C929245CDF652D230757765F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFF9F3773FB1AEB1D2FA69C57F32AE0 /* TABAnimated.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/TABAnimated/TABAnimated-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = TABAnimated;
+				PRODUCT_NAME = TABAnimated;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EC8EEF683285C863C439962BF338915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCDD5738F9AE7DFB675CFDC64FAE7718 /* SDWebImage.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AEEA5CC30001CB70A788717A32DBAB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E21457D6DD022C075AD5A7708357D1BE /* Masonry.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C51C73D058B8C4354F8146CA290E491D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A82E62150AC468D150FD3A44BEBF6C /* AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D79ABF7B13BA8276CB152FFEA0E6862F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6050CA167799A1729934DA9A952070DF /* Pods-CRPlayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCB5674ABC6DFAB8E2A756CA9DA6F9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35B94775DE5F6E218257BE6B7C7BD07 /* SDWebImage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SDWebImage;
+				PRODUCT_NAME = SDWebImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52C06A9C52DC1C9C05AFF92A142A44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB18116BD2CB52AB4838607EDEAC38E /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99870D874C7FA838E84D9C55C010CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDAA70FE285D2FC69CE44DDAA17DF9C /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99870D874C7FA838E84D9C55C010CF1 /* Debug */,
+				8AEEA5CC30001CB70A788717A32DBAB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B9D905D41931C2FE6F12321B7C8C39 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51C73D058B8C4354F8146CA290E491D /* Debug */,
+				F52C06A9C52DC1C9C05AFF92A142A44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71AB6472704509F0C26E38DA84FCC5AC /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EC8EEF683285C863C439962BF338915 /* Debug */,
+				DCB5674ABC6DFAB8E2A756CA9DA6F9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD4CE6F340637F4869252666E40AA31 /* Build configuration list for PBXNativeTarget "Pods-CRPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24540FC1FB4FA39EF7ECB412EFD97470 /* Debug */,
+				D79ABF7B13BA8276CB152FFEA0E6862F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49E6E930E171339349C52883A15290C /* Build configuration list for PBXNativeTarget "TABAnimated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4052F041C929245CDF652D230757765F /* Debug */,
+				1723B4EB2B2059981AFFC9651BF20BFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

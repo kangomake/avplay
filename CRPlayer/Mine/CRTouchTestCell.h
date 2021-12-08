@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CRTouchTestCell : UITableViewCell
 
 @property (nonatomic, strong) cellFoldModel *foldModel;
+@property (nonatomic, strong) UILabel *leftLabel;
+@property (nonatomic, strong) UILabel *rightLabel;
 
 @end
 

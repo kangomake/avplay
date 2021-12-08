@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL isfold;
 @property (nonatomic, copy) NSString *contentString;
+@property (nonatomic, assign) float cellHeight;
+
+- (instancetype)initWithHeight:(float)height;
 
 @end
 

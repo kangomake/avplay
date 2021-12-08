@@ -11,6 +11,7 @@
 
 #import <objc/runtime.h>
 #import "YYFPSLabel.h"
+#import "WKWebViewController.h"
 
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 

@@ -9,5 +9,11 @@
 #import "cellFoldModel.h"
 
 @implementation cellFoldModel
-
+- (instancetype)initWithHeight:(float)height{
+    
+    if(self = [super init]){
+        self.cellHeight = height;
+    }
+    return self;
+}
 @end

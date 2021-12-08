@@ -12,10 +12,14 @@
 
 //
 #import <CommonCrypto/CommonDigest.h>
+#import "UIView+NTES.h"
 
+#import "WKWebViewController.h"
 
 @interface CRHomeViewController ()
 @property (nonatomic, strong) UIButton *goShoppingButton;
+@property (nonatomic, strong) UIButton *alertButton;
+
 
 @end
 
@@ -66,6 +70,8 @@
         dispatch_group_leave(group);
     });
 
+    [self.view addSubview:self.alertButton];
+    
     //0.6 + 0.45 + 0.8 + 0.3*0.37 + 0.28
     
     // Do any additional setup after loading the view.
@@ -204,10 +210,27 @@
         _goShoppingButton.layer.masksToBounds = YES;
         [_goShoppingButton setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
         _goShoppingButton.frame = CGRectMake(0, 0, 100, 40);
-        _goShoppingButton.center = self.view.center;
+        _goShoppingButton.centerX = self.view.centerX;
+        _goShoppingButton.top = 100;
     }
     return _goShoppingButton;
 }
+
+- (UIButton *)alertButton{
+    if(!_alertButton){
+        _alertButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_alertButton setTitle:@"alertButton" forState:UIControlStateNormal];
+        [_alertButton addTarget:self action:@selector(alertShow) forControlEvents:UIControlEventTouchUpInside];
+        _alertButton.layer.cornerRadius = 5;
+        _alertButton.layer.masksToBounds = YES;
+        [_alertButton setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
+        _alertButton.frame = CGRectMake(0, 0, 100, 40);
+        _alertButton.centerX = self.view.centerX;
+        _alertButton.top = 150;
+    }
+    return _alertButton;
+}
+
 
 - (void)goShoppingButtonAction {
 //    CRShopCartViewController *shopcartVC = [[CRShopCartViewController alloc] init];
@@ -217,6 +240,71 @@
     [self.navigationController pushViewController:meituanVC animated:YES];
     
 }
+
+- (void)alertShow{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
+    
+    // 使用富文本来改变alert的title字体大小和颜色
+    NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:@"这里是标题"];
+    [title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:24] range:NSMakeRange(0, 2)];
+    [title addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
+    [alert setValue:title forKey:@"attributedTitle"];
+    
+    
+    // 使用富文本来改变alert的message字体大小和颜色
+    // NSMakeRange(0, 2) 代表:从0位置开始 两个字符
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithString:@"这里是正文信息"];
+    [message addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(0, 6)];
+    [message addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
+    [message addAttribute:NSForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(3, 3)];
+    
+    [alert setValue:message forKey:@"attributedMessage"];
+    
+    
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    
+    // 设置按钮背景图片
+    UIImage *accessoryImage = [[UIImage imageNamed:@"3.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [cancelAction setValue:accessoryImage forKey:@"image"];
+    
+    // 设置按钮的title颜色
+    [cancelAction setValue:[UIColor lightGrayColor] forKey:@"titleTextColor"];
+    
+    // 设置按钮的title的对齐方式
+    [cancelAction setValue:[NSNumber numberWithInteger:NSTextAlignmentLeft] forKey:@"titleTextAlignment"];
+    
+    
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self pushWKWebView];
+    }];
+    
+    
+    [alert addAction:okAction];
+    [alert addAction:cancelAction];
+    
+    
+    
+    [self presentViewController:alert animated:YES completion:nil];
+    
+    //
+    
+    
+    
+    
+    
+}
+
+
+- (void)pushWKWebView{
+    
+    WKWebViewController *web = [[WKWebViewController alloc]init];
+    web.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:web animated:YES completion:nil];
+    
+}
+
+
 
 /*
 #pragma mark - Navigation

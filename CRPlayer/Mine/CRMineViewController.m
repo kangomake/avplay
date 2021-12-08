@@ -10,6 +10,8 @@
 #import "CRScreen.h"
 #import "MyTableView.h"
 #import "CRTouchTestCell.h"
+#import "MineEditController.h"
+#import "CRTextEditController.h"
 
 
 @interface CRMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
@@ -27,6 +29,9 @@
     UITapGestureRecognizer *tapGesture =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyBoard)];
     tapGesture.delegate = self;
     [self.tableView addGestureRecognizer:tapGesture];
+    
+   CGFloat statusBarHeight = [CRScreen statusBarHeight];
+    NSLog(@"statusBarHeight-(%f)",statusBarHeight);
     
     // Do any additional setup after loading the view.
 }
@@ -92,9 +97,10 @@
         cell = [[CRTouchTestCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Identifier"];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"row--%ld",indexPath.row];
+//    cell.textLabel.text = [NSString stringWithFormat:@"row--%ld",indexPath.row];
     cell.backgroundColor = [UIColor whiteColor];
-    
+    cell.leftLabel.text = [NSString stringWithFormat:@"row--%ld",indexPath.row];
+    cell.rightLabel.text = @"2021.10.26(23:59:00)";
     return cell;
     
 }
@@ -112,7 +118,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-   
+    
+    if(indexPath.row %2 ==0){
+        MineEditController *edit = [[MineEditController alloc]init];
+        [self.navigationController pushViewController:edit animated:YES];
+    }else{
+        CRTextEditController *text = [[CRTextEditController alloc]init];
+        [self.navigationController pushViewController:text animated:YES];
+    }
+    
+    
 }
 
 

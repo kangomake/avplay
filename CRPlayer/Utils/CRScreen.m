@@ -24,4 +24,16 @@
     return CGSizeMake(375,812);
 }
 
+
+//根据不同系统，通过相应方法获取状态栏高度。
++ (CGFloat)statusBarHeight {
+    CGFloat statusBarHeight = 0;
+    if (@available(iOS 13.0, *)) {
+        statusBarHeight = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;
+    } else {
+        statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+    }
+    return statusBarHeight;
+}
+
 @end

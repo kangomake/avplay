@@ -11,12 +11,12 @@
 @implementation MyTableView
 
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%s",__FUNCTION__);
-//    NSLog(@"touches-%@,event-%@",touches,event);
-    [super touchesBegan:touches withEvent:event];
-
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+////    NSLog(@"%s",__FUNCTION__);
+////    NSLog(@"touches-%@,event-%@",touches,event);
+//    [super touchesBegan:touches withEvent:event];
+//
+//}
 
 /*
 // Only override drawRect: if you perform custom drawing.

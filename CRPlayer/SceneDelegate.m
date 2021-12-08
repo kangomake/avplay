@@ -43,10 +43,11 @@
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     
-    [self.window addSubview:({
-        CRSplashView *splashView = [[CRSplashView alloc] initWithFrame:self.window.bounds];
-        splashView;
-    })];
+    //实现了开屏广告的效果
+//    [self.window addSubview:({
+//        CRSplashView *splashView = [[CRSplashView alloc] initWithFrame:self.window.bounds];
+//        splashView;
+//    })];
     
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
