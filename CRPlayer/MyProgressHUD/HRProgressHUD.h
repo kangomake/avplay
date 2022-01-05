@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HRProgressHUD : UIView
 
-+ (instancetype)showHUDAddedTo:(UIView *)view animated:(BOOL)animated;
-
-+ (BOOL)hideHUDForView:(UIView *)view animated:(BOOL)animated;
+//+ (instancetype)showHUDAddedTo:(UIView *)view animated:(BOOL)animated;
+//
+//+ (BOOL)hideHUDForView:(UIView *)view animated:(BOOL)animated;
 
 
 @end

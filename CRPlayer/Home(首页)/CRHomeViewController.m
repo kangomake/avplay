@@ -10,16 +10,20 @@
 #import "CRShopCartViewController.h"
 #import "CRMeituanViewController.h"
 
-//
 #import <CommonCrypto/CommonDigest.h>
 #import "UIView+NTES.h"
 
 #import "WKWebViewController.h"
 
+#import <MediaPlayer/MPVolumeView.h>
+#import <MediaPlayer/MPMusicPlayerController.h>
+
 @interface CRHomeViewController ()
 @property (nonatomic, strong) UIButton *goShoppingButton;
 @property (nonatomic, strong) UIButton *alertButton;
-
+@property (strong, nonatomic) MPVolumeView *volumeView;
+@property (strong, nonatomic) UISlider *volumeViewSlider;
+@property (nonatomic, strong) UIButton *volumeClose;
 
 @end
 
@@ -27,24 +31,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    
-    
-    
-    NSDictionary *dict = @{@"secretId":@"1",
-                           @"timestamp":@"2",
-                           @"nonce":@"3",
-                           @"signatureMethod":@"md5",
-                        };
-    
+
+    NSDictionary *dict = @{ @"secretId": @"1",
+                            @"timestamp": @"2",
+                            @"nonce": @"3",
+                            @"signatureMethod": @"md5", };
+
     [self genSignature:dict secretKey:@"6308afb129ea00301bd7c79621d07591"];
-    
-    
-    
+
 //    [self.view addSubview:self.goShoppingButton];
-    
+
     //shiti
 //    dispatch_queue_t serialqueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
 //    dispatch_async(serialqueue, ^{
@@ -63,7 +61,7 @@
 //        NSLog(@"5");
 //    });
 //    NSLog(@"6");
-    
+
     dispatch_group_t group = dispatch_group_create();
     dispatch_group_enter(group);
     dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -71,44 +69,93 @@
     });
 
     [self.view addSubview:self.alertButton];
-    
-    //0.6 + 0.45 + 0.8 + 0.3*0.37 + 0.28
-    
+    [self.view addSubview:self.volumeClose];
+
+    [self volumeViewConfig];
+//    [self musicPlayer];
+
     // Do any additional setup after loading the view.
 }
 
-#pragma mark ---semaphore 信号量练习
-//当信号量的当前值小于初始化，释放信号量时，会导致崩溃，简而言之就是，signal的调用次数一定要大于等于wait的调用次数，否则导致崩溃。
-- (void)semaphore_test_willCrash{
-    
-    dispatch_semaphore_t semp = dispatch_semaphore_create(1);
-      dispatch_block_t block = ^{
-          dispatch_semaphore_signal(semp);
-          NSLog(@"signal");
-      };
-
-//      NSMutableArray *array = [NSMutableArray array];
-      for (NSInteger i = 0; i < 4; i++) {
-          NSLog(@"wait");
-          dispatch_semaphore_wait(semp, DISPATCH_TIME_FOREVER);
-          if (i > 2) {//当I大于2时，只执行 wait ，没执行signal
-              break;
-          }else{ //当I小于等于2时，signal与wait是配对的
-              block();
-          }
-      }
-    
+//插件起作用 injectionIII
+- (void)injected {
+    [_alertButton setBackgroundColor:[UIColor blueColor]];
+    _alertButton.centerX = 50;
 }
 
-- (void)semaphore_test_withDispatch_group{
+- (void)volumeCloseClick:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.selected) {
+        [self.volumeViewSlider setValue:0 animated:YES];
+        [self.volumeViewSlider sendActionsForControlEvents:UIControlEventTouchUpInside];
+    } else {
+        [self.volumeViewSlider setValue:0.5 animated:YES];
+        [self.volumeViewSlider sendActionsForControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+#pragma mark --音量控制
+//ios13以下使用
+- (void)volumeViewConfig {
+    if (!self.volumeView) {
+        self.volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(-1000, -100, 100, 100)];
+
+        for (UIView *view in [self.volumeView subviews]) {
+            if ([view.class.description isEqualToString:@"MPVolumeSlider"]) {
+                self.volumeViewSlider = (UISlider *)view;
+                break;
+            }
+        }
+    }
+
+    [self.volumeView setFrame:CGRectMake(30, 300, [UIScreen mainScreen].bounds.size.width - 60, 20)];
+    [self.view addSubview:self.volumeView];
+
+//    self.volumeView.showsVolumeSlider = NO;
+//    self.volumeViewSlider.value = 0;
+}
+
+//- (void)musicPlayer{
+//    MPMusicPlayerController *musicPlayer = [MPMusicPlayerController applicationMusicPlayer];
+//
+//    if (([musicPlayer respondsToSelector:@selector(setVolume:)]) && [[[UIDevice currentDevice] systemVersion] floatValue] >= 13.0) {
+//    //消除警告
+//    #pragma clang diagnostic push
+//    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
+//                [musicPlayer setVolume:0];
+//    #pragma clang diagnostic pop
+//            }
+//}
+
+#pragma mark ---semaphore 信号量练习
+//当信号量的当前值小于初始化，释放信号量时，会导致崩溃，简而言之就是，signal的调用次数一定要大于等于wait的调用次数，否则导致崩溃。
+- (void)semaphore_test_willCrash {
+    dispatch_semaphore_t semp = dispatch_semaphore_create(1);
+    dispatch_block_t block = ^{
+        dispatch_semaphore_signal(semp);
+        NSLog(@"signal");
+    };
+
+//      NSMutableArray *array = [NSMutableArray array];
+    for (NSInteger i = 0; i < 4; i++) {
+        NSLog(@"wait");
+        dispatch_semaphore_wait(semp, DISPATCH_TIME_FOREVER);
+        if (i > 2) {  //当I大于2时，只执行 wait ，没执行signal
+            break;
+        } else { //当I小于等于2时，signal与wait是配对的
+            block();
+        }
+    }
+}
+
+- (void)semaphore_test_withDispatch_group {
     dispatch_group_t group = dispatch_group_create();
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(10);
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    for (int i = 0; i < 100; i++)
-    {
+    for (int i = 0; i < 100; i++) {
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         dispatch_group_async(group, queue, ^{
-            NSLog(@"%@-%i",[NSThread currentThread],i);
+            NSLog(@"%@-%i", [NSThread currentThread], i);
             sleep(1);
             dispatch_semaphore_signal(semaphore);
         });
@@ -116,23 +163,18 @@
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
 }
 
-
-
 #pragma mark -- tool
-
-- (NSString *)genSignature:(NSDictionary *)dict secretKey:(NSString *)secretKey{
-    
+- (NSString *)genSignature:(NSDictionary *)dict secretKey:(NSString *)secretKey {
     //将所有的key放进数组
     NSArray *allKeyArray = [dict allKeys];
 
     //序列化器对数组进行排序的block 返回值为排序后的数组
-    NSArray * afterSortKeyArray = [allKeyArray sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+    NSArray *afterSortKeyArray = [allKeyArray sortedArrayUsingComparator:^NSComparisonResult (id _Nonnull obj1, id _Nonnull obj2) {
         NSComparisonResult resuest = [obj1 compare:obj2];
         return resuest;
     }];
-    
 
-    NSLog(@"afterSortKeyArray-%@",afterSortKeyArray);
+    NSLog(@"afterSortKeyArray-%@", afterSortKeyArray);
     //通过排列的key值获取value
     NSMutableString *resultString = [[NSMutableString alloc]init];
     for (NSString *sortsing in afterSortKeyArray) {
@@ -140,14 +182,12 @@
         [resultString appendString:sortsing];
         [resultString appendString:valueString];
     }
-    
+
     [resultString appendString:secretKey];
     NSString *md5string = [self md5:resultString];
 //    NSLog(@"md5-%@,result-%@",md5string,resultString);
     return md5string;
 }
-
-
 
 // md5加密
 - (NSString *)md5:(NSString *)aText
@@ -156,35 +196,32 @@
     unsigned char result[16];
     CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
     NSMutableString *hash = [NSMutableString string];
-    for (int i = 0; i < 16; i++)
+    for (int i = 0; i < 16; i++) {
         [hash appendFormat:@"%02X", result[i]];
-    
+    }
+
     return [hash lowercaseString];
 }
 
-
-
-- (void)sortedDictionary:(NSDictionary *)dict{
+- (void)sortedDictionary:(NSDictionary *)dict {
     //将所有的key放进数组
     NSArray *allKeyArray = [dict allKeys];
 
     //序列化器对数组进行排序的block 返回值为排序后的数组
-    NSArray * afterSortKeyArray = [allKeyArray sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+    NSArray *afterSortKeyArray = [allKeyArray sortedArrayUsingComparator:^NSComparisonResult (id _Nonnull obj1, id _Nonnull obj2) {
         NSComparisonResult resuest = [obj1 compare:obj2];
         return resuest;
     }];
 
 //        NSLog(@"afterSortKeyArray:%@",afterSortKeyArray);
-        //通过排列的key值获取value
+    //通过排列的key值获取value
     NSMutableString *resultString = [[NSMutableString alloc]init];
     for (NSString *sortsing in afterSortKeyArray) {
         NSString *valueString = [dict objectForKey:sortsing];
         [resultString appendString:sortsing];
         [resultString appendString:valueString];
     }
-    NSLog(@"resultString:%@",resultString);
-    
-            
+    NSLog(@"resultString:%@", resultString);
 }
 
 /**
@@ -199,10 +236,8 @@
         注意:compare方法是区分大小写的,即按照ASCII排序
         */
 
-
 - (UIButton *)goShoppingButton {
-    if(_goShoppingButton == nil)
-    {
+    if (_goShoppingButton == nil) {
         _goShoppingButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_goShoppingButton setTitle:@"进入购物车" forState:UIControlStateNormal];
         [_goShoppingButton addTarget:self action:@selector(goShoppingButtonAction) forControlEvents:UIControlEventTouchUpInside];
@@ -216,8 +251,8 @@
     return _goShoppingButton;
 }
 
-- (UIButton *)alertButton{
-    if(!_alertButton){
+- (UIButton *)alertButton {
+    if (!_alertButton) {
         _alertButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_alertButton setTitle:@"alertButton" forState:UIControlStateNormal];
         [_alertButton addTarget:self action:@selector(alertShow) forControlEvents:UIControlEventTouchUpInside];
@@ -231,80 +266,77 @@
     return _alertButton;
 }
 
+- (UIButton *)volumeClose {
+    if (!_volumeClose) {
+        _volumeClose = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_volumeClose setTitle:@"volumeClose" forState:UIControlStateNormal];
+        [_volumeClose setTitle:@"volumeOpen" forState:UIControlStateSelected];
+        [_volumeClose addTarget:self action:@selector(volumeCloseClick:) forControlEvents:UIControlEventTouchUpInside];
+        _volumeClose.layer.cornerRadius = 5;
+        _volumeClose.layer.masksToBounds = YES;
+        [_volumeClose setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
+        _volumeClose.frame = CGRectMake(0, 0, 200, 40);
+        _volumeClose.centerX = self.view.centerX;
+        _volumeClose.top = 200;
+    }
+    return _volumeClose;
+}
 
 - (void)goShoppingButtonAction {
 //    CRShopCartViewController *shopcartVC = [[CRShopCartViewController alloc] init];
 //    [self.navigationController pushViewController:shopcartVC animated:YES];
-    
+
     CRMeituanViewController *meituanVC = [[CRMeituanViewController alloc]init];
     [self.navigationController pushViewController:meituanVC animated:YES];
-    
 }
 
-- (void)alertShow{
+- (void)alertShow {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"标题" message:@"内容" preferredStyle:UIAlertControllerStyleAlert];
-    
+
     // 使用富文本来改变alert的title字体大小和颜色
     NSMutableAttributedString *title = [[NSMutableAttributedString alloc] initWithString:@"这里是标题"];
     [title addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:24] range:NSMakeRange(0, 2)];
     [title addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
     [alert setValue:title forKey:@"attributedTitle"];
-    
-    
+
     // 使用富文本来改变alert的message字体大小和颜色
     // NSMakeRange(0, 2) 代表:从0位置开始 两个字符
     NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithString:@"这里是正文信息"];
     [message addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(0, 6)];
     [message addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
     [message addAttribute:NSForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(3, 3)];
-    
+
     [alert setValue:message forKey:@"attributedMessage"];
-    
-    
-    
+
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    
+
     // 设置按钮背景图片
     UIImage *accessoryImage = [[UIImage imageNamed:@"3.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     [cancelAction setValue:accessoryImage forKey:@"image"];
-    
+
     // 设置按钮的title颜色
     [cancelAction setValue:[UIColor lightGrayColor] forKey:@"titleTextColor"];
-    
+
     // 设置按钮的title的对齐方式
     [cancelAction setValue:[NSNumber numberWithInteger:NSTextAlignmentLeft] forKey:@"titleTextAlignment"];
-    
-    
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
         [self pushWKWebView];
     }];
-    
-    
+
     [alert addAction:okAction];
     [alert addAction:cancelAction];
-    
-    
-    
+
     [self presentViewController:alert animated:YES completion:nil];
-    
+
     //
-    
-    
-    
-    
-    
 }
 
-
-- (void)pushWKWebView{
-    
+- (void)pushWKWebView {
     WKWebViewController *web = [[WKWebViewController alloc]init];
     web.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:web animated:YES completion:nil];
-    
 }
-
-
 
 /*
 #pragma mark - Navigation

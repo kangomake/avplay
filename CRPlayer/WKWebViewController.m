@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor purpleColor];
     
     self.urlStr = @"http://m.chenhr.com/act/2021/xgs/sdhk";
     
@@ -45,9 +46,7 @@
     
     NSURL * url = [NSURL URLWithString:self.urlStr];
     NSMutableURLRequest * request = [[NSMutableURLRequest alloc] initWithURL:url];
-    
     [request setHTTPMethod:@"GET"];
-    
     //wk
     [_wk_WebView loadRequest:request];
     
