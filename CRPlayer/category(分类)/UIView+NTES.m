@@ -142,6 +142,18 @@
     self.frame = frame;
 }
 
+- (CGFloat)maxX {
+    return self.frame.origin.x + self.frame.size.width;
+}
+
+- (void)setMaxX:(CGFloat)right {
+    CGRect frame = self.frame;
+    frame.origin.x = right - frame.size.width;
+    self.frame = frame;
+}
+
+
+
 
 - (UIViewController *)viewController{
     for (UIView* next = self; next; next = next.superview) {

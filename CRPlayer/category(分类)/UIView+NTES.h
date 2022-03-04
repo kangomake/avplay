@@ -74,6 +74,10 @@
 - (UIViewController *)viewController;
 
 
+@property (nonatomic) CGFloat maxX;
+
+
+
 @end
 
 

@@ -36,11 +36,9 @@
     [self _stopPlay];
 
 //    NSURL *videoURL = [NSURL URLWithString:videoUrl];
-    
 //    NSURL * videoURL = [NSURL fileURLWithPath:videoUrl];
     
     NSURL *videoURL  = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"shanghaiwaitan" ofType:@"mp4"]];
-    
     
     AVAsset *asset = [AVAsset assetWithURL:videoURL];
     _videoItem = [AVPlayerItem playerItemWithAsset:asset];
@@ -71,8 +69,22 @@
     //接收播放完成Notification
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_handlePlayEnd) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
     
-    self.avPlayer.rate = 1.25;//add  注意更改播放速度要在视频开始播放之后才会生效
+//    self.avPlayer.rate = 1;//add  注意更改播放速度要在视频开始播放之后才会生效
 }
+
+//
+- (void)videoStop{
+    
+    [self _stopPlay];
+    
+    
+//    注意更改播放速度要在视频开始播放之后才会生效
+//    self.avPlayer.rate = 0.0;//即暂停
+//    self.avPlayer.rate = 2.0;//
+
+    
+}
+
 
 #pragma mark - private method
 

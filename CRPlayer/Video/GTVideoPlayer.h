@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)playVideoWithUrl:(NSString *)videoUrl attachView:(UIView *)attachView;
 
+- (void)videoStop;
+
 @end
 
 NS_ASSUME_NONNULL_END

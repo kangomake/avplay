@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+//视频播放/UICollectionView
 @interface ViewController : UIViewController
 
 

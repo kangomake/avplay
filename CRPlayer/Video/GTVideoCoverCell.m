@@ -15,7 +15,11 @@
 
 @interface GTVideoCoverCell ()
 @property (nonatomic, strong, readwrite) UIImageView *coverView;
-@property (nonatomic, strong, readwrite) UIImageView *playButton;
+//@property (nonatomic, strong, readwrite) UIImageView *playButton;
+@property (nonatomic, strong, readwrite) UIButton *playButton;
+
+
+
 @property (nonatomic, copy, readwrite) NSString *videoUrl;
 @property (nonatomic, strong, readwrite) GTVideoToolbar *toolbar;
 
@@ -44,18 +48,36 @@
             _coverView;
         })];
 
+//        [_coverView addSubview:({
+//            _playButton = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width - 50) / 2, (frame.size.height - GTVideoToolbarHeight - 50) / 2, 50, 50)];
+//            _playButton.image = [UIImage imageNamed:@"videoPlay"];
+//            _playButton.userInteractionEnabled = YES;
+//            [_playButton addGestureRecognizer:({
+//
+//                UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tapToPlay)];
+//                tapGesture;
+//
+//            })];
+//            _playButton;
+//        })];
+        
         [_coverView addSubview:({
-            _playButton = [[UIImageView alloc] initWithFrame:CGRectMake((frame.size.width - 50) / 2, (frame.size.height - GTVideoToolbarHeight - 50) / 2, 50, 50)];
-            _playButton.image = [UIImage imageNamed:@"videoPlay"];
+            _playButton = [[UIButton alloc] initWithFrame:CGRectMake((frame.size.width - 50) / 2, (frame.size.height - GTVideoToolbarHeight - 50) / 2, 50, 50)];
+//            _playButton.image = [UIImage imageNamed:@"videoPlay"];
+//            [_playButton setImage:[UIImage imageNamed:@"videoPlay"] forState:UIControlStateNormal];
+            [_playButton setBackgroundImage:[UIImage imageNamed:@"videoPlay"] forState:UIControlStateNormal];
+
             _playButton.userInteractionEnabled = YES;
-            [_playButton addGestureRecognizer:({
-
-                UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tapToPlay)];
-                tapGesture;
-
-            })];
+            [_playButton addTarget:self action:@selector(_tapToPlay:) forControlEvents:UIControlEventTouchUpInside];
+//            [_playButton addGestureRecognizer:({
+//
+//                UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(_tapToPlay)];
+//                tapGesture;
+//
+//            })];
             _playButton;
         })];
+        
 
         [self addSubview:({
             _toolbar = [[GTVideoToolbar alloc] initWithFrame:CGRectMake(0, _coverView.bounds.size.height, frame.size.width, GTVideoToolbarHeight)];
@@ -89,9 +111,16 @@
 
 #pragma mark - private method
 
-- (void)_tapToPlay {
-    //在当前Item上播放视频
-    [[GTVideoPlayer Player] playVideoWithUrl:_videoUrl attachView:_coverView];
+- (void)_tapToPlay:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if(sender.selected){
+        //在当前Item上播放视频
+        [[GTVideoPlayer Player] playVideoWithUrl:_videoUrl attachView:_coverView];
+    }else{
+        [[GTVideoPlayer Player] videoStop];
+    }
+    
+    
 }
 
 - (void)FullPlay{

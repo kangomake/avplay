@@ -7,6 +7,7 @@
 //
 
 #import "CRClockView.h"
+#import "CRScreen.h"
 
 @interface CRClockView ()
 
@@ -110,7 +111,7 @@
 - (UIView *)bgView{
     if(!_bgView){
         _bgView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.width)];
-        _bgView.backgroundColor = [UIColor whiteColor];
+        _bgView.backgroundColor = RGBA(240, 240, 240, 0.8);
         _bgView.layer.cornerRadius = self.frame.size.width/2;
 //        _bgView.layer.borderWidth = 1;
 //        _bgView.layer.borderColor = [UIColor grayColor].CGColor;

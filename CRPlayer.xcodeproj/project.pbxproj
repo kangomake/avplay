@@ -56,6 +56,10 @@
 		C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C727179A24B70C660075B3BA /* CRTabBarController.m */; };
 		C72717A024B71C1C0075B3BA /* CRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C727179F24B71C1C0075B3BA /* CRHomeViewController.m */; };
 		C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C72717A224B71C840075B3BA /* CRShopCartViewController.m */; };
+		C728BFF627D0494200F8E564 /* CRPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C728BFF527D0494200F8E564 /* CRPullDownMenu.m */; };
+		C728BFFC27D092C800F8E564 /* CRCover.m in Sources */ = {isa = PBXBuildFile; fileRef = C728BFFB27D092C800F8E564 /* CRCover.m */; };
+		C728C00227D095AF00F8E564 /* CRMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C728C00127D095AF00F8E564 /* CRMenuButton.m */; };
+		C728C00827D0B38000F8E564 /* CRMenuTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = C728C00727D0B38000F8E564 /* CRMenuTableController.m */; };
 		C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */; };
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
@@ -171,6 +175,7 @@
 		C77912CC272A324200AAF0DD /* MineEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912CB272A324200AAF0DD /* MineEditController.m */; };
 		C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */; };
 		C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */; };
+		C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B487D27CF661700C62CD2 /* CRPullView.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -321,6 +326,14 @@
 		C727179F24B71C1C0075B3BA /* CRHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRHomeViewController.m; sourceTree = "<group>"; };
 		C72717A124B71C840075B3BA /* CRShopCartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopCartViewController.h; sourceTree = "<group>"; };
 		C72717A224B71C840075B3BA /* CRShopCartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRShopCartViewController.m; sourceTree = "<group>"; };
+		C728BFF427D0494200F8E564 /* CRPullDownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPullDownMenu.h; sourceTree = "<group>"; };
+		C728BFF527D0494200F8E564 /* CRPullDownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullDownMenu.m; sourceTree = "<group>"; };
+		C728BFFA27D092C800F8E564 /* CRCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRCover.h; sourceTree = "<group>"; };
+		C728BFFB27D092C800F8E564 /* CRCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCover.m; sourceTree = "<group>"; };
+		C728C00027D095AF00F8E564 /* CRMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMenuButton.h; sourceTree = "<group>"; };
+		C728C00127D095AF00F8E564 /* CRMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMenuButton.m; sourceTree = "<group>"; };
+		C728C00627D0B38000F8E564 /* CRMenuTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMenuTableController.h; sourceTree = "<group>"; };
+		C728C00727D0B38000F8E564 /* CRMenuTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMenuTableController.m; sourceTree = "<group>"; };
 		C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+extensionTest.h"; sourceTree = "<group>"; };
 		C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTVideoPlayer+CategoryTest.h"; sourceTree = "<group>"; };
 		C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTVideoPlayer+CategoryTest.m"; sourceTree = "<group>"; };
@@ -467,6 +480,8 @@
 		C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEditFoldCell.m; sourceTree = "<group>"; };
 		C77912E2272A9B6D00AAF0DD /* TextFieldFoldController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldFoldController.h; sourceTree = "<group>"; };
 		C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldFoldController.m; sourceTree = "<group>"; };
+		C77B487C27CF661700C62CD2 /* CRPullView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPullView.h; sourceTree = "<group>"; };
+		C77B487D27CF661700C62CD2 /* CRPullView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullView.m; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* 微信.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -978,6 +993,23 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		C77B487B27CF65F200C62CD2 /* 下拉弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				C77B487C27CF661700C62CD2 /* CRPullView.h */,
+				C77B487D27CF661700C62CD2 /* CRPullView.m */,
+				C728BFF427D0494200F8E564 /* CRPullDownMenu.h */,
+				C728BFF527D0494200F8E564 /* CRPullDownMenu.m */,
+				C728C00027D095AF00F8E564 /* CRMenuButton.h */,
+				C728C00127D095AF00F8E564 /* CRMenuButton.m */,
+				C728BFFA27D092C800F8E564 /* CRCover.h */,
+				C728BFFB27D092C800F8E564 /* CRCover.m */,
+				C728C00627D0B38000F8E564 /* CRMenuTableController.h */,
+				C728C00727D0B38000F8E564 /* CRMenuTableController.m */,
+			);
+			path = "下拉弹窗";
+			sourceTree = "<group>";
+		};
 		C77D7D5D248F7E7100F1CC5C = {
 			isa = PBXGroup;
 			children = (
@@ -1105,6 +1137,7 @@
 		C7CAE7C924DBA613002E00B1 /* Found(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				C77B487B27CF65F200C62CD2 /* 下拉弹窗 */,
 				C7CAE7CA24DBA64A002E00B1 /* CRFoundViewController.h */,
 				C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */,
 				C77493A624EA21D900FE9196 /* CRMenuView.h */,
@@ -1476,6 +1509,7 @@
 				C7CA46ED24F78C690095560F /* CRWaveLoadingView.m in Sources */,
 				C76A4CDC2546A9E500A960BE /* UIColor+CRAddtion.m in Sources */,
 				C71BC37425CFC9C900A764D3 /* NSParagraphStyle+YYText.m in Sources */,
+				C728C00227D095AF00F8E564 /* CRMenuButton.m in Sources */,
 				C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */,
 				C7BE86B624F607B100A901BB /* CRShopcartTableViewProxy.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
@@ -1484,6 +1518,7 @@
 				C75ACCF9272FC43F00B50259 /* ZSSTextView.m in Sources */,
 				C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */,
 				C71BC31625CFC9B800A764D3 /* UIView+YYAdd.m in Sources */,
+				C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */,
 				C77912CC272A324200AAF0DD /* MineEditController.m in Sources */,
 				C77493AB24EA597400FE9196 /* CRClockView.m in Sources */,
 				C77D7DA0248F7FD100F1CC5C /* GTVideoCoverCell.m in Sources */,
@@ -1492,6 +1527,7 @@
 				C75ACD09272FC4CE00B50259 /* CYRTextStorage.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
+				C728C00827D0B38000F8E564 /* CRMenuTableController.m in Sources */,
 				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
 				C7BF81FE2511EFCA007CB539 /* CRNotifier.m in Sources */,
 				C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */,
@@ -1520,6 +1556,7 @@
 				C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */,
 				C71BC37125CFC9C900A764D3 /* YYTextArchiver.m in Sources */,
 				C71BC37825CFC9C900A764D3 /* UIView+YYText.m in Sources */,
+				C728BFF627D0494200F8E564 /* CRPullDownMenu.m in Sources */,
 				C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */,
 				C75ACD0A272FC4CE00B50259 /* CYRLayoutManager.m in Sources */,
 				C71BC37725CFC9C900A764D3 /* YYTextTransaction.m in Sources */,
@@ -1538,6 +1575,7 @@
 				C77D7D7C248F7E7400F1CC5C /* main.m in Sources */,
 				C71BC36525CFC9C900A764D3 /* YYTextContainerView.m in Sources */,
 				C75ACD20272FC51700B50259 /* HRColorPickerView.m in Sources */,
+				C728BFFC27D092C800F8E564 /* CRCover.m in Sources */,
 				C71BC35F25CFC9C900A764D3 /* YYImage.m in Sources */,
 				C75ACD1E272FC51700B50259 /* HRColorUtil.m in Sources */,
 				C71BC35D25CFC9C900A764D3 /* YYSpriteSheetImage.m in Sources */,
