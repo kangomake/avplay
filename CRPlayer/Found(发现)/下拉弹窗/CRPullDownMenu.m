@@ -73,7 +73,7 @@ static const CGFloat kMenuContentHeight = 300;
 
         CGFloat coverH = self.superview.bounds.size.height - coverY;
         _coverView = [[CRCover alloc] initWithFrame:CGRectMake(coverX, coverY, coverW, coverH)];
-        _coverView.backgroundColor = RGBA(200, 200, 200, 0.9);
+        _coverView.backgroundColor = RGBA(0, 0, 0, 0.5);
         
         UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
         [keyWindow addSubview:_coverView];
@@ -341,7 +341,7 @@ static const CGFloat kMenuContentHeight = 300;
     } completion:^(BOOL finished) {
         
         self.coverView.hidden = YES;
-        self.coverView.backgroundColor = RGBA(200, 200, 200, 0.9);
+        self.coverView.backgroundColor = RGBA(0, 0, 0, 0.5);
         
     }];
 }

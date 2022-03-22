@@ -309,7 +309,7 @@
 }
 
 - (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath  API_AVAILABLE(ios(11.0)){
-    if (@available(iOS 11.0, *)) {
+//    if (@available(iOS 11.0, *)) {
         UIContextualAction *delete = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:@"删除" handler:^(UIContextualAction *_Nonnull action, __kindof UIView *_Nonnull sourceView, void (^_Nonnull completionHandler)(BOOL)) {
             [tableView setEditing:NO animated:YES];
             completionHandler(YES);
@@ -327,12 +327,12 @@
         //禁止滑动到底直接执行第一个按钮的事件
         config.performsFirstActionWithFullSwipe = NO;
         return config;
-    } else {
-        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[]];
-        //禁止滑动到底直接执行第一个按钮的事件
-        config.performsFirstActionWithFullSwipe = NO;
-        return config;
-    }
+//    } else {
+//        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[]];
+//        //禁止滑动到底直接执行第一个按钮的事件
+//        config.performsFirstActionWithFullSwipe = NO;
+//        return config;
+//    }
 }
 
 - (void)tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -350,7 +350,11 @@
                     aBtn.titleLabel.font = [UIFont systemFontOfSize:14];
 
                     if (![aBtn.currentTitle isEqualToString:@"删除"]) {
-                        [aBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+                        [aBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        aBtn.backgroundColor = [UIColor greenColor];
+                    }else if([aBtn.currentTitle isEqualToString:@"删除"]){
+                        [aBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                        aBtn.backgroundColor = [UIColor redColor];
                     }
                 }
             }

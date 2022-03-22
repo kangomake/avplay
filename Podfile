@@ -7,5 +7,6 @@ pod 'TABAnimated'
 pod 'AFNetworking', '~> 4.0'
 pod 'SDWebImage','~>4.0'
 pod 'Masonry'
+pod 'MJRefresh'
 
 end
