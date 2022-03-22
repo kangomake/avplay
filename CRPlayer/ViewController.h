@@ -10,7 +10,7 @@
 
 //视频播放/UICollectionView
 @interface ViewController : UIViewController
-
+@property (nonatomic, copy) NSString *text;
 
 @end
 
