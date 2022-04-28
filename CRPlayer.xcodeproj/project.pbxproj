@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8C84A37EC5D4F0C5CF857908 /* libPods-CRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */; };
 		C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = C70292392721672F00F9FB7D /* UIView+NTES.m */; };
 		C70ECDF92518417D00D79383 /* CRMeituanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ECDF82518417D00D79383 /* CRMeituanViewController.m */; };
+		C71712B0281A974500F2B6F0 /* myhtml.html in Resources */ = {isa = PBXBuildFile; fileRef = C71712AF281A974500F2B6F0 /* myhtml.html */; };
 		C71BC2FB25CFC8BF00A764D3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FA25CFC8BF00A764D3 /* CoreText.framework */; };
 		C71BC2FD25CFC8C800A764D3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FC25CFC8C800A764D3 /* CoreFoundation.framework */; };
 		C71BC2FF25CFC8D200A764D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FE25CFC8D200A764D3 /* CoreGraphics.framework */; };
@@ -166,6 +167,10 @@
 		C76657FF25B976CC0022F404 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FE25B976CC0022F404 /* AssetsLibrary.framework */; };
 		C766580125B976D60022F404 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C766580025B976D60022F404 /* CoreData.framework */; };
 		C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C76772362727A4B7007C2413 /* HRProgressHUD.m */; };
+		C7678F8128123D120053A557 /* KSSideslipContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F7B28123D120053A557 /* KSSideslipContainerView.m */; };
+		C7678F8228123D120053A557 /* KSSideslipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F7F28123D120053A557 /* KSSideslipCell.m */; };
+		C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F8028123D120053A557 /* KSSideslipCellProxy.m */; };
+		C7678F8628123E140053A557 /* CRFoundEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F8528123E140053A557 /* CRFoundEditCell.m */; };
 		C76A4CDC2546A9E500A960BE /* UIColor+CRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */; };
 		C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */; };
 		C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */; };
@@ -176,6 +181,7 @@
 		C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */; };
 		C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */; };
 		C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B487D27CF661700C62CD2 /* CRPullView.m */; };
+		C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D4BF228041C8F0002AB41 /* keychainManager.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -189,6 +195,7 @@
 		C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */; };
 		C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA4248F81C600F1CC5C /* icon.bundle */; };
 		C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */; };
+		C7A97C0027E9AF0100BE545E /* UIScrollView+CRRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */; };
 		C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB863B26A67F7900F779D6 /* CRMineViewController.m */; };
 		C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864426A69B5700F779D6 /* MyTableView.m */; };
 		C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */; };
@@ -243,6 +250,7 @@
 		C702923A2721672F00F9FB7D /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTES.h"; sourceTree = "<group>"; };
 		C70ECDF72518417D00D79383 /* CRMeituanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMeituanViewController.h; sourceTree = "<group>"; };
 		C70ECDF82518417D00D79383 /* CRMeituanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMeituanViewController.m; sourceTree = "<group>"; };
+		C71712AF281A974500F2B6F0 /* myhtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myhtml.html; sourceTree = "<group>"; };
 		C71BC2FA25CFC8BF00A764D3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		C71BC2FC25CFC8C800A764D3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C71BC2FE25CFC8D200A764D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -464,6 +472,14 @@
 		C766580025B976D60022F404 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C76772352727A4B7007C2413 /* HRProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRProgressHUD.h; sourceTree = "<group>"; };
 		C76772362727A4B7007C2413 /* HRProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRProgressHUD.m; sourceTree = "<group>"; };
+		C7678F7B28123D120053A557 /* KSSideslipContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSideslipContainerView.m; sourceTree = "<group>"; };
+		C7678F7C28123D120053A557 /* KSSideslipContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSideslipContainerView.h; sourceTree = "<group>"; };
+		C7678F7D28123D120053A557 /* KSSideslipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSideslipCell.h; sourceTree = "<group>"; };
+		C7678F7E28123D120053A557 /* KSSideslipCellProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSideslipCellProxy.h; sourceTree = "<group>"; };
+		C7678F7F28123D120053A557 /* KSSideslipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSideslipCell.m; sourceTree = "<group>"; };
+		C7678F8028123D120053A557 /* KSSideslipCellProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSideslipCellProxy.m; sourceTree = "<group>"; };
+		C7678F8428123E140053A557 /* CRFoundEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFoundEditCell.h; sourceTree = "<group>"; };
+		C7678F8528123E140053A557 /* CRFoundEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFoundEditCell.m; sourceTree = "<group>"; };
 		C76A4CDA2546A9E500A960BE /* UIColor+CRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRAddtion.h"; sourceTree = "<group>"; };
 		C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRAddtion.m"; sourceTree = "<group>"; };
 		C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
@@ -482,6 +498,8 @@
 		C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldFoldController.m; sourceTree = "<group>"; };
 		C77B487C27CF661700C62CD2 /* CRPullView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPullView.h; sourceTree = "<group>"; };
 		C77B487D27CF661700C62CD2 /* CRPullView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullView.m; sourceTree = "<group>"; };
+		C77D4BF128041C8F0002AB41 /* keychainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keychainManager.h; sourceTree = "<group>"; };
+		C77D4BF228041C8F0002AB41 /* keychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keychainManager.m; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* 微信.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -506,6 +524,8 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C7A97BFE27E9AF0100BE545E /* UIScrollView+CRRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRRefresh.h"; sourceTree = "<group>"; };
+		C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CRRefresh.m"; sourceTree = "<group>"; };
 		C7AB863A26A67F7900F779D6 /* CRMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMineViewController.h; sourceTree = "<group>"; };
 		C7AB863B26A67F7900F779D6 /* CRMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMineViewController.m; sourceTree = "<group>"; };
 		C7AB864326A69B5700F779D6 /* MyTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableView.h; sourceTree = "<group>"; };
@@ -962,6 +982,19 @@
 			path = MyProgressHUD;
 			sourceTree = "<group>";
 		};
+		C7678F7A28123CD70053A557 /* sideSlipCell */ = {
+			isa = PBXGroup;
+			children = (
+				C7678F7D28123D120053A557 /* KSSideslipCell.h */,
+				C7678F7F28123D120053A557 /* KSSideslipCell.m */,
+				C7678F7E28123D120053A557 /* KSSideslipCellProxy.h */,
+				C7678F8028123D120053A557 /* KSSideslipCellProxy.m */,
+				C7678F7C28123D120053A557 /* KSSideslipContainerView.h */,
+				C7678F7B28123D120053A557 /* KSSideslipContainerView.m */,
+			);
+			path = sideSlipCell;
+			sourceTree = "<group>";
+		};
 		C76A4CD62546A95900A960BE /* category(分类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -969,6 +1002,8 @@
 				C70292392721672F00F9FB7D /* UIView+NTES.m */,
 				C76A4CDA2546A9E500A960BE /* UIColor+CRAddtion.h */,
 				C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */,
+				C7A97BFE27E9AF0100BE545E /* UIScrollView+CRRefresh.h */,
+				C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */,
 				C76DF6BD2718041C00DEA7C4 /* UIImage+MyImage.h */,
 				C76DF6BE2718041C00DEA7C4 /* UIImage+MyImage.m */,
 			);
@@ -1035,6 +1070,7 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7678F7A28123CD70053A557 /* sideSlipCell */,
 				C75ACC41272FC32300B50259 /* richTextEditor */,
 				C767723427279DB9007C2413 /* MyProgressHUD */,
 				C7AB863926A67F5D00F779D6 /* Mine */,
@@ -1053,6 +1089,8 @@
 				C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */,
 				C77D7D6F248F7E7100F1CC5C /* ViewController.h */,
 				C77D7D70248F7E7100F1CC5C /* ViewController.m */,
+				C77D4BF128041C8F0002AB41 /* keychainManager.h */,
+				C77D4BF228041C8F0002AB41 /* keychainManager.m */,
 				C75301FC274CBFB300ADBC04 /* WKWebViewController.h */,
 				C75301FD274CBFB300ADBC04 /* WKWebViewController.m */,
 				C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */,
@@ -1152,6 +1190,8 @@
 				C7C673F624FDEA5900F84C12 /* CRTagListView.m */,
 				C7D31EE7250733B000189D3E /* CRButton.h */,
 				C7D31EE8250733B000189D3E /* CRButton.m */,
+				C7678F8428123E140053A557 /* CRFoundEditCell.h */,
+				C7678F8528123E140053A557 /* CRFoundEditCell.m */,
 			);
 			path = "Found(发现)";
 			sourceTree = "<group>";
@@ -1201,6 +1241,7 @@
 		C7E4904924D8FC5900BB803E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C71712AF281A974500F2B6F0 /* myhtml.html */,
 				C77D7DA4248F81C600F1CC5C /* icon.bundle */,
 				C71BC30E25CFC99D00A764D3 /* YYkit */,
 				C76B6F4624A1FF3600EEC7A8 /* imageBundle */,
@@ -1427,6 +1468,7 @@
 				C75ACCA3272FC40900B50259 /* ZSSpicker.png in Resources */,
 				C75ACCA5272FC40900B50259 /* ZSSquicklink.png in Resources */,
 				C75ACCC1272FC40900B50259 /* ZSSh5@2x.png in Resources */,
+				C71712B0281A974500F2B6F0 /* myhtml.html in Resources */,
 				C75ACCC6272FC40900B50259 /* ZSSviewsource@2x.png in Resources */,
 				C75ACCB6272FC40900B50259 /* ZSStextcolor.png in Resources */,
 				C75ACCCB272FC40900B50259 /* ZSScenterjustify@2x.png in Resources */,
@@ -1546,10 +1588,12 @@
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
 				C728C00827D0B38000F8E564 /* CRMenuTableController.m in Sources */,
+				C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */,
 				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
 				C7BF81FE2511EFCA007CB539 /* CRNotifier.m in Sources */,
 				C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */,
 				C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */,
+				C7678F8228123D120053A557 /* KSSideslipCell.m in Sources */,
 				C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */,
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C71BC37325CFC9C900A764D3 /* YYTextUtilities.m in Sources */,
@@ -1569,8 +1613,10 @@
 				C75ACD21272FC51700B50259 /* HRColorPickerViewController.m in Sources */,
 				C71BC37625CFC9C900A764D3 /* UIPasteboard+YYText.m in Sources */,
 				C75ACD27272FC57B00B50259 /* CRTextEditController.m in Sources */,
+				C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */,
 				C71BC36B25CFC9C900A764D3 /* YYTextKeyboardManager.m in Sources */,
 				C7BE86B924F65F1D00A901BB /* CRShopcartBottomView.m in Sources */,
+				C7678F8628123E140053A557 /* CRFoundEditCell.m in Sources */,
 				C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */,
 				C71BC37125CFC9C900A764D3 /* YYTextArchiver.m in Sources */,
 				C71BC37825CFC9C900A764D3 /* UIView+YYText.m in Sources */,
@@ -1607,9 +1653,11 @@
 				C76DF6BF2718041C00DEA7C4 /* UIImage+MyImage.m in Sources */,
 				C71BC36E25CFC9C900A764D3 /* YYTextRunDelegate.m in Sources */,
 				C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */,
+				C7A97C0027E9AF0100BE545E /* UIScrollView+CRRefresh.m in Sources */,
 				C71BC36125CFC9C900A764D3 /* YYFrameImage.m in Sources */,
 				C7B4F9C024F8E678000DA3E5 /* CRShopcartFormat.m in Sources */,
 				C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */,
+				C7678F8128123D120053A557 /* KSSideslipContainerView.m in Sources */,
 				C75ACC45272FC37500B50259 /* ZSSRichTextEditor.m in Sources */,
 				C71BC36025CFC9C900A764D3 /* YYImageCoder.m in Sources */,
 				C75ACD1F272FC51700B50259 /* HRBrightnessCursor.m in Sources */,

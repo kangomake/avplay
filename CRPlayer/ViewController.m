@@ -13,6 +13,8 @@
 #import "YYFPSLabel.h"
 #import "WKWebViewController.h"
 
+#import "keychainManager.h"
+
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
@@ -22,8 +24,11 @@
 @implementation ViewController
 
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     
     //流式布局，itemSize设置
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -43,7 +48,6 @@
 
     //注册Item class
     [collectionView registerClass:[GTVideoCoverCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
-
     [self.view addSubview:collectionView];
     
 //    [self performSelector:@selector(fun)];
@@ -56,8 +60,31 @@
     [self printMethodList_view];
     
     [self testFPSLabel];
+    
+    
+    [self keychainTest];
     // Do any additional setup after loading the view.
 }
+
+//钥匙串测试
+- (void)keychainTest{
+    
+//    BOOL succeed = [keychainManager SaveData:@"123456789" withAccountIdentifier:@"trigger" andServiceIdentifier:@"password"];
+//    BOOL succeed1 = [keychainManager SaveData:@"987654321" withAccountIdentifier:@"trigger" andServiceIdentifier:@"account"];
+//    NSLog(@"%d",succeed);
+//    NSLog(@"%d",succeed1);
+    NSLog(@"account-%@",(NSString *)[keychainManager GetDataWithAccountIdentifier:@"trigger" andServiceIdentifier:@"account"]);
+    NSLog(@"password-%@",(NSString *)[keychainManager GetDataWithAccountIdentifier:@"trigger" andServiceIdentifier:@"password"]);
+//    [keychainManager UpdataData:@"000000000" withAccountIdentifier:@"trigger" andServiceIdentifier:@"password"];
+//    NSLog(@"password-%@",(NSString *)[keychainManager GetDataWithAccountIdentifier:@"trigger" andServiceIdentifier:@"password"]);
+//    [keychainManager DeleteWithAccountIdentifier:@"trigger" andServiceIdentifier:@"account"];
+//     NSLog(@"account%@",(NSString *)[keychainManager GetDataWithAccountIdentifier:@"trigger" andServiceIdentifier:@"account"]);
+    
+//    account(null)
+    
+    
+}
+
 
 //FPS帧率测试
 - (void)testFPSLabel{

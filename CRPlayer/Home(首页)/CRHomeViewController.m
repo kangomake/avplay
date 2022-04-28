@@ -334,8 +334,9 @@
 
 - (void)pushWKWebView {
     WKWebViewController *web = [[WKWebViewController alloc]init];
-    web.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:web animated:YES completion:nil];
+    [self.navigationController pushViewController:web animated:YES];
+//    web.modalPresentationStyle = UIModalPresentationFullScreen;
+//    [self presentViewController:web animated:YES completion:nil];
 }
 
 /*
