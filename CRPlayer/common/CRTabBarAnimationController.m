@@ -8,6 +8,7 @@
 
 #import "CRTabBarAnimationController.h"
 #import "CRAnimationManager.h"
+#import "CRNavigationController.h"
 
 #define kClassKey  @"rootVCClassString"
 #define kTitleKey  @"title"
@@ -57,7 +58,7 @@
         UIViewController *vc = [NSClassFromString(dict[kClassKey]) new];
         vc.title = dict[kTitleKey];
         //        NSLog(@"class--%@",dict[kClassKey]);
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        CRNavigationController *nav = [[CRNavigationController alloc] initWithRootViewController:vc];
         UITabBarItem *item = nav.tabBarItem;
         item.title = dict[kTitleKey];
         item.image = [UIImage imageNamed:dict[kImgKey]];

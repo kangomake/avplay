@@ -162,6 +162,7 @@
 		C75ACD20272FC51700B50259 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACD17272FC51700B50259 /* HRColorPickerView.m */; };
 		C75ACD21272FC51700B50259 /* HRColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACD19272FC51700B50259 /* HRColorPickerViewController.m */; };
 		C75ACD27272FC57B00B50259 /* CRTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACD26272FC57B00B50259 /* CRTextEditController.m */; };
+		C75F17B0281BDB2A000BCCA3 /* CRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75F17AF281BDB2A000BCCA3 /* CRNavigationController.m */; };
 		C76657FB25B976B60022F404 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FA25B976B60022F404 /* AVFoundation.framework */; };
 		C76657FD25B976C20022F404 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FC25B976C20022F404 /* CoreMedia.framework */; };
 		C76657FF25B976CC0022F404 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FE25B976CC0022F404 /* AssetsLibrary.framework */; };
@@ -466,6 +467,8 @@
 		C75ACD1B272FC51700B50259 /* HRColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRColorPickerViewController.h; sourceTree = "<group>"; };
 		C75ACD25272FC57B00B50259 /* CRTextEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRTextEditController.h; sourceTree = "<group>"; };
 		C75ACD26272FC57B00B50259 /* CRTextEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTextEditController.m; sourceTree = "<group>"; };
+		C75F17AE281BDB2A000BCCA3 /* CRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRNavigationController.h; sourceTree = "<group>"; };
+		C75F17AF281BDB2A000BCCA3 /* CRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRNavigationController.m; sourceTree = "<group>"; };
 		C76657FA25B976B60022F404 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C76657FC25B976C20022F404 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C76657FE25B976CC0022F404 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -1093,6 +1096,8 @@
 				C77D4BF228041C8F0002AB41 /* keychainManager.m */,
 				C75301FC274CBFB300ADBC04 /* WKWebViewController.h */,
 				C75301FD274CBFB300ADBC04 /* WKWebViewController.m */,
+				C75F17AE281BDB2A000BCCA3 /* CRNavigationController.h */,
+				C75F17AF281BDB2A000BCCA3 /* CRNavigationController.m */,
 				C731D432249387150059BDEE /* GTVideoPlayer+extensionTest.h */,
 				C731D433249387310059BDEE /* GTVideoPlayer+CategoryTest.h */,
 				C731D434249387310059BDEE /* GTVideoPlayer+CategoryTest.m */,
@@ -1598,6 +1603,7 @@
 				C733CE1C2498692500D66243 /* CRScreen.m in Sources */,
 				C71BC37325CFC9C900A764D3 /* YYTextUtilities.m in Sources */,
 				C75ACCF7272FC43F00B50259 /* ZSSBarButtonItem.m in Sources */,
+				C75F17B0281BDB2A000BCCA3 /* CRNavigationController.m in Sources */,
 				C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */,
 				C7CFA190251B42A400F5E9F4 /* CRTabBarAnimationController.m in Sources */,
 				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
