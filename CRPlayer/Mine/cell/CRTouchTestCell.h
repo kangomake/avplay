@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *leftLabel;
 @property (nonatomic, strong) UILabel *rightLabel;
 
+
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
 @end
 
 NS_ASSUME_NONNULL_END

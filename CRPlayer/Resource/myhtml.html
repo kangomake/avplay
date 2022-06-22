@@ -1,120 +1,275 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>ZSSRichTextEditor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8" />
+    <title>myhtml</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        charset="utf-8" />
 
-<!-- Custom CSS Styling -->
-<style type="text/css">
     
-    /* Custom CSS Styling */
-    
-    /*customcss*/
-    
-</style>
+    </script> 
+    <!-- alert() -->
+    </script> 
 
-<!-- jQuery Source For ZSSRichTextEditor -->
-<script>
-<!-- jQuery -->
-</script>
-        
-<!-- JSBeautifier Source for ZSSRichTextEditor -->
-<script>
-<!-- jsbeautifier -->
-</script>
+    <!-- CSS Styles for ZSSRichTextEditor -->
+    <style type="text/css">
+        * {
+            outline: 0px solid transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+        }
 
-<!-- Javascript for ZSSRichTextEditor -->
-<script>
-<!--editor-->
-</script>
+        /* html, */
+        /* body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        } */
 
-<!-- CSS Styles for ZSSRichTextEditor -->
-<style type="text/css">
+        /* body {
+            padding: 10px;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            height: 100%;
+        } */
 
-/* Default ZSSRichTextEditor Styling */
-* {
-	outline: 0px solid transparent;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-touch-callout: none;
-}
- 
-html, body {
-	padding: 0;
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
-      
-body {
-	padding: 10px;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-	height: 100%;
-}
+        h1, h4, .subTitle {
+    /*background-color:lightgray;*/
+            font-weight: 400;
+            text-align: center;
+        }
 
-img.zs_active {
-	border: 2px dashed #000;
-}
-      
-audio {
-	padding: 20px 0;
-}
+       img.zs_active {
+            border: 2px dashed #000;
+        }
 
-div.zs_editor_content {
-	width: 100%;
-	height: 100%;
-	-webkit-overflow-scrolling: touch;
-	overflow:auto;
-}
+        audio {
+            padding: 20px 0;
+        }
 
-[placeholder]:empty:before {
-    content: attr(placeholder);
-    color: #555; 
-}
+        div.zs_editor_content {
+            width: 100%;
+            height: 100%;
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+        }
 
-[placeholder]:empty:focus:before {
-    content: "";
-}
-	
-</style>
+        [placeholder]:empty:before {
+            content: attr(placeholder);
+            color: #555;
+        }
+
+        [placeholder]:empty:focus:before {
+            content: "";
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* .formtable {
+            text-align: center;
+            font-size: 14px;
+        } */
+
+    </style>
 
 </head>
 
 <body onLoad="zss_editor.init();">
 
-	<!-- ZSSRichTextEditor Editable Content -->
-	<div id="zss_editor_content" class="zs_editor_content" contenteditable="true" placeholder=""></div>
+    <!-- ZSSRichTextEditor Editable Content -->
+    <div id="zss_editor_content" class="zs_editor_content" contenteditable="true" placeholder=""></div>
 
-	<!-- Footer -->
-	<div id="zss_editor_footer"></div>
+    <!-- Footer -->
+    <div id="zss_editor_footer"></div>
 
-		<h1>这是文本标题，下面是一张图片</h1><!--文本标题标签-->
-        
-        <h1>这是1号标题</h1>
-        <font size="6">这是6号字体文本</font>
+    <h1>这是文本标题</h1>
+    <div class="subTitle"><font size="3">副标题-这是3号字体文本</font></div>
+    
 
-        <h2>这是2号标题</h2>
-        <font size="5">这是5号字体文本</font>
+    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
 
-        <h3>这是3号标题</h3>
-        <font size="4">这是4号字体文本</font>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="down.jpg" /></td>
+                <td>456</td>
+                <td>123</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
 
-        <h4>这是4号标题</h4>
-        <font size="3">这是3号字体文本</font>
+            <tr>
+                <td>2</td>
+                <td>盗墓笔记</td>
+                <td><img src="down.jpg" /></td>
+                <td>124</td>
+                <td>675432</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>西游记</td>
+                <td><img src="up.jpg" /></td>
+                <td>212</td>
+                <td>7654</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>东游记</td>
+                <td><img src="up.jpg" /></td>
+                <td>23</td>
+                <td>75645</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>水浒传</td>
+                <td><img src="up.jpg" /></td>
+                <td>576576</td>
+                <td>1231421</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>三国演义</td>
+                <td><img src="down.jpg" /></td>
+                <td>234</td>
+                <td>7686</td>
+                <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-        <h5>这是5号标题</h5>
-        <font size="2">这是2号字体文本</font>
 
-        <h6>这是6号标题</h6>
-        <font size="1">这是1号字体文本</font>
-        
-        
-        <img src="icon.png"><br><!--图片标签，br是换行标签-->
-        <input type="text" value="这是输入框，请输入内容！"><br><!--输入框标签-->
-        <button type="submit" >按钮</button><!--按钮标签-->
-        <a href="https://www.runoob.com">这是一个链接</a>
-        <p>这是第一个段落。</p>
-        <hr>
-        <img src="/icon/icon.png" width="58" height="58" />
+    <br>
+
+
+
+
+    <form action="" method="get" name="form1">
+        <table class="formtable">
+            <tr>
+                <td>性别</td>
+                <td><label for="nan">男</label> <input type="radio" name="sex" id="nan">
+                    <label for="nv">女</label> <input type="radio" name="sex" id="nv"> </td>
+            </tr>
+
+            <tr>
+                <td>生日🎂</td>
+                <td>
+                <select>
+                    <option name="Year" value="year">--请选择年--</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                </select><select>
+                    <option name="Month" value="month">--请选择月--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select><select>
+                    <option name="Day" value="day">--请选择日--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>所在地区</td>
+                <td><input type="text" value="北京思密达" width="300"></td>
+            </tr>
+            <tr>
+                <td>学历</td>
+                <td>
+                    <input type="text" value="当然是博士啦">
+                </td>
+            </tr>
+            <tr>
+                <td>老家哪的</td>
+                <td>
+                    <select>
+                        <option>北京 </option>
+                        <option>天津 </option>
+                        <option selected="selected">河北 </option>
+                        <option>上海 </option>
+                        <option>深圳 </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>兴趣爱好</td>
+                <td>
+                <input type="checkbox">🏊‍♀️体育运动🏊
+                <input type="checkbox">影视音乐🎵
+                <input type="checkbox">极限运动🛹
+                <input type="checkbox">书法绘画🎨
+                <input type="checkbox" checked="checked">当然是样样精通啦
+                </td>
+            </tr>
+            <tr>
+                <td>个人介绍</td>
+                <td><textarea cols="50" rows="5">个人反馈留言是textarea来做的</textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="提交吧" /></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="checkbox" checked="checked">我同意注册条款和会员加入标准 </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><a href="https://www.runoob.com" target="_blank">来这看看</a></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td>
+                    <h5>我承诺</h5>
+                    <ul>
+                        <li>好好学习</li>
+                        <li>天天向上</li>
+                    </ul>
+                </td>
+            </tr>
+
+
+        </table>
+
+    </form>
+    <hr>
+
+
+
+    <img src="Image/baidu.png" title="baidu" width="334" height="171" />
+    <br>
+
+
+  
+
+
+
+
 
 </body>
+
 </html>

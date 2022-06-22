@@ -17,8 +17,13 @@
 
 #import <MediaPlayer/MPVolumeView.h>
 #import <MediaPlayer/MPMusicPlayerController.h>
+#import <StoreKit/StoreKit.h>
 
-@interface CRHomeViewController ()
+#import "CRPerson.h"
+#import "CRStudent.h"
+#import <objc/runtime.h>
+
+@interface CRHomeViewController ()<SKStoreProductViewControllerDelegate>
 @property (nonatomic, strong) UIButton *goShoppingButton;
 @property (nonatomic, strong) UIButton *alertButton;
 @property (strong, nonatomic) MPVolumeView *volumeView;
@@ -29,28 +34,87 @@
 
 @implementation CRHomeViewController
 
+/**
+ __func__  是C99标准的一部分
+ static const char __func__[] = "function-name";
+ __FUNCTION__ 程序预编译时预编译器将用所在的函数名，返回值是字符串;
+ 跟_ func _ 效果一样，只是为了兼容旧版的GCC
+ __FUNCTION__意思主要是指：当前正在编译文件对应 的函数名 返回值是一个字符串；
+ */
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    
+    
+//    id cls = [CRPerson class];
+//    NSLog(@"%p",[CRPerson class]);
+//    void *obj = &cls;
+//    [(__bridge  id)obj test];
+//    [cls test];
+    
+    CRPerson *person = [[CRPerson alloc] init];
+    NSLog(@"%p",[person class]);//0x10487f368
+    NSLog(@"%@",person);//person->isa  $0 = 0x010000010487f369
+    
+    
+//    [person test];
+    
+    object_setClass(person, [CRStudent class]);
+    [person run];
+    
+    
+    object_isClass(person);
+    object_isClass([person class]);
+    object_isClass(object_getClass([person class]));
+    
+    
+    class_isMetaClass([person class]);
+    class_getSuperclass([person class]);
+    
+    NSLog(@"haha:%@-%@",object_getClass(person), objc_getClass("CRPerson"));
+    
+    Ivar nameIvar = class_getInstanceVariable([person class], "_name");
+    NSLog(@"%s, %s",ivar_getName(nameIvar),ivar_getTypeEncoding(nameIvar));
+    
+    
+    object_setIvar(person, nameIvar, @"crName");
+    NSLog(@"%@",object_getIvar(person, nameIvar));
+    
+    unsigned int count;
+    Ivar *ivars = class_copyIvarList([CRPerson class], &count);
+    for (int i = 0;i < count;i ++) {
+        Ivar ivar = ivars[i];
+        NSLog(@"%s, %s",ivar_getName(ivar),ivar_getTypeEncoding(ivar));
+        
+    }
+    free(ivars);
+    
+    
+    
+    
     self.view.backgroundColor = [UIColor whiteColor];
 
+    
+    
+    
     NSDictionary *dict = @{ @"secretId": @"1",
                             @"timestamp": @"2",
                             @"nonce": @"3",
                             @"signatureMethod": @"md5", };
 
-    [self genSignature:dict secretKey:@"6308afb129ea00301bd7c79621d07591"];
+//    [self genSignature:dict secretKey:@"6308afb129ea00301bd7c79621d07591"];
 
 //    [self.view addSubview:self.goShoppingButton];
 
     //shiti
 //    dispatch_queue_t serialqueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+//    __unused dispatch_queue_t mainQueue = dispatch_get_main_queue();
 //    dispatch_async(serialqueue, ^{
-//
 //        dispatch_sync(serialqueue, ^{
 //            NSLog(@"1");
 //        });
-//
 //    });
 //    NSLog(@"2");
 //    dispatch_async(serialqueue, ^{
@@ -62,20 +126,104 @@
 //    });
 //    NSLog(@"6");
 
-    dispatch_group_t group = dispatch_group_create();
-    dispatch_group_enter(group);
-    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        dispatch_group_leave(group);
-    });
+//    dispatch_group_t group = dispatch_group_create();
+//    dispatch_group_enter(group);
+//    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        dispatch_group_leave(group);
+//    });
 
     [self.view addSubview:self.alertButton];
     [self.view addSubview:self.volumeClose];
 
     [self volumeViewConfig];
 //    [self musicPlayer];
+    
+//    NSLog(@"%@ %@", [self class],[super class]);
 
+    
+//    CRPerson *person = [[CRPerson alloc]init];
+//    CRStudent *student = [[CRStudent alloc] init];
+    
+    
+    
+    
+//    [self runtimeTest];
+    
     // Do any additional setup after loading the view.
 }
+
+void run (id self, SEL _cmd){
+    NSLog(@"%@-%@",self, NSStringFromSelector(_cmd));
+}
+
+- (void)runtimeTest{
+    
+    Class newClass = objc_allocateClassPair([NSObject class], "Student", 0);
+    class_addIvar(newClass, "_age", 4, 1, @encode(int));
+    class_addIvar(newClass, "_height", 4, 1, @encode(float));
+    
+    class_addMethod(newClass, @selector(run), (IMP)run, "v@:");
+    objc_registerClassPair(newClass);
+    
+    id student = [[newClass alloc] init];
+    
+    [student setValue:@15 forKey:@"_age"];
+    [student setValue:@176.5 forKey:@"_height"];
+    
+    // 获取成员变量
+    NSLog(@"_age = %@ , _height = %@",[student valueForKey:@"_age"], [student valueForKey:@"_height"]);
+    
+    NSLog(@"%zd",class_getInstanceSize(newClass));
+    
+    
+//    object_getClass(newClass);
+//    objc_getClass(newClass);
+    
+}
+
+
+- (void)testSKAdNetwork{
+    
+    if (@available(iOS 11.3, *)) {
+        [SKAdNetwork registerAppForAdNetworkAttribution];
+        if (@available(iOS 14.0, *)) {
+            [SKAdNetwork updateConversionValue:5];
+        }
+    }
+    
+   
+    if (@available(iOS 14.5, *)) {
+        SKAdImpression *imp  = [[SKAdImpression alloc]init];
+        [SKAdNetwork startImpression:imp completionHandler:^(NSError * _Nullable error) {
+                
+        }];
+    }
+    
+    
+}
+
+- (void)goToStoreView {
+    SKStoreProductViewController *storeVC = [[SKStoreProductViewController alloc] init];
+    storeVC.delegate = self;
+    [self presentViewController:storeVC animated:YES completion:^{
+        [storeVC loadProductWithParameters:@{ SKStoreProductParameterITunesItemIdentifier: @"testappid" } completionBlock:^(BOOL result, NSError *_Nullable error) {
+            if (error) {
+                NSLog(@"error = %@", error);
+            } else {
+                NSLog(@"显示完成");
+            }
+        }];
+    }];
+}
+
+#pragma mark -- SKStoreProductViewControllerDelegate
+
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController {
+    //点击完成或是下载更新完成的回调，dismiss掉VC
+    [viewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 
 //插件起作用 injectionIII
 - (void)injected {
@@ -326,7 +474,6 @@
 
     [alert addAction:okAction];
     [alert addAction:cancelAction];
-
     [self presentViewController:alert animated:YES completion:nil];
 
     //
@@ -335,8 +482,6 @@
 - (void)pushWKWebView {
     WKWebViewController *web = [[WKWebViewController alloc]init];
     [self.navigationController pushViewController:web animated:YES];
-//    web.modalPresentationStyle = UIModalPresentationFullScreen;
-//    [self presentViewController:web animated:YES completion:nil];
 }
 
 /*

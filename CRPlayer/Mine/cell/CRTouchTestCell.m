@@ -16,6 +16,18 @@
     // Initialization code
 }
 
++ (instancetype)cellWithTableView:(UITableView *)tableView{
+    
+    static NSString *Identifier = @"cellIdentifier";
+    CRTouchTestCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier];
+    if(cell == nil){
+        cell = [[CRTouchTestCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Identifier];
+    }
+    
+    return cell;
+}
+
+
 //iOS自动布局Autolayout 优先级的使用 https://www.cnblogs.com/junhuawang/p/5691302.html
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     

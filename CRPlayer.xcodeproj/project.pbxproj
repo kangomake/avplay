@@ -183,6 +183,8 @@
 		C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */; };
 		C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B487D27CF661700C62CD2 /* CRPullView.m */; };
 		C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D4BF228041C8F0002AB41 /* keychainManager.m */; };
+		C77D673C284F4D41005FB2C2 /* CRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D673B284F4D41005FB2C2 /* CRPerson.m */; };
+		C77D673F284F4D5E005FB2C2 /* CRStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D673E284F4D5E005FB2C2 /* CRStudent.m */; };
 		C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */; };
 		C77D7D6E248F7E7100F1CC5C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */; };
 		C77D7D71248F7E7100F1CC5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7D70248F7E7100F1CC5C /* ViewController.m */; };
@@ -196,6 +198,8 @@
 		C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */; };
 		C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA4248F81C600F1CC5C /* icon.bundle */; };
 		C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */; };
+		C794EB5828629B8E00CF8CB5 /* myXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C794EB5628629B8E00CF8CB5 /* myXibCell.m */; };
+		C794EB5928629B8E00CF8CB5 /* myXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C794EB5728629B8E00CF8CB5 /* myXibCell.xib */; };
 		C7A97C0027E9AF0100BE545E /* UIScrollView+CRRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */; };
 		C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB863B26A67F7900F779D6 /* CRMineViewController.m */; };
 		C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864426A69B5700F779D6 /* MyTableView.m */; };
@@ -503,6 +507,10 @@
 		C77B487D27CF661700C62CD2 /* CRPullView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullView.m; sourceTree = "<group>"; };
 		C77D4BF128041C8F0002AB41 /* keychainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keychainManager.h; sourceTree = "<group>"; };
 		C77D4BF228041C8F0002AB41 /* keychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keychainManager.m; sourceTree = "<group>"; };
+		C77D673A284F4D41005FB2C2 /* CRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPerson.h; sourceTree = "<group>"; };
+		C77D673B284F4D41005FB2C2 /* CRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPerson.m; sourceTree = "<group>"; };
+		C77D673D284F4D5E005FB2C2 /* CRStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRStudent.h; sourceTree = "<group>"; };
+		C77D673E284F4D5E005FB2C2 /* CRStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRStudent.m; sourceTree = "<group>"; };
 		C77D7D66248F7E7100F1CC5C /* 微信.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77D7D69248F7E7100F1CC5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C77D7D6A248F7E7100F1CC5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -527,6 +535,9 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C794EB5528629B8E00CF8CB5 /* myXibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myXibCell.h; sourceTree = "<group>"; };
+		C794EB5628629B8E00CF8CB5 /* myXibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myXibCell.m; sourceTree = "<group>"; };
+		C794EB5728629B8E00CF8CB5 /* myXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myXibCell.xib; sourceTree = "<group>"; };
 		C7A97BFE27E9AF0100BE545E /* UIScrollView+CRRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRRefresh.h"; sourceTree = "<group>"; };
 		C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CRRefresh.m"; sourceTree = "<group>"; };
 		C7AB863A26A67F7900F779D6 /* CRMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMineViewController.h; sourceTree = "<group>"; };
@@ -778,6 +789,10 @@
 				C7BE86B324F6077E00A901BB /* 购物车 */,
 				C727179E24B71C1C0075B3BA /* CRHomeViewController.h */,
 				C727179F24B71C1C0075B3BA /* CRHomeViewController.m */,
+				C77D673A284F4D41005FB2C2 /* CRPerson.h */,
+				C77D673B284F4D41005FB2C2 /* CRPerson.m */,
+				C77D673D284F4D5E005FB2C2 /* CRStudent.h */,
+				C77D673E284F4D5E005FB2C2 /* CRStudent.m */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -1025,6 +1040,11 @@
 		C77912D0272A337000AAF0DD /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				C794EB5528629B8E00CF8CB5 /* myXibCell.h */,
+				C794EB5628629B8E00CF8CB5 /* myXibCell.m */,
+				C794EB5728629B8E00CF8CB5 /* myXibCell.xib */,
+				C7AB864926A69B8F00F779D6 /* CRTouchTestCell.h */,
+				C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */,
 				C77912D1272A339D00AAF0DD /* MyEditFoldCell.h */,
 				C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */,
 			);
@@ -1139,8 +1159,6 @@
 				C7AB863B26A67F7900F779D6 /* CRMineViewController.m */,
 				C7AB864326A69B5700F779D6 /* MyTableView.h */,
 				C7AB864426A69B5700F779D6 /* MyTableView.m */,
-				C7AB864926A69B8F00F779D6 /* CRTouchTestCell.h */,
-				C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */,
 				C77912CA272A324200AAF0DD /* MineEditController.h */,
 				C77912CB272A324200AAF0DD /* MineEditController.m */,
 				C77912E2272A9B6D00AAF0DD /* TextFieldFoldController.h */,
@@ -1458,6 +1476,7 @@
 				C77D7D79248F7E7400F1CC5C /* LaunchScreen.storyboard in Resources */,
 				C75ACCB1272FC40900B50259 /* ZSSforcejustify@2x.png in Resources */,
 				C7C09445251DE03A0031E01D /* cr_qrcode.png in Resources */,
+				C794EB5928629B8E00CF8CB5 /* myXibCell.xib in Resources */,
 				C75ACCAD272FC40900B50259 /* ZSSindent@2x.png in Resources */,
 				C75ACCA8272FC40900B50259 /* ZSSbold.png in Resources */,
 				C75ACCCD272FC40900B50259 /* ZSSrightjustify.png in Resources */,
@@ -1625,6 +1644,7 @@
 				C7678F8628123E140053A557 /* CRFoundEditCell.m in Sources */,
 				C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */,
 				C71BC37125CFC9C900A764D3 /* YYTextArchiver.m in Sources */,
+				C77D673F284F4D5E005FB2C2 /* CRStudent.m in Sources */,
 				C71BC37825CFC9C900A764D3 /* UIView+YYText.m in Sources */,
 				C728BFF627D0494200F8E564 /* CRPullDownMenu.m in Sources */,
 				C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */,
@@ -1667,6 +1687,8 @@
 				C75ACC45272FC37500B50259 /* ZSSRichTextEditor.m in Sources */,
 				C71BC36025CFC9C900A764D3 /* YYImageCoder.m in Sources */,
 				C75ACD1F272FC51700B50259 /* HRBrightnessCursor.m in Sources */,
+				C77D673C284F4D41005FB2C2 /* CRPerson.m in Sources */,
+				C794EB5828629B8E00CF8CB5 /* myXibCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -57,7 +57,7 @@
 //    [self swizzledFunction];
     
     [self printIvarList];
-    [self printMethodList_view];
+    [self printMethodList];
     
     [self testFPSLabel];
     
@@ -122,17 +122,7 @@
     free(methodList);
 }
 
-- (void)printMethodList_view{
-    
-    unsigned int count_;
-    
-    Method *methodList_ = class_copyMethodList([UIView class], &count_);
-    for(unsigned int i = 0;i<count_;i++){
-        Method method = methodList_[i];
-        NSLog(@"view_method(%d):%@",i,NSStringFromSelector(method_getName(method)));
-    }
-    
-}
+
 
 
 

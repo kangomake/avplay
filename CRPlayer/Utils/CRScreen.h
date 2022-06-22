@@ -78,8 +78,14 @@ static inline CGRect UIRectAdapter(x,y,width,height){
 
 //...其它机型
 
+//状态栏高度
 + (CGFloat)statusBarHeight;
 
+/// 状态栏+导航栏的高度
++ (CGFloat)navigationFullHeight;
+
+/// 底部导航栏高度（包括安全区）
++ (CGFloat)tabBarFullHeight;
 
 @end
 

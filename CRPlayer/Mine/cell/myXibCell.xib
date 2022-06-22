@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="myXibCell">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="nameLabel" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-Hw-PLS">
+                        <rect key="frame" x="70" y="15" width="83.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="trD-Fu-77X">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Pm1-w0-yQp"/>
+                            <constraint firstAttribute="width" constant="40" id="c3B-cq-JHC"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaW-ui-uxK">
+                        <rect key="frame" x="177" y="58" width="69" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="zanBtn"/>
+                        <connections>
+                            <action selector="upClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dcg-yl-lgl"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWo-Lx-yg4">
+                        <rect key="frame" x="308" y="58" width="65" height="31"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="caiBtn"/>
+                        <connections>
+                            <action selector="downClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rGh-zJ-j3R"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="timeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv6-ai-FYz">
+                        <rect key="frame" x="315.5" y="15" width="74.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dv6-ai-FYz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="H7k-Nk-ObH"/>
+                    <constraint firstItem="trD-Fu-77X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="R1o-mI-mU8"/>
+                    <constraint firstAttribute="trailing" secondItem="dv6-ai-FYz" secondAttribute="trailing" constant="20" id="Shn-Gg-0J5"/>
+                    <constraint firstItem="dv6-ai-FYz" firstAttribute="leading" secondItem="8Us-Hw-PLS" secondAttribute="trailing" constant="20" id="W32-RY-30C"/>
+                    <constraint firstItem="8Us-Hw-PLS" firstAttribute="leading" secondItem="trD-Fu-77X" secondAttribute="trailing" constant="20" id="W3f-Sp-JOG"/>
+                    <constraint firstItem="8Us-Hw-PLS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WRd-5x-VOd"/>
+                    <constraint firstItem="trD-Fu-77X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="acf-Yb-kpx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="caiBtn" destination="XWo-Lx-yg4" id="Tgh-EA-F27"/>
+                <outlet property="iconImage" destination="trD-Fu-77X" id="Pkn-br-Kgo"/>
+                <outlet property="nameLabel" destination="8Us-Hw-PLS" id="kDS-zQ-3RQ"/>
+                <outlet property="timeLabel" destination="dv6-ai-FYz" id="L5K-tD-o86"/>
+                <outlet property="zanBtn" destination="aaW-ui-uxK" id="v0I-QT-xpy"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="-207"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
