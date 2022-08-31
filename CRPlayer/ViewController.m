@@ -15,6 +15,8 @@
 
 #import "keychainManager.h"
 
+typedef void(^customBlock)(NSString *name);
+
 @interface ViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
@@ -64,6 +66,27 @@
     
     [self keychainTest];
     // Do any additional setup after loading the view.
+}
+
+//定义一个block
+//手动添加方法
+- (void)addMethodByIMP{
+    customBlock block = ^(NSString *name){
+        NSLog(@"block-exe");
+    };
+    
+    IMP impBlock = imp_implementationWithBlock(block);
+    Method m = class_getInstanceMethod(self.class, @selector(keychainTest));
+    method_setImplementation(m, impBlock);
+    const char *types = method_getTypeEncoding(m);
+    sel_registerName("newSel");
+    BOOL isAdded = class_addMethod([self class], @selector(newSel), impBlock, types);
+    if(isAdded ==YES){
+        NSLog(@"add successful");
+        [self performSelector:@selector(newSel)];
+    }
+    
+    
 }
 
 //钥匙串测试
@@ -149,6 +172,37 @@
 
 - (void)swizzledFunction{
     NSLog(@"swizzledFunction");
+}
+
+/*
+怎么调用到原来类中被category覆盖掉的方法？
+对于这个问题，我们已经知道category其实并不是完全替换掉原来类的同名方法，只是category在方法列表的前面而已，所以我们只要顺着方法列表找到最后一个对应名字的方法，就可以调用原来类的方法：
+*/
++ (void)useClassMethodInsteadCayegoryMethod: (SEL)selector{
+    
+    if(self){
+        unsigned int methodCount;
+        Method *methodList = class_copyMethodList([self class], &methodCount);
+        IMP lastImp = NULL;
+        SEL lastSel = NULL;
+        for(NSInteger i = 0;i<methodCount;i++){
+            Method method = methodList[i];
+            NSString *methodName = [NSString stringWithCString:sel_getName(method_getName(method)) encoding:NSUTF8StringEncoding];
+            NSString *selectorName = NSStringFromSelector(selector);
+            if([selectorName isEqualToString:methodName]){
+                lastImp = method_getImplementation(method);
+                lastSel = method_getName(method);
+            }
+        }
+        
+        typedef void (*fn)(id,SEL);
+        if(lastImp != NULL){
+            fn f = (fn)lastImp;
+            f(self,lastSel);
+        }
+        
+        free(methodList);
+    }
 }
 
 #pragma mark -- runtime 1.消息转发

@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 //当前屏幕渲染 实现圆角 提高性能
 - (UIImage *)imageWIthCornerRadius:(CGFloat)radius ofSize:(CGSize)size;
 
+/**
+ 图片修改颜色
+ */
+- (UIImage*)imageChangeColor:(UIColor*)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

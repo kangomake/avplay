@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 #define kScreenHeight  ([UIScreen mainScreen].bounds.size.height)
 
 
+#define KWScale (kScreenWidth/375.0)
+#define KHScale (kScreenHeight/667.0)
+
 //#define kNaviHeight (IS_IPHONE_X_XR_MAX ? 88 : 64)
 //#define kStatusBarHeight  (IS_IPHONE_X_XR_MAX ? 44 : 20)
 //#define kTabbarHeight (IS_IPHONE_X_XR_MAX ? 83 : 49)

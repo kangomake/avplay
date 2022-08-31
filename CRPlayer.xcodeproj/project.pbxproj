@@ -65,6 +65,7 @@
 		C73305E424971D5300CF2E7F /* CRSplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73305E324971D5300CF2E7F /* CRSplashView.m */; };
 		C733CE1C2498692500D66243 /* CRScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1B2498692500D66243 /* CRScreen.m */; };
 		C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = C733CE1F249873D300D66243 /* GTVideoToolbar.m */; };
+		C74EC1B028AB25DA00CD3DB2 /* CRCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C74EC1AF28AB25DA00CD3DB2 /* CRCalendarView.m */; };
 		C75301FE274CBFB300ADBC04 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75301FD274CBFB300ADBC04 /* WKWebViewController.m */; };
 		C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7589D6924EB8654004E2A7C /* CRPersonView.m */; };
 		C75ACC45272FC37500B50259 /* ZSSRichTextEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACC44272FC37500B50259 /* ZSSRichTextEditor.m */; };
@@ -172,6 +173,7 @@
 		C7678F8228123D120053A557 /* KSSideslipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F7F28123D120053A557 /* KSSideslipCell.m */; };
 		C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F8028123D120053A557 /* KSSideslipCellProxy.m */; };
 		C7678F8628123E140053A557 /* CRFoundEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F8528123E140053A557 /* CRFoundEditCell.m */; };
+		C7689A31289BAD6300D7AF9C /* CRCalendarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7689A30289BAD6300D7AF9C /* CRCalendarController.m */; };
 		C76A4CDC2546A9E500A960BE /* UIColor+CRAddtion.m in Sources */ = {isa = PBXBuildFile; fileRef = C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */; };
 		C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */; };
 		C76B6F4A24A1FF6300EEC7A8 /* 1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = C76B6F4824A1FF6300EEC7A8 /* 1242x2688.png */; };
@@ -356,6 +358,8 @@
 		C733CE1B2498692500D66243 /* CRScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRScreen.m; sourceTree = "<group>"; };
 		C733CE1E249873D300D66243 /* GTVideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVideoToolbar.h; sourceTree = "<group>"; };
 		C733CE1F249873D300D66243 /* GTVideoToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoToolbar.m; sourceTree = "<group>"; };
+		C74EC1AE28AB25DA00CD3DB2 /* CRCalendarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRCalendarView.h; sourceTree = "<group>"; };
+		C74EC1AF28AB25DA00CD3DB2 /* CRCalendarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCalendarView.m; sourceTree = "<group>"; };
 		C75301FC274CBFB300ADBC04 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		C75301FD274CBFB300ADBC04 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		C7589D6824EB8654004E2A7C /* CRPersonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPersonView.h; sourceTree = "<group>"; };
@@ -487,6 +491,8 @@
 		C7678F8028123D120053A557 /* KSSideslipCellProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSideslipCellProxy.m; sourceTree = "<group>"; };
 		C7678F8428123E140053A557 /* CRFoundEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRFoundEditCell.h; sourceTree = "<group>"; };
 		C7678F8528123E140053A557 /* CRFoundEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRFoundEditCell.m; sourceTree = "<group>"; };
+		C7689A2F289BAD6300D7AF9C /* CRCalendarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRCalendarController.h; sourceTree = "<group>"; };
+		C7689A30289BAD6300D7AF9C /* CRCalendarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCalendarController.m; sourceTree = "<group>"; };
 		C76A4CDA2546A9E500A960BE /* UIColor+CRAddtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CRAddtion.h"; sourceTree = "<group>"; };
 		C76A4CDB2546A9E500A960BE /* UIColor+CRAddtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CRAddtion.m"; sourceTree = "<group>"; };
 		C76B6F4724A1FF6300EEC7A8 /* 1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1242x2208.png; sourceTree = "<group>"; };
@@ -771,7 +777,6 @@
 		C727179824B70C1C0075B3BA /* common */ = {
 			isa = PBXGroup;
 			children = (
-				C7E0A6032513017B0099F418 /* New Group */,
 				C727179924B70C660075B3BA /* CRTabBarController.h */,
 				C727179A24B70C660075B3BA /* CRTabBarController.m */,
 				C7CFA18E251B42A400F5E9F4 /* CRTabBarAnimationController.h */,
@@ -785,6 +790,7 @@
 		C727179D24B718360075B3BA /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				C7689A2E289BAD1900D7AF9C /* calendar日历 */,
 				C70ECDF62518414F00D79383 /* 订餐购物车 */,
 				C7BE86B324F6077E00A901BB /* 购物车 */,
 				C727179E24B71C1C0075B3BA /* CRHomeViewController.h */,
@@ -1013,6 +1019,17 @@
 			path = sideSlipCell;
 			sourceTree = "<group>";
 		};
+		C7689A2E289BAD1900D7AF9C /* calendar日历 */ = {
+			isa = PBXGroup;
+			children = (
+				C7689A2F289BAD6300D7AF9C /* CRCalendarController.h */,
+				C7689A30289BAD6300D7AF9C /* CRCalendarController.m */,
+				C74EC1AE28AB25DA00CD3DB2 /* CRCalendarView.h */,
+				C74EC1AF28AB25DA00CD3DB2 /* CRCalendarView.m */,
+			);
+			path = "calendar日历";
+			sourceTree = "<group>";
+		};
 		C76A4CD62546A95900A960BE /* category(分类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,13 +1247,6 @@
 				C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */,
 			);
 			path = videoPlayer;
-			sourceTree = "<group>";
-		};
-		C7E0A6032513017B0099F418 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		C7E2648B26A93D620087869E /* foldModel */ = {
@@ -1586,6 +1596,7 @@
 				C75ACD08272FC4CE00B50259 /* CYRTextView.m in Sources */,
 				C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */,
 				C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */,
+				C74EC1B028AB25DA00CD3DB2 /* CRCalendarView.m in Sources */,
 				C7C673F724FDEA5900F84C12 /* CRTagListView.m in Sources */,
 				C75301FE274CBFB300ADBC04 /* WKWebViewController.m in Sources */,
 				C75ACD07272FC4CE00B50259 /* CYRToken.m in Sources */,
@@ -1598,6 +1609,7 @@
 				C7BE86B624F607B100A901BB /* CRShopcartTableViewProxy.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
 				C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */,
+				C7689A31289BAD6300D7AF9C /* CRCalendarController.m in Sources */,
 				C71BC31825CFC9B800A764D3 /* NSString+YYAdd.m in Sources */,
 				C75ACCF9272FC43F00B50259 /* ZSSTextView.m in Sources */,
 				C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */,

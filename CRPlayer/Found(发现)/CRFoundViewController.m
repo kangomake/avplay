@@ -28,6 +28,7 @@
 #import "UIScrollView+CRRefresh.h"
 #import "CRFoundEditCell.h"
 #import "KSSideslipCell.h"
+#import "UIImage+MyImage.h"
 
 
 #define knavHeight 88
@@ -103,15 +104,12 @@
     [super viewDidLoad];
 
     
-    
-    
-    
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
 
     UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
     [button addTarget:self action:@selector(addItem) forControlEvents:UIControlEventTouchUpInside];
-    button.frame = CGRectMake(0 , 0, 44, 44);
+    button.frame = CGRectMake(0, 0, 44, 44);
     [self.view addSubview:button];
     UIBarButtonItem *rightItem =[[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -635,7 +633,10 @@
     if (!_customView) {
         _customView = [[UIImageView alloc]initWithFrame:CGRectMake(0, -200, SCREEN_WIDTH, 200)];
         _customView.backgroundColor = [UIColor whiteColor];
-        _customView.image = [UIImage imageNamed:@"baidu.png"];
+        
+        UIImage *image = [UIImage imageNamed:@"baidu.png"];
+        _customView.image = image;
+//        _customView.image = [image imageChangeColor:UIColor.orangeColor];
         _customView.layer.borderWidth = 1;
         _customView.layer.borderColor = [UIColor lightTextColor].CGColor;
         _customView.userInteractionEnabled = YES;

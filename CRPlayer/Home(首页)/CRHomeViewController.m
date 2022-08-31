@@ -22,6 +22,7 @@
 #import "CRPerson.h"
 #import "CRStudent.h"
 #import <objc/runtime.h>
+#import "CRCalendarController.h"
 
 @interface CRHomeViewController ()<SKStoreProductViewControllerDelegate>
 @property (nonatomic, strong) UIButton *goShoppingButton;
@@ -29,6 +30,10 @@
 @property (strong, nonatomic) MPVolumeView *volumeView;
 @property (strong, nonatomic) UISlider *volumeViewSlider;
 @property (nonatomic, strong) UIButton *volumeClose;
+@property (nonatomic, strong) UIButton *datePickBtn;
+
+@property (nonatomic, strong) UITextField *timeTextField;
+
 
 @end
 
@@ -106,7 +111,7 @@
 
 //    [self genSignature:dict secretKey:@"6308afb129ea00301bd7c79621d07591"];
 
-//    [self.view addSubview:self.goShoppingButton];
+    [self.view addSubview:self.goShoppingButton];
 
     //shiti
 //    dispatch_queue_t serialqueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
@@ -134,7 +139,22 @@
 
     [self.view addSubview:self.alertButton];
     [self.view addSubview:self.volumeClose];
+    [self.view addSubview:self.datePickBtn];
 
+    self.timeTextField = [[UITextField alloc]initWithFrame:CGRectMake(30, 300, 200, 40)];
+    self.timeTextField.returnKeyType = UIReturnKeyDone;
+    self.timeTextField.backgroundColor = [UIColor orangeColor];
+    self.timeTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    self.timeTextField.textAlignment = NSTextAlignmentLeft;
+    self.timeTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.timeTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.timeTextField.font = [UIFont systemFontOfSize:14];
+    self.timeTextField.placeholder = @"请填写";
+    [self.view addSubview:self.timeTextField];
+    
+    
+    [self configDatePicker];
+    
     [self volumeViewConfig];
 //    [self musicPlayer];
     
@@ -255,7 +275,6 @@ void run (id self, SEL _cmd){
             }
         }
     }
-
     [self.volumeView setFrame:CGRectMake(30, 300, [UIScreen mainScreen].bounds.size.width - 60, 20)];
     [self.view addSubview:self.volumeView];
 
@@ -338,8 +357,7 @@ void run (id self, SEL _cmd){
 }
 
 // md5加密
-- (NSString *)md5:(NSString *)aText
-{
+- (NSString *)md5:(NSString *)aText{
     const char *cStr = [aText UTF8String];
     unsigned char result[16];
     CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
@@ -402,12 +420,12 @@ void run (id self, SEL _cmd){
 - (UIButton *)alertButton {
     if (!_alertButton) {
         _alertButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_alertButton setTitle:@"alertButton" forState:UIControlStateNormal];
+        [_alertButton setTitle:@"alertButton-GoHtml" forState:UIControlStateNormal];
         [_alertButton addTarget:self action:@selector(alertShow) forControlEvents:UIControlEventTouchUpInside];
         _alertButton.layer.cornerRadius = 5;
         _alertButton.layer.masksToBounds = YES;
         [_alertButton setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
-        _alertButton.frame = CGRectMake(0, 0, 100, 40);
+        _alertButton.frame = CGRectMake(0, 0, 200, 40);
         _alertButton.centerX = self.view.centerX;
         _alertButton.top = 150;
     }
@@ -430,6 +448,59 @@ void run (id self, SEL _cmd){
     return _volumeClose;
 }
 
+- (UIButton *)datePickBtn{
+    if (!_datePickBtn) {
+        _datePickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_datePickBtn setTitle:@"datePickBtn" forState:UIControlStateNormal];
+        [_datePickBtn addTarget:self action:@selector(datePickClick:) forControlEvents:UIControlEventTouchUpInside];
+        _datePickBtn.layer.cornerRadius = 5;
+        _datePickBtn.layer.masksToBounds = YES;
+        [_datePickBtn setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
+        _datePickBtn.frame = CGRectMake(0, 0, 200, 40);
+        _datePickBtn.centerX = self.view.centerX;
+        _datePickBtn.top = 250;
+    }
+    return _datePickBtn;
+}
+
+- (void)datePickClick:(UIButton *)sender{
+    CRCalendarController *VC = [[CRCalendarController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (void)configDatePicker{
+    UIDatePicker *datePicker = [[UIDatePicker alloc]init];
+    datePicker.locale = [NSLocale localeWithLocaleIdentifier:@"zh"];
+    if (@available(iOS 13.4, *)) {
+        datePicker.preferredDatePickerStyle = UIDatePickerStyleAutomatic;
+    }
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    [datePicker setDate:[NSDate date] animated:YES];
+//    [datePicker setMaximumDate:[NSDate date]];
+    [datePicker setMinimumDate:[NSDate date]];
+//    [datePicker setMinuteInterval:2];
+    datePicker.frame = CGRectMake(100, 500, 200, 40);
+    [datePicker addTarget:self action:@selector(dateChange:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:datePicker];
+    self.timeTextField.inputView = datePicker;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+
+- (void)dateChange:(UIDatePicker *)datePicker {
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    
+    //设置时间格式
+    formatter.dateFormat = @"yyyy年 MM月 dd日";
+    NSString *dateStr = [formatter  stringFromDate:datePicker.date];
+    
+    self.timeTextField.text = dateStr;
+}
+
 - (void)goShoppingButtonAction {
 //    CRShopCartViewController *shopcartVC = [[CRShopCartViewController alloc] init];
 //    [self.navigationController pushViewController:shopcartVC animated:YES];
@@ -449,7 +520,7 @@ void run (id self, SEL _cmd){
 
     // 使用富文本来改变alert的message字体大小和颜色
     // NSMakeRange(0, 2) 代表:从0位置开始 两个字符
-    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithString:@"这里是正文信息"];
+    NSMutableAttributedString *message = [[NSMutableAttributedString alloc] initWithString:@"这里是正文信息，myhtml-go"];
     [message addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:10] range:NSMakeRange(0, 6)];
     [message addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 2)];
     [message addAttribute:NSForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(3, 3)];
