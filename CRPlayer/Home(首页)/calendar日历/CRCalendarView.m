@@ -13,6 +13,9 @@
 #define ChineseFestival @[@"除夕",@"春节",@"中秋",@"五一",@"国庆节",@"儿童节",@"圣诞",@"七夕",@"端午节",@"清明节",@"元宵节",@"重阳节",@"腊八节",@"小年",@"建军节",@"妇女节",@"植树节",@"青年节",@"愚人节",@"元旦"]
 #define ChineseDays @[@"初一", @"初二", @"初三", @"初四", @"初五", @"初六", @"初七", @"初八", @"初九", @"初十",@"十一", @"十二", @"十三", @"十四", @"十五", @"十六", @"十七", @"十八", @"十九", @"二十", @"廿一", @"廿二", @"廿三", @"廿四", @"廿五", @"廿六", @"廿七", @"廿八", @"廿九", @"三十"]
 
+#define MLFONT_PF_SC_Regular @"PingFangSC-Regular"
+#define MLFONT_PF_SC_Medium @"PingFangSC-Medium"
+
 @interface CRCalendarView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UILabel *showDateLabel;
@@ -57,7 +60,7 @@
     
     
     //===============
-    UIView *bgWhiteView=[[UIView alloc]initWithFrame:CGRectMake(0, self.bounds.size.height-((50+50+40)*KWScale+itemWith*6), kScreenWidth, ((50+50+40)*KWScale+itemWith*6))];
+    UIView *bgWhiteView=[[UIView alloc]initWithFrame:CGRectMake(0, self.bounds.size.height-((50+50+40)*KWScale+itemWith*6)-20, kScreenWidth, ((50+50+40)*KWScale+itemWith*6))];
     [self addSubview:bgWhiteView];
     bgWhiteView.backgroundColor=[UIColor whiteColor];
     
@@ -122,7 +125,7 @@
     flowLayout.minimumInteritemSpacing=0;
     flowLayout.itemSize = CGSizeMake(itemWith, itemWith);
     
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 140*KWScale, kScreenWidth, itemWith*6) collectionViewLayout:flowLayout];
+    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 140*KWScale, kScreenWidth, itemWith*6+20) collectionViewLayout:flowLayout];
     [bgWhiteView addSubview:self.collectionView];
     self.collectionView.backgroundColor=[UIColor whiteColor];
     self.collectionView.scrollEnabled=NO;
@@ -651,17 +654,20 @@
     [self.contentView addSubview:self.tapSelectView];
     self.tapSelectView.layer.cornerRadius=self.contentView.bounds.size.width/2.0;
     
+    CGFloat viewWidth = self.contentView.frame.size.width;
+    CGFloat viewHeight = self.contentView.frame.size.height;
     
-    self.dayNumberLabel=[[UILabel alloc]initWithFrame:self.contentView.bounds];
+//    self.dayNumberLabel=[[UILabel alloc]initWithFrame:self.contentView.bounds];
+    self.dayNumberLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, (viewHeight-35)/2, viewWidth, 21)];
     [self.contentView addSubview:self.dayNumberLabel];
-    self.dayNumberLabel.font=[UIFont systemFontOfSize:14.0];
+    self.dayNumberLabel.font= [UIFont fontWithName:MLFONT_PF_SC_Regular size:15];
     self.dayNumberLabel.textAlignment=NSTextAlignmentCenter;
     self.dayNumberLabel.textColor=[UIColor blackColor];
     
     
-    self.tipsLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, self.contentView.bounds.size.height-10*KWScale, self.contentView.bounds.size.width, 10*KWScale)];
+    self.tipsLabel=[[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.dayNumberLabel.frame), viewWidth, 15)];
     [self.contentView addSubview:self.tipsLabel];
-    self.tipsLabel.font=[UIFont systemFontOfSize:12.0];
+    self.tipsLabel.font = [UIFont fontWithName:MLFONT_PF_SC_Regular size:11];
     self.tipsLabel.textAlignment=NSTextAlignmentCenter;
     self.tipsLabel.textColor=[UIColor blueColor];
     
@@ -690,39 +696,41 @@
     
     //今天特别样式
     if (dateModel.isToday) {
-        self.dayNumberLabel.layer.borderWidth=1;
-        self.dayNumberLabel.layer.borderColor=[UIColor redColor].CGColor;
+//        self.dayNumberLabel.layer.borderWidth=1;
+//        self.dayNumberLabel.layer.borderColor=[UIColor redColor].CGColor;
+        
+//        self.dayNumberLabel.textColor = UIColor.blueColor;
+//        self.tipsLabel.textColor = UIColor.blueColor;
+        
     }else{
-        self.dayNumberLabel.layer.borderWidth=0;
-        self.dayNumberLabel.layer.borderColor=[UIColor clearColor].CGColor;
+//        self.dayNumberLabel.layer.borderWidth=0;
+//        self.dayNumberLabel.layer.borderColor=[UIColor clearColor].CGColor;
+//        self.dayNumberLabel.textColor = [UIColor lightGrayColor];
+//        self.tipsLabel.textColor = [UIColor lightGrayColor];
     }
     
     
     //显示是否能被选中
     if (dateModel.canSelect) {
         
-//        if(dateModel.isToday){
-//            self.dayNumberLabel.textColor = UIColor.orangeColor;
-//        }else{
+        if(dateModel.isToday){
+            self.dayNumberLabel.textColor = UIColor.blueColor;
+            self.tipsLabel.textColor = UIColor.blueColor;
+        }else{
             self.dayNumberLabel.textColor = UIColor.blackColor;
-        self.tipsLabel.textColor=[UIColor blueColor];
-
-//        }
+            self.tipsLabel.textColor = RGB(102, 102, 102);
+        }
         
     }else{
-        
-        self.dayNumberLabel.textColor=[UIColor lightGrayColor];
-        self.tipsLabel.textColor=[UIColor lightGrayColor];
-
+        self.dayNumberLabel.textColor = [UIColor lightGrayColor];
+        self.tipsLabel.textColor = [UIColor lightGrayColor];
     }
     
     
     //显示是否已经选中
     if (dateModel.selectState) {
-        
-        self.tapSelectView.backgroundColor=self.selectColor?self.selectColor:[[UIColor blueColor] colorWithAlphaComponent:0.5];
+        self.tapSelectView.backgroundColor=self.selectColor?self.selectColor:[[UIColor orangeColor] colorWithAlphaComponent:0.5];
     }else{
-        
         self.tapSelectView.backgroundColor=[UIColor clearColor];
     }
 }

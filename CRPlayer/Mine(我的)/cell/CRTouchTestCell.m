@@ -99,6 +99,18 @@
     NSLog(@"%s",__FUNCTION__);
 //    NSLog(@"touches-%@,event-%@",touches,event);
     [super touchesBegan:touches withEvent:event];
+    
+    
+#ifdef DEBUG
+    NSLog(@"DEBUG");
+#elif SCHENEDEBUG
+    NSLog(@"SCHENEDEBUG");
+
+#else
+    NSLog(@"else");
+
+#endif
+    
 
 }
 

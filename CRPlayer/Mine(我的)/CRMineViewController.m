@@ -15,6 +15,7 @@
 
 #import "MineEditController.h"
 #import "CRTextEditController.h"
+#import "CRAdvertViewController.h"
 
 
 @interface CRMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
@@ -42,6 +43,32 @@
     
     // Do any additional setup after loading the view.
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self animateTable];
+}
+
+- (void)animateTable{
+    
+    [self.tableView reloadData];
+    CGFloat tableHeight = self.tableView.bounds.size.height;
+    
+    for (UITableViewCell *cell in self.tableView.visibleCells) {
+        cell.transform = CGAffineTransformMakeTranslation(0, tableHeight);
+    }
+    
+    NSInteger index =0;
+    for (UITableViewCell *cell in self.tableView.visibleCells) {
+        
+        [UIView animateWithDuration:1.0 delay:0.05*index usingSpringWithDamping:0.8 initialSpringVelocity:0 options:UIViewAnimationOptionTransitionNone animations:^{
+            cell.transform = CGAffineTransformMakeTranslation(0, 0);
+        } completion:nil];
+        index +=1;
+    }
+    
+}
+
 
 
 - (void)regularExpression{
@@ -142,7 +169,7 @@
         CRTextEditController *text = [[CRTextEditController alloc]init];
 //        [self.navigationController pushViewController:text animated:YES];
     }
-    
+    [self pushAdvert];
     
 }
 
@@ -152,7 +179,19 @@
 //    NSLog(@"touches-%@,event-%@",touches,event);
     [super touchesBegan:touches withEvent:event];
 
+
+    
+    
 }
+
+
+- (void)pushAdvert{
+    
+    CRAdvertViewController *advert = [[CRAdvertViewController alloc]init];
+    [self.navigationController pushViewController:advert animated:YES];
+    
+}
+
 
 #pragma mark -- lazy
 - (MyTableView *)tableView{
