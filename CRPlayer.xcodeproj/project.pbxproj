@@ -10,8 +10,6 @@
 		8C84A37EC5D4F0C5CF857908 /* libPods-CRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */; };
 		C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = C70292392721672F00F9FB7D /* UIView+NTES.m */; };
 		C70ECDF92518417D00D79383 /* CRMeituanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ECDF82518417D00D79383 /* CRMeituanViewController.m */; };
-		C70F9E0B28E29C53008F881B /* CRAdvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70F9E0A28E29C53008F881B /* CRAdvertViewController.m */; };
-		C70F9E0E28E29CEA008F881B /* CRAdvertHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C70F9E0D28E29CEA008F881B /* CRAdvertHeadView.m */; };
 		C71712B0281A974500F2B6F0 /* myhtml.html in Resources */ = {isa = PBXBuildFile; fileRef = C71712AF281A974500F2B6F0 /* myhtml.html */; };
 		C71BC2FB25CFC8BF00A764D3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FA25CFC8BF00A764D3 /* CoreText.framework */; };
 		C71BC2FD25CFC8C800A764D3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FC25CFC8C800A764D3 /* CoreFoundation.framework */; };
@@ -166,11 +164,15 @@
 		C75ACD21272FC51700B50259 /* HRColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACD19272FC51700B50259 /* HRColorPickerViewController.m */; };
 		C75ACD27272FC57B00B50259 /* CRTextEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75ACD26272FC57B00B50259 /* CRTextEditController.m */; };
 		C75F17B0281BDB2A000BCCA3 /* CRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75F17AF281BDB2A000BCCA3 /* CRNavigationController.m */; };
+		C7630B0128F8FD5600B04873 /* NameSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = C7630B0028F8FD5600B04873 /* NameSorting.m */; };
+		C7630B0428F8FEE000B04873 /* NSString+PinYin.m in Sources */ = {isa = PBXBuildFile; fileRef = C7630B0328F8FEE000B04873 /* NSString+PinYin.m */; };
+		C7630B0928F93D1E00B04873 /* Des.m in Sources */ = {isa = PBXBuildFile; fileRef = C7630B0828F93D1E00B04873 /* Des.m */; };
+		C7630B0D28F93D4800B04873 /* MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = C7630B0B28F93D4800B04873 /* MD5.m */; };
+		C7630B1128F93D6400B04873 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C7630B0F28F93D6400B04873 /* RSAEncryptor.m */; };
 		C76657FB25B976B60022F404 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FA25B976B60022F404 /* AVFoundation.framework */; };
 		C76657FD25B976C20022F404 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FC25B976C20022F404 /* CoreMedia.framework */; };
 		C76657FF25B976CC0022F404 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76657FE25B976CC0022F404 /* AssetsLibrary.framework */; };
 		C766580125B976D60022F404 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C766580025B976D60022F404 /* CoreData.framework */; };
-		C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C76772362727A4B7007C2413 /* HRProgressHUD.m */; };
 		C7678F8128123D120053A557 /* KSSideslipContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F7B28123D120053A557 /* KSSideslipContainerView.m */; };
 		C7678F8228123D120053A557 /* KSSideslipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F7F28123D120053A557 /* KSSideslipCell.m */; };
 		C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7678F8028123D120053A557 /* KSSideslipCellProxy.m */; };
@@ -184,7 +186,6 @@
 		C77493AB24EA597400FE9196 /* CRClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77493AA24EA597400FE9196 /* CRClockView.m */; };
 		C77912CC272A324200AAF0DD /* MineEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912CB272A324200AAF0DD /* MineEditController.m */; };
 		C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */; };
-		C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */; };
 		C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B487D27CF661700C62CD2 /* CRPullView.m */; };
 		C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D4BF228041C8F0002AB41 /* keychainManager.m */; };
 		C77D673C284F4D41005FB2C2 /* CRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D673B284F4D41005FB2C2 /* CRPerson.m */; };
@@ -225,6 +226,8 @@
 		C7D0BC5524DD303300157443 /* CRAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5424DD303300157443 /* CRAVPlayer.m */; };
 		C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5824DD426700157443 /* CRVideoComplexControlBar.m */; };
 		C7D0BC5C24DD428C00157443 /* CRPlayerProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */; };
+		C7D19AE528F7B62D006543E0 /* Tool_Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D19AE428F7B62D006543E0 /* Tool_Audio.m */; };
+		C7D19AEA28F7EA53006543E0 /* Tool_SelectPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D19AE928F7EA53006543E0 /* Tool_SelectPhoto.m */; };
 		C7D31EE9250733B000189D3E /* CRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D31EE8250733B000189D3E /* CRButton.m */; };
 		C7E0A606251301B90099F418 /* CRNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E0A605251301B90099F418 /* CRNotificationManager.m */; };
 		C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E2648D26A93DA30087869E /* cellFoldModel.m */; };
@@ -252,6 +255,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A9E7B85A730C78DC16869B /* Pods-CRPlayer.scheme_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.scheme_debug.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.scheme_debug.xcconfig"; sourceTree = "<group>"; };
 		898AF4C08579331230ED66B0 /* Pods-CRPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.debug.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		A28B292E24CE59B89C472283 /* Pods-CRPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.release.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,10 +263,6 @@
 		C702923A2721672F00F9FB7D /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTES.h"; sourceTree = "<group>"; };
 		C70ECDF72518417D00D79383 /* CRMeituanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMeituanViewController.h; sourceTree = "<group>"; };
 		C70ECDF82518417D00D79383 /* CRMeituanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMeituanViewController.m; sourceTree = "<group>"; };
-		C70F9E0928E29C53008F881B /* CRAdvertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAdvertViewController.h; sourceTree = "<group>"; };
-		C70F9E0A28E29C53008F881B /* CRAdvertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAdvertViewController.m; sourceTree = "<group>"; };
-		C70F9E0C28E29CEA008F881B /* CRAdvertHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAdvertHeadView.h; sourceTree = "<group>"; };
-		C70F9E0D28E29CEA008F881B /* CRAdvertHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAdvertHeadView.m; sourceTree = "<group>"; };
 		C71712AF281A974500F2B6F0 /* myhtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myhtml.html; sourceTree = "<group>"; };
 		C71BC2FA25CFC8BF00A764D3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		C71BC2FC25CFC8C800A764D3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -483,12 +483,20 @@
 		C75ACD26272FC57B00B50259 /* CRTextEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTextEditController.m; sourceTree = "<group>"; };
 		C75F17AE281BDB2A000BCCA3 /* CRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRNavigationController.h; sourceTree = "<group>"; };
 		C75F17AF281BDB2A000BCCA3 /* CRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRNavigationController.m; sourceTree = "<group>"; };
+		C7630AFF28F8FD5600B04873 /* NameSorting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSorting.h; sourceTree = "<group>"; };
+		C7630B0028F8FD5600B04873 /* NameSorting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSorting.m; sourceTree = "<group>"; };
+		C7630B0228F8FEE000B04873 /* NSString+PinYin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin.h"; sourceTree = "<group>"; };
+		C7630B0328F8FEE000B04873 /* NSString+PinYin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin.m"; sourceTree = "<group>"; };
+		C7630B0728F93D1D00B04873 /* Des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Des.h; sourceTree = "<group>"; };
+		C7630B0828F93D1E00B04873 /* Des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Des.m; sourceTree = "<group>"; };
+		C7630B0B28F93D4800B04873 /* MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5.m; sourceTree = "<group>"; };
+		C7630B0C28F93D4800B04873 /* MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5.h; sourceTree = "<group>"; };
+		C7630B0F28F93D6400B04873 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		C7630B1028F93D6400B04873 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		C76657FA25B976B60022F404 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C76657FC25B976C20022F404 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C76657FE25B976CC0022F404 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C766580025B976D60022F404 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C76772352727A4B7007C2413 /* HRProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRProgressHUD.h; sourceTree = "<group>"; };
-		C76772362727A4B7007C2413 /* HRProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRProgressHUD.m; sourceTree = "<group>"; };
 		C7678F7B28123D120053A557 /* KSSideslipContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSideslipContainerView.m; sourceTree = "<group>"; };
 		C7678F7C28123D120053A557 /* KSSideslipContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSideslipContainerView.h; sourceTree = "<group>"; };
 		C7678F7D28123D120053A557 /* KSSideslipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSideslipCell.h; sourceTree = "<group>"; };
@@ -513,8 +521,6 @@
 		C77912CB272A324200AAF0DD /* MineEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineEditController.m; sourceTree = "<group>"; };
 		C77912D1272A339D00AAF0DD /* MyEditFoldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEditFoldCell.h; sourceTree = "<group>"; };
 		C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEditFoldCell.m; sourceTree = "<group>"; };
-		C77912E2272A9B6D00AAF0DD /* TextFieldFoldController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldFoldController.h; sourceTree = "<group>"; };
-		C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldFoldController.m; sourceTree = "<group>"; };
 		C77B487C27CF661700C62CD2 /* CRPullView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPullView.h; sourceTree = "<group>"; };
 		C77B487D27CF661700C62CD2 /* CRPullView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullView.m; sourceTree = "<group>"; };
 		C77D4BF128041C8F0002AB41 /* keychainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keychainManager.h; sourceTree = "<group>"; };
@@ -590,6 +596,10 @@
 		C7D0BC5824DD426700157443 /* CRVideoComplexControlBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRVideoComplexControlBar.m; sourceTree = "<group>"; };
 		C7D0BC5A24DD428C00157443 /* CRPlayerProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPlayerProgress.h; sourceTree = "<group>"; };
 		C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPlayerProgress.m; sourceTree = "<group>"; };
+		C7D19AE328F7B62D006543E0 /* Tool_Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool_Audio.h; sourceTree = "<group>"; };
+		C7D19AE428F7B62D006543E0 /* Tool_Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool_Audio.m; sourceTree = "<group>"; };
+		C7D19AE828F7EA53006543E0 /* Tool_SelectPhoto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tool_SelectPhoto.h; sourceTree = "<group>"; };
+		C7D19AE928F7EA53006543E0 /* Tool_SelectPhoto.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tool_SelectPhoto.m; sourceTree = "<group>"; };
 		C7D31EE7250733B000189D3E /* CRButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRButton.h; sourceTree = "<group>"; };
 		C7D31EE8250733B000189D3E /* CRButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRButton.m; sourceTree = "<group>"; };
 		C7D3FCB624A8700800BCA1AD /* CRPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CRPlayer.entitlements; sourceTree = "<group>"; };
@@ -651,6 +661,7 @@
 			children = (
 				898AF4C08579331230ED66B0 /* Pods-CRPlayer.debug.xcconfig */,
 				A28B292E24CE59B89C472283 /* Pods-CRPlayer.release.xcconfig */,
+				16A9E7B85A730C78DC16869B /* Pods-CRPlayer.scheme_debug.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -664,17 +675,6 @@
 				C7EF15C1255BC05000CFC976 /* MeituanViewModel.m */,
 			);
 			path = "订餐购物车";
-			sourceTree = "<group>";
-		};
-		C70F9E0828E29C19008F881B /* 轮播 */ = {
-			isa = PBXGroup;
-			children = (
-				C70F9E0928E29C53008F881B /* CRAdvertViewController.h */,
-				C70F9E0A28E29C53008F881B /* CRAdvertViewController.m */,
-				C70F9E0C28E29CEA008F881B /* CRAdvertHeadView.h */,
-				C70F9E0D28E29CEA008F881B /* CRAdvertHeadView.m */,
-			);
-			path = "轮播";
 			sourceTree = "<group>";
 		};
 		C71BC30E25CFC99D00A764D3 /* YYkit */ = {
@@ -1014,13 +1014,52 @@
 			path = ColorPicker;
 			sourceTree = "<group>";
 		};
-		C767723427279DB9007C2413 /* MyProgressHUD */ = {
+		C7630AFE28F8FD3700B04873 /* 仿微信名字排序 */ = {
 			isa = PBXGroup;
 			children = (
-				C76772352727A4B7007C2413 /* HRProgressHUD.h */,
-				C76772362727A4B7007C2413 /* HRProgressHUD.m */,
+				C7630AFF28F8FD5600B04873 /* NameSorting.h */,
+				C7630B0028F8FD5600B04873 /* NameSorting.m */,
+				C7630B0228F8FEE000B04873 /* NSString+PinYin.h */,
+				C7630B0328F8FEE000B04873 /* NSString+PinYin.m */,
 			);
-			path = MyProgressHUD;
+			path = "仿微信名字排序";
+			sourceTree = "<group>";
+		};
+		C7630B0528F93CEA00B04873 /* 各种加密 */ = {
+			isa = PBXGroup;
+			children = (
+				C7630B0E28F93D4E00B04873 /* RSA加密 */,
+				C7630B0A28F93D2600B04873 /* MD5加密 */,
+				C7630B0628F93D0700B04873 /* Des加密 */,
+			);
+			path = "各种加密";
+			sourceTree = "<group>";
+		};
+		C7630B0628F93D0700B04873 /* Des加密 */ = {
+			isa = PBXGroup;
+			children = (
+				C7630B0728F93D1D00B04873 /* Des.h */,
+				C7630B0828F93D1E00B04873 /* Des.m */,
+			);
+			path = "Des加密";
+			sourceTree = "<group>";
+		};
+		C7630B0A28F93D2600B04873 /* MD5加密 */ = {
+			isa = PBXGroup;
+			children = (
+				C7630B0C28F93D4800B04873 /* MD5.h */,
+				C7630B0B28F93D4800B04873 /* MD5.m */,
+			);
+			path = "MD5加密";
+			sourceTree = "<group>";
+		};
+		C7630B0E28F93D4E00B04873 /* RSA加密 */ = {
+			isa = PBXGroup;
+			children = (
+				C7630B1028F93D6400B04873 /* RSAEncryptor.h */,
+				C7630B0F28F93D6400B04873 /* RSAEncryptor.m */,
+			);
+			path = "RSA加密";
 			sourceTree = "<group>";
 		};
 		C7678F7A28123CD70053A557 /* sideSlipCell */ = {
@@ -1127,9 +1166,9 @@
 		C77D7D68248F7E7100F1CC5C /* CRPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C7D19AE228F7B5EC006543E0 /* tool(工具) */,
 				C7678F7A28123CD70053A557 /* sideSlipCell */,
 				C75ACC41272FC32300B50259 /* richTextEditor */,
-				C767723427279DB9007C2413 /* MyProgressHUD */,
 				C7AB863926A67F5D00F779D6 /* Mine(我的) */,
 				C76A4CD62546A95900A960BE /* category(分类) */,
 				C7D0BC5624DD422300157443 /* videoPlayer */,
@@ -1186,7 +1225,6 @@
 		C7AB863926A67F5D00F779D6 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
-				C70F9E0828E29C19008F881B /* 轮播 */,
 				C77912D0272A337000AAF0DD /* cell */,
 				C7E2648B26A93D620087869E /* foldModel */,
 				C7B9E9B226A7AE6400CA8094 /* newModel(创建对象) */,
@@ -1196,8 +1234,6 @@
 				C7AB864426A69B5700F779D6 /* MyTableView.m */,
 				C77912CA272A324200AAF0DD /* MineEditController.h */,
 				C77912CB272A324200AAF0DD /* MineEditController.m */,
-				C77912E2272A9B6D00AAF0DD /* TextFieldFoldController.h */,
-				C77912E3272A9B6D00AAF0DD /* TextFieldFoldController.m */,
 				C75ACD25272FC57B00B50259 /* CRTextEditController.h */,
 				C75ACD26272FC57B00B50259 /* CRTextEditController.m */,
 			);
@@ -1265,6 +1301,35 @@
 				C7D0BC5B24DD428C00157443 /* CRPlayerProgress.m */,
 			);
 			path = videoPlayer;
+			sourceTree = "<group>";
+		};
+		C7D19AE228F7B5EC006543E0 /* tool(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				C7630B0528F93CEA00B04873 /* 各种加密 */,
+				C7630AFE28F8FD3700B04873 /* 仿微信名字排序 */,
+				C7D19AE728F7EA2C006543E0 /* 选择手机图片 */,
+				C7D19AE628F7EA10006543E0 /* 录音工具 */,
+			);
+			path = "tool(工具)";
+			sourceTree = "<group>";
+		};
+		C7D19AE628F7EA10006543E0 /* 录音工具 */ = {
+			isa = PBXGroup;
+			children = (
+				C7D19AE328F7B62D006543E0 /* Tool_Audio.h */,
+				C7D19AE428F7B62D006543E0 /* Tool_Audio.m */,
+			);
+			path = "录音工具";
+			sourceTree = "<group>";
+		};
+		C7D19AE728F7EA2C006543E0 /* 选择手机图片 */ = {
+			isa = PBXGroup;
+			children = (
+				C7D19AE828F7EA53006543E0 /* Tool_SelectPhoto.h */,
+				C7D19AE928F7EA53006543E0 /* Tool_SelectPhoto.m */,
+			);
+			path = "选择手机图片";
 			sourceTree = "<group>";
 		};
 		C7E2648B26A93D620087869E /* foldModel */ = {
@@ -1615,6 +1680,7 @@
 				C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */,
 				C7589D6A24EB8654004E2A7C /* CRPersonView.m in Sources */,
 				C74EC1B028AB25DA00CD3DB2 /* CRCalendarView.m in Sources */,
+				C7630B0D28F93D4800B04873 /* MD5.m in Sources */,
 				C7C673F724FDEA5900F84C12 /* CRTagListView.m in Sources */,
 				C75301FE274CBFB300ADBC04 /* WKWebViewController.m in Sources */,
 				C75ACD07272FC4CE00B50259 /* CYRToken.m in Sources */,
@@ -1626,7 +1692,6 @@
 				C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */,
 				C7BE86B624F607B100A901BB /* CRShopcartTableViewProxy.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
-				C77912E4272A9B6D00AAF0DD /* TextFieldFoldController.m in Sources */,
 				C7689A31289BAD6300D7AF9C /* CRCalendarController.m in Sources */,
 				C71BC31825CFC9B800A764D3 /* NSString+YYAdd.m in Sources */,
 				C75ACCF9272FC43F00B50259 /* ZSSTextView.m in Sources */,
@@ -1654,11 +1719,11 @@
 				C75ACCF7272FC43F00B50259 /* ZSSBarButtonItem.m in Sources */,
 				C75F17B0281BDB2A000BCCA3 /* CRNavigationController.m in Sources */,
 				C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */,
-				C70F9E0E28E29CEA008F881B /* CRAdvertHeadView.m in Sources */,
 				C7CFA190251B42A400F5E9F4 /* CRTabBarAnimationController.m in Sources */,
 				C727179B24B70C660075B3BA /* CRTabBarController.m in Sources */,
 				C75ACD1C272FC51700B50259 /* HRColorCursor.m in Sources */,
 				C77D7D6B248F7E7100F1CC5C /* AppDelegate.m in Sources */,
+				C7630B0428F8FEE000B04873 /* NSString+PinYin.m in Sources */,
 				C71BC36A25CFC9C900A764D3 /* YYTextSelectionView.m in Sources */,
 				C71BC37925CFC9C900A764D3 /* YYTextAsyncLayer.m in Sources */,
 				C71BC36425CFC9C900A764D3 /* YYTextMagnifier.m in Sources */,
@@ -1671,15 +1736,15 @@
 				C75ACD27272FC57B00B50259 /* CRTextEditController.m in Sources */,
 				C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */,
 				C71BC36B25CFC9C900A764D3 /* YYTextKeyboardManager.m in Sources */,
+				C7630B1128F93D6400B04873 /* RSAEncryptor.m in Sources */,
 				C7BE86B924F65F1D00A901BB /* CRShopcartBottomView.m in Sources */,
 				C7678F8628123E140053A557 /* CRFoundEditCell.m in Sources */,
-				C76772372727A4B7007C2413 /* HRProgressHUD.m in Sources */,
 				C71BC37125CFC9C900A764D3 /* YYTextArchiver.m in Sources */,
 				C77D673F284F4D5E005FB2C2 /* CRStudent.m in Sources */,
 				C71BC37825CFC9C900A764D3 /* UIView+YYText.m in Sources */,
 				C728BFF627D0494200F8E564 /* CRPullDownMenu.m in Sources */,
 				C7E2648E26A93DA30087869E /* cellFoldModel.m in Sources */,
-				C70F9E0B28E29C53008F881B /* CRAdvertViewController.m in Sources */,
+				C7D19AE528F7B62D006543E0 /* Tool_Audio.m in Sources */,
 				C75ACD0A272FC4CE00B50259 /* CYRLayoutManager.m in Sources */,
 				C71BC37725CFC9C900A764D3 /* YYTextTransaction.m in Sources */,
 				C77493A824EA21D900FE9196 /* CRMenuView.m in Sources */,
@@ -1690,6 +1755,7 @@
 				C71BC36825CFC9C900A764D3 /* YYTextLayout.m in Sources */,
 				C71BC36325CFC9C900A764D3 /* YYTextView.m in Sources */,
 				C7D31EE9250733B000189D3E /* CRButton.m in Sources */,
+				C7D19AEA28F7EA53006543E0 /* Tool_SelectPhoto.m in Sources */,
 				C731D435249387310059BDEE /* GTVideoPlayer+CategoryTest.m in Sources */,
 				C7CFA193251B430C00F5E9F4 /* CRAnimationManager.m in Sources */,
 				C71BC37025CFC9C900A764D3 /* YYTextAttribute.m in Sources */,
@@ -1700,6 +1766,8 @@
 				C728BFFC27D092C800F8E564 /* CRCover.m in Sources */,
 				C71BC35F25CFC9C900A764D3 /* YYImage.m in Sources */,
 				C75ACD1E272FC51700B50259 /* HRColorUtil.m in Sources */,
+				C7630B0128F8FD5600B04873 /* NameSorting.m in Sources */,
+				C7630B0928F93D1E00B04873 /* Des.m in Sources */,
 				C71BC35D25CFC9C900A764D3 /* YYSpriteSheetImage.m in Sources */,
 				C71BC36D25CFC9C900A764D3 /* YYLabel.m in Sources */,
 				C71BC36F25CFC9C900A764D3 /* YYTextParser.m in Sources */,
@@ -1835,7 +1903,7 @@
 		};
 		C76F4A6A28E6CF0600DB51B9 /* Scheme_Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 898AF4C08579331230ED66B0 /* Pods-CRPlayer.debug.xcconfig */;
+			baseConfigurationReference = 16A9E7B85A730C78DC16869B /* Pods-CRPlayer.scheme_debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;

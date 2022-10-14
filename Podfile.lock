@@ -20,6 +20,7 @@ PODS:
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
   - TABAnimated (2.4.6)
+  - TZImagePickerController/Basic (3.8.3)
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0)
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - MJRefresh
   - SDWebImage (~> 4.0)
   - TABAnimated
+  - TZImagePickerController/Basic
 
 SPEC REPOS:
   trunk:
@@ -35,6 +37,7 @@ SPEC REPOS:
     - MJRefresh
     - SDWebImage
     - TABAnimated
+    - TZImagePickerController
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -42,7 +45,8 @@ SPEC CHECKSUMS:
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   TABAnimated: 46b764df4fb4c3450a10dd2200d14382f62ca916
+  TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
 
-PODFILE CHECKSUM: ded0e677d8a3bf2d654c7de0f2a041754c4c5166
+PODFILE CHECKSUM: 418e5e3694219d37fabd3c37f17fa9377f25aff1
 
 COCOAPODS: 1.11.2

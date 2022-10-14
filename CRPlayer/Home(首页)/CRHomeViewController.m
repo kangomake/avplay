@@ -23,6 +23,7 @@
 #import "CRStudent.h"
 #import <objc/runtime.h>
 #import "CRCalendarController.h"
+#import "Tool_SelectPhoto.h"
 
 @interface CRHomeViewController ()<SKStoreProductViewControllerDelegate>
 @property (nonatomic, strong) UIButton *goShoppingButton;
@@ -31,6 +32,7 @@
 @property (strong, nonatomic) UISlider *volumeViewSlider;
 @property (nonatomic, strong) UIButton *volumeClose;
 @property (nonatomic, strong) UIButton *datePickBtn;
+@property (nonatomic, strong) UIButton *imagePickBtn;
 
 @property (nonatomic, strong) UITextField *timeTextField;
 
@@ -140,17 +142,18 @@
     [self.view addSubview:self.alertButton];
     [self.view addSubview:self.volumeClose];
     [self.view addSubview:self.datePickBtn];
-
-    self.timeTextField = [[UITextField alloc]initWithFrame:CGRectMake(30, 300, 200, 40)];
-    self.timeTextField.returnKeyType = UIReturnKeyDone;
-    self.timeTextField.backgroundColor = [UIColor orangeColor];
-    self.timeTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    self.timeTextField.textAlignment = NSTextAlignmentLeft;
-    self.timeTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    self.timeTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    self.timeTextField.font = [UIFont systemFontOfSize:14];
-    self.timeTextField.placeholder = @"请填写";
-    [self.view addSubview:self.timeTextField];
+    [self.view addSubview:self.imagePickBtn];
+    
+//    self.timeTextField = [[UITextField alloc]initWithFrame:CGRectMake(30, 300, 200, 40)];
+//    self.timeTextField.returnKeyType = UIReturnKeyDone;
+//    self.timeTextField.backgroundColor = [UIColor orangeColor];
+//    self.timeTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+//    self.timeTextField.textAlignment = NSTextAlignmentLeft;
+//    self.timeTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+//    self.timeTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+//    self.timeTextField.font = [UIFont systemFontOfSize:14];
+//    self.timeTextField.placeholder = @"请填写";
+//    [self.view addSubview:self.timeTextField];
     
     
     [self configDatePicker];
@@ -161,8 +164,6 @@
 //    NSLog(@"%@ %@", [self class],[super class]);
 
     
-//    CRPerson *person = [[CRPerson alloc]init];
-//    CRStudent *student = [[CRStudent alloc] init];
     
     
     
@@ -275,7 +276,7 @@ void run (id self, SEL _cmd){
             }
         }
     }
-    [self.volumeView setFrame:CGRectMake(30, 300, [UIScreen mainScreen].bounds.size.width - 60, 20)];
+    [self.volumeView setFrame:CGRectMake(30, 100, [UIScreen mainScreen].bounds.size.width - 60, 20)];
     [self.view addSubview:self.volumeView];
 
 //    self.volumeView.showsVolumeSlider = NO;
@@ -410,7 +411,7 @@ void run (id self, SEL _cmd){
         _goShoppingButton.layer.cornerRadius = 5;
         _goShoppingButton.layer.masksToBounds = YES;
         [_goShoppingButton setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
-        _goShoppingButton.frame = CGRectMake(0, 0, 100, 40);
+        _goShoppingButton.frame = CGRectMake(0, 0, 200, 40);
         _goShoppingButton.centerX = self.view.centerX;
         _goShoppingButton.top = 100;
     }
@@ -463,6 +464,28 @@ void run (id self, SEL _cmd){
     return _datePickBtn;
 }
 
+- (UIButton *)imagePickBtn{
+    if (!_imagePickBtn) {
+        _imagePickBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_imagePickBtn setTitle:@"imagePickBtn" forState:UIControlStateNormal];
+        [_imagePickBtn addTarget:self action:@selector(imagePickClick:) forControlEvents:UIControlEventTouchUpInside];
+        _imagePickBtn.layer.cornerRadius = 5;
+        _imagePickBtn.layer.masksToBounds = YES;
+        [_imagePickBtn setBackgroundColor:[UIColor colorWithRed:0.918  green:0.141  blue:0.137 alpha:1]];
+        _imagePickBtn.frame = CGRectMake(0, 0, 200, 40);
+        _imagePickBtn.centerX = self.view.centerX;
+        _imagePickBtn.top = 350;
+    }
+    return _imagePickBtn;
+}
+
+- (void)imagePickClick:(UIButton *)sender{
+    [[Tool_SelectPhoto shareSelectPhotoManager] goToSelcetPhotoWithMaxImagesCount:5 selectedAssets:[NSMutableArray array] superVC:self selectBlock:^(NSArray * _Nonnull photos, NSArray * _Nonnull assets) {
+        NSLog(@"selectPhoto-%@",photos);
+    }];
+}
+
+
 - (void)datePickClick:(UIButton *)sender{
     CRCalendarController *VC = [[CRCalendarController alloc]init];
     [self.navigationController pushViewController:VC animated:YES];
@@ -479,10 +502,11 @@ void run (id self, SEL _cmd){
 //    [datePicker setMaximumDate:[NSDate date]];
     [datePicker setMinimumDate:[NSDate date]];
 //    [datePicker setMinuteInterval:2];
-    datePicker.frame = CGRectMake(100, 500, 200, 40);
+    datePicker.frame = CGRectMake(100, 300, 200, 40);
+//    datePicker.centerX = self.view.centerX;
     [datePicker addTarget:self action:@selector(dateChange:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:datePicker];
-    self.timeTextField.inputView = datePicker;
+//    self.timeTextField.inputView = datePicker;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -498,7 +522,7 @@ void run (id self, SEL _cmd){
     formatter.dateFormat = @"yyyy年 MM月 dd日";
     NSString *dateStr = [formatter  stringFromDate:datePicker.date];
     
-    self.timeTextField.text = dateStr;
+//    self.timeTextField.text = dateStr;
 }
 
 - (void)goShoppingButtonAction {

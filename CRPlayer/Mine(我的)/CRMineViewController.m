@@ -15,7 +15,6 @@
 
 #import "MineEditController.h"
 #import "CRTextEditController.h"
-#import "CRAdvertViewController.h"
 
 
 @interface CRMineViewController ()<UITableViewDelegate,UITableViewDataSource,UIGestureRecognizerDelegate>
@@ -187,8 +186,9 @@
 
 - (void)pushAdvert{
     
-    CRAdvertViewController *advert = [[CRAdvertViewController alloc]init];
-    [self.navigationController pushViewController:advert animated:YES];
+//    @throw [NSException exceptionWithName:@"CJLUnKnownKeyException" reason:[NSString stringWithFormat:@"****[%@ valueForUndefinedKey:]: this class is not key value coding-compliant for the key name.****",self] userInfo:nil];
+    
+
     
 }
 

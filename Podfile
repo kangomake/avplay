@@ -9,4 +9,5 @@ pod 'SDWebImage','~>4.0'
 pod 'Masonry'
 pod 'MJRefresh'
 
+pod 'TZImagePickerController/Basic'
 end

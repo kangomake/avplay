@@ -39,8 +39,8 @@
 
         @{ kClassKey: @"ViewController",
            kTitleKey: @"视频",
-           kImgKey: @"tabbar_message",
-           kSelImgKey: @"tabbar_messageHL" },
+           kImgKey: @"tabbar_video",
+           kSelImgKey: @"tabbar_videoHL" },
 
         @{ kClassKey: @"CRFoundViewController",
            kTitleKey: @"发现",
