@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8C84A37EC5D4F0C5CF857908 /* libPods-CRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */; };
 		C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = C70292392721672F00F9FB7D /* UIView+NTES.m */; };
+		C70E4DCF2904CAA8006E4F31 /* CRMyNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C70E4DCE2904CAA8006E4F31 /* CRMyNormalHeader.m */; };
+		C70E4DD629052A93006E4F31 /* CRWaveLoadingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C70E4DD529052A93006E4F31 /* CRWaveLoadingHeader.m */; };
+		C70E4DDA29053129006E4F31 /* CRCicleGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C70E4DD929053129006E4F31 /* CRCicleGifHeader.m */; };
 		C70ECDF92518417D00D79383 /* CRMeituanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70ECDF82518417D00D79383 /* CRMeituanViewController.m */; };
 		C71712B0281A974500F2B6F0 /* myhtml.html in Resources */ = {isa = PBXBuildFile; fileRef = C71712AF281A974500F2B6F0 /* myhtml.html */; };
 		C71BC2FB25CFC8BF00A764D3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71BC2FA25CFC8BF00A764D3 /* CoreText.framework */; };
@@ -261,6 +264,12 @@
 		BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70292392721672F00F9FB7D /* UIView+NTES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NTES.m"; sourceTree = "<group>"; };
 		C702923A2721672F00F9FB7D /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTES.h"; sourceTree = "<group>"; };
+		C70E4DCD2904CAA8006E4F31 /* CRMyNormalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMyNormalHeader.h; sourceTree = "<group>"; };
+		C70E4DCE2904CAA8006E4F31 /* CRMyNormalHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMyNormalHeader.m; sourceTree = "<group>"; };
+		C70E4DD429052A93006E4F31 /* CRWaveLoadingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRWaveLoadingHeader.h; sourceTree = "<group>"; };
+		C70E4DD529052A93006E4F31 /* CRWaveLoadingHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRWaveLoadingHeader.m; sourceTree = "<group>"; };
+		C70E4DD829053129006E4F31 /* CRCicleGifHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRCicleGifHeader.h; sourceTree = "<group>"; };
+		C70E4DD929053129006E4F31 /* CRCicleGifHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRCicleGifHeader.m; sourceTree = "<group>"; };
 		C70ECDF72518417D00D79383 /* CRMeituanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMeituanViewController.h; sourceTree = "<group>"; };
 		C70ECDF82518417D00D79383 /* CRMeituanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMeituanViewController.m; sourceTree = "<group>"; };
 		C71712AF281A974500F2B6F0 /* myhtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = myhtml.html; sourceTree = "<group>"; };
@@ -664,6 +673,54 @@
 				16A9E7B85A730C78DC16869B /* Pods-CRPlayer.scheme_debug.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C70E4DD1290519B9006E4F31 /* 下拉刷新 */ = {
+			isa = PBXGroup;
+			children = (
+				C70E4DCD2904CAA8006E4F31 /* CRMyNormalHeader.h */,
+				C70E4DCE2904CAA8006E4F31 /* CRMyNormalHeader.m */,
+				C70E4DD429052A93006E4F31 /* CRWaveLoadingHeader.h */,
+				C70E4DD529052A93006E4F31 /* CRWaveLoadingHeader.m */,
+				C70E4DD829053129006E4F31 /* CRCicleGifHeader.h */,
+				C70E4DD929053129006E4F31 /* CRCicleGifHeader.m */,
+			);
+			path = "下拉刷新";
+			sourceTree = "<group>";
+		};
+		C70E4DD229052746006E4F31 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C77493A624EA21D900FE9196 /* CRMenuView.h */,
+				C77493A724EA21D900FE9196 /* CRMenuView.m */,
+				C77493A924EA597400FE9196 /* CRClockView.h */,
+				C77493AA24EA597400FE9196 /* CRClockView.m */,
+				C7589D6824EB8654004E2A7C /* CRPersonView.h */,
+				C7589D6924EB8654004E2A7C /* CRPersonView.m */,
+				C7CA46EB24F78C690095560F /* CRWaveLoadingView.h */,
+				C7CA46EC24F78C690095560F /* CRWaveLoadingView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C70E4DD32905278F006E4F31 /* TagListView */ = {
+			isa = PBXGroup;
+			children = (
+				C7C673F524FDEA5900F84C12 /* CRTagListView.h */,
+				C7C673F624FDEA5900F84C12 /* CRTagListView.m */,
+				C7D31EE7250733B000189D3E /* CRButton.h */,
+				C7D31EE8250733B000189D3E /* CRButton.m */,
+			);
+			path = TagListView;
+			sourceTree = "<group>";
+		};
+		C70E4DD729052D87006E4F31 /* 钥匙串 */ = {
+			isa = PBXGroup;
+			children = (
+				C77D4BF128041C8F0002AB41 /* keychainManager.h */,
+				C77D4BF228041C8F0002AB41 /* keychainManager.m */,
+			);
+			path = "钥匙串";
 			sourceTree = "<group>";
 		};
 		C70ECDF62518414F00D79383 /* 订餐购物车 */ = {
@@ -1185,8 +1242,6 @@
 				C77D7D6D248F7E7100F1CC5C /* SceneDelegate.m */,
 				C77D7D6F248F7E7100F1CC5C /* ViewController.h */,
 				C77D7D70248F7E7100F1CC5C /* ViewController.m */,
-				C77D4BF128041C8F0002AB41 /* keychainManager.h */,
-				C77D4BF228041C8F0002AB41 /* keychainManager.m */,
 				C75301FC274CBFB300ADBC04 /* WKWebViewController.h */,
 				C75301FD274CBFB300ADBC04 /* WKWebViewController.m */,
 				C75F17AE281BDB2A000BCCA3 /* CRNavigationController.h */,
@@ -1269,21 +1324,12 @@
 		C7CAE7C924DBA613002E00B1 /* Found(发现) */ = {
 			isa = PBXGroup;
 			children = (
+				C70E4DD32905278F006E4F31 /* TagListView */,
+				C70E4DD229052746006E4F31 /* view */,
+				C70E4DD1290519B9006E4F31 /* 下拉刷新 */,
 				C77B487B27CF65F200C62CD2 /* 下拉弹窗 */,
 				C7CAE7CA24DBA64A002E00B1 /* CRFoundViewController.h */,
 				C7CAE7CB24DBA64A002E00B1 /* CRFoundViewController.m */,
-				C77493A624EA21D900FE9196 /* CRMenuView.h */,
-				C77493A724EA21D900FE9196 /* CRMenuView.m */,
-				C77493A924EA597400FE9196 /* CRClockView.h */,
-				C77493AA24EA597400FE9196 /* CRClockView.m */,
-				C7589D6824EB8654004E2A7C /* CRPersonView.h */,
-				C7589D6924EB8654004E2A7C /* CRPersonView.m */,
-				C7CA46EB24F78C690095560F /* CRWaveLoadingView.h */,
-				C7CA46EC24F78C690095560F /* CRWaveLoadingView.m */,
-				C7C673F524FDEA5900F84C12 /* CRTagListView.h */,
-				C7C673F624FDEA5900F84C12 /* CRTagListView.m */,
-				C7D31EE7250733B000189D3E /* CRButton.h */,
-				C7D31EE8250733B000189D3E /* CRButton.m */,
 				C7678F8428123E140053A557 /* CRFoundEditCell.h */,
 				C7678F8528123E140053A557 /* CRFoundEditCell.m */,
 			);
@@ -1306,6 +1352,7 @@
 		C7D19AE228F7B5EC006543E0 /* tool(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				C70E4DD729052D87006E4F31 /* 钥匙串 */,
 				C7630B0528F93CEA00B04873 /* 各种加密 */,
 				C7630AFE28F8FD3700B04873 /* 仿微信名字排序 */,
 				C7D19AE728F7EA2C006543E0 /* 选择手机图片 */,
@@ -1691,11 +1738,13 @@
 				C728C00227D095AF00F8E564 /* CRMenuButton.m in Sources */,
 				C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */,
 				C7BE86B624F607B100A901BB /* CRShopcartTableViewProxy.m in Sources */,
+				C70E4DD629052A93006E4F31 /* CRWaveLoadingHeader.m in Sources */,
 				C733CE20249873D300D66243 /* GTVideoToolbar.m in Sources */,
 				C7689A31289BAD6300D7AF9C /* CRCalendarController.m in Sources */,
 				C71BC31825CFC9B800A764D3 /* NSString+YYAdd.m in Sources */,
 				C75ACCF9272FC43F00B50259 /* ZSSTextView.m in Sources */,
 				C7CAE7CC24DBA64A002E00B1 /* CRFoundViewController.m in Sources */,
+				C70E4DCF2904CAA8006E4F31 /* CRMyNormalHeader.m in Sources */,
 				C71BC31625CFC9B800A764D3 /* UIView+YYAdd.m in Sources */,
 				C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */,
 				C77912CC272A324200AAF0DD /* MineEditController.m in Sources */,
@@ -1709,6 +1758,7 @@
 				C728C00827D0B38000F8E564 /* CRMenuTableController.m in Sources */,
 				C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */,
 				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
+				C70E4DDA29053129006E4F31 /* CRCicleGifHeader.m in Sources */,
 				C7BF81FE2511EFCA007CB539 /* CRNotifier.m in Sources */,
 				C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */,
 				C7E4905424D95F9F00BB803E /* CRFPSLabel.m in Sources */,

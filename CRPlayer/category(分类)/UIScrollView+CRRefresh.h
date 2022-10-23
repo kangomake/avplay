@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MJRefresh/MJRefresh.h>
+#import <KafkaRefresh.h>
+
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 设置下拉刷新 (如果需要上拉和下拉,用(MKUITableView+LGRefresh.h 的setRefreshBlock))
 - (void)setHeaderRefresh:(void (^)(void))refreshBlock;
+
+//开始刷新
+- (void)mk_beginRefreshing;
 
 // 结束刷新
 - (void)mk_endRefreshing;

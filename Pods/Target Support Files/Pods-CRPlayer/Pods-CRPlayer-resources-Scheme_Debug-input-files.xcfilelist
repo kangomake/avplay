@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-resources.sh
+${PODS_ROOT}/KafkaRefresh/KafkaRefresh/Resource/Image.bundle
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
 ${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle

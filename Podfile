@@ -10,4 +10,7 @@ pod 'Masonry'
 pod 'MJRefresh'
 
 pod 'TZImagePickerController/Basic'
+
+pod 'KafkaRefresh'
+
 end

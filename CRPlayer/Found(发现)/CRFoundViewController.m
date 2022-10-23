@@ -40,9 +40,9 @@
 @property (nonatomic, strong) CRTagListView *tagListView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
-//@property (nonatomic, assign) BOOL isDelete;
-//@property (nonatomic, strong) UILabel *sureDeleteLabel; // 确认删除Label
+
 @property (nonatomic) NSIndexPath *indexPath;
+@property (nonatomic, strong) UILabel *refreshSuccessLabel;
 
 @end
 
@@ -100,10 +100,15 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.tableView mk_beginRefreshing];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
 
@@ -116,30 +121,83 @@
     
     
     
-    __weak typeof(self) weakSelf = self;
-    [self.tableView setHeaderRefresh:^{
-        [weakSelf.dataSource removeAllObjects];
-        for(int i = 0;i <20;i++){
-            NSString *str = [NSString stringWithFormat:@"左滑删除置顶row-%d",i];
-            [weakSelf.dataSource addObject:str];
-        }
-        [weakSelf.tableView reloadData];
-        [weakSelf.tableView mk_endRefreshing];
-    }];
+    [self refreshConfig];
     
+    [self pullDownMenuConfig];
+
+    [self clockConfig];
+
     
+
+    CRWaveLoadingView *waveView = [[CRWaveLoadingView alloc]initWithFrame:CGRectMake(100, 450, 40, 30)];
+    waveView.center = self.view.center;
+    [self.view addSubview:waveView];
+    [waveView startLoading];
+
+
+
+//    [self YYlabelTest];
+    [self regulsText];
+}
+
+#pragma mark --UIView 添加image contentsGravity
+//UIView 添加image
+- (void)viewImageTest{
+    UIView *showView = [[UIView alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
+    showView.backgroundColor = [UIColor whiteColor];
+//    [self.view addSubview:showView];
+
+    UIImage *showImage = [UIImage imageNamed:@"baidu.png"];
+    showView.layer.contents = (__bridge id _Nullable)(showImage.CGImage);
+    showView.layer.contentsGravity = kCAGravityResizeAspectFill;
+    showView.layer.contentsScale = [UIScreen mainScreen].scale;
+    showView.layer.masksToBounds = YES;
+
+    /*
+     CALayer与 contentMode 对应的属性叫做 contentsGravity ，但是它是一个 NSString类型，而不是像对应的UIKit部分，那里面的值是枚
+     举。
+     和 cotentMode 一样， contentsGravity 的目的是为了决定内容在图层的边界 中怎么对齐，我们将使用kCAGravityResizeAspect，它的效果等同于 UIViewContentModeScaleAspectFit， 同时它还能在图层中等比例拉伸以适应图层 的边界。
+
+
+     UIView有一个叫做 clipsToBounds  的属性可以用来决定是否显示超出边界的内容，CALayer对应的属性叫做 masksToBounds  ，把它设置为YES，就在边界里啦
+
+     **/
+
+//    CRPersonView *personView = [[CRPersonView alloc]initWithFrame:self.view.bounds];
+//    [self.view addSubview:personView];
+}
+
+#pragma mark --taglist 标签
+- (void)taglistConfig{
+    self.tagListView = [[CRTagListView alloc]initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 20)];
+    [self.view addSubview:self.tagListView];
+
+    NSArray *testArray = @[@"", @"j", @"g", @"v", @"", @"a", @"hahaha", @"text"];
+    [self.tagListView addTags:testArray];
+
+//    __weak typeof(self) weakSelf = self;
+//    self.tagListView.clickTagBlock = ^(NSString * _Nonnull tag) {
+//        [weakSelf.tagListView deleteTag:tag];
+//    };
+}
+
+#pragma mark --pullDownMenu
+- (void)pullDownMenuConfig{
     CRMenuTableController *tableA = [[CRMenuTableController alloc]init];
     [tableA configData:@[@"不限", @"建筑设计师（北京）", @"总设计师", @"效果图", @"建模设计"]];
 
     CRMenuTableController *tableB = [[CRMenuTableController alloc]init];
     [tableB configData:@[@"不限", @"打招呼", @"已投递", @"接受邀约", @"邀约中"]];
 
-
-
     CRPullDownMenu *menu = [[CRPullDownMenu alloc]initWithFrame:CGRectMake(0, knavHeight, kScreenWidth, 50)];
     [menu ConfigChildViewControllers:[NSMutableArray arrayWithArray:@[tableA, tableB]]];
     [self.view addSubview:menu];
+}
 
+
+#pragma mark --clock 一个钟表🕙
+//一个钟表🕙
+- (void)clockConfig{
     CGFloat navHeight = 88;
     CGFloat TabbarHeight = 83;
 
@@ -165,50 +223,55 @@
         [pan setTranslation:CGPointMake(0, 0) inView:self.view];
     };
     [self.view addSubview:clock];
-
-    UIView *showView = [[UIView alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
-    showView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:showView];
-
-    UIImage *showImage = [UIImage imageNamed:@"baidu.png"];
-    showView.layer.contents = (__bridge id _Nullable)(showImage.CGImage);
-    showView.layer.contentsGravity = kCAGravityResizeAspectFill;
-    showView.layer.contentsScale = [UIScreen mainScreen].scale;
-    showView.layer.masksToBounds = YES;
-
-    /*
-     CALayer与 contentMode 对应的属性叫做 contentsGravity ，但是它是一个 NSString类型，而不是像对应的UIKit部分，那里面的值是枚
-     举。
-     和 cotentMode 一样， contentsGravity 的目的是为了决定内容在图层的边界 中怎么对齐，我们将使用kCAGravityResizeAspect，它的效果等同于 UIViewContentModeScaleAspectFit， 同时它还能在图层中等比例拉伸以适应图层 的边界。
-
-
-     UIView有一个叫做 clipsToBounds  的属性可以用来决定是否显示超出边界的内容，CALayer对应的属性叫做 masksToBounds  ，把它设置为YES，就在边界里啦
-
-     **/
-
-//    CRPersonView *personView = [[CRPersonView alloc]initWithFrame:self.view.bounds];
-//    [self.view addSubview:personView];
-
-    CRWaveLoadingView *waveView = [[CRWaveLoadingView alloc]initWithFrame:CGRectMake(100, 450, 40, 30)];
-    waveView.center = self.view.center;
-    [self.view addSubview:waveView];
-    [waveView startLoading];
-
-    self.tagListView = [[CRTagListView alloc]initWithFrame:CGRectMake(10, 100, self.view.frame.size.width - 20, 20)];
-//    [self.view addSubview:self.tagListView];
-
-    NSArray *testArray = @[@"", @"j", @"g", @"v", @"", @"a", @"hahaha", @"text"];
-    [self.tagListView addTags:testArray];
-
-//    __weak typeof(self) weakSelf = self;
-//    self.tagListView.clickTagBlock = ^(NSString * _Nonnull tag) {
-//        [weakSelf.tagListView deleteTag:tag];
-//    };
-
-//    [self YYlabelTest];
-    [self regulsText];
 }
 
+#pragma mark -- 下拉刷新
+- (void)refreshConfig{
+    __weak typeof(self) weakSelf = self;
+    [self.tableView setHeaderRefresh:^{
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            [weakSelf.dataSource removeAllObjects];
+            for(int i = 0;i <20;i++){
+                NSString *str = [NSString stringWithFormat:@"左滑删除置顶row-%d",i];
+                [weakSelf.dataSource addObject:str];
+            }
+            [weakSelf.tableView reloadData];
+            [weakSelf refreshSuccessLabelConfig];
+            [weakSelf.tableView mk_endRefreshing];
+  
+        });
+        
+        
+    }];
+}
+
+
+- (void)refreshSuccessLabelConfig{
+    __weak typeof(self) weakSelf = self;
+
+    [UIView animateWithDuration:1.1 delay:0.2 usingSpringWithDamping:0.9 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    
+        [weakSelf.view bringSubviewToFront:weakSelf.refreshSuccessLabel];
+        weakSelf.refreshSuccessLabel.alpha = 1.0;
+        weakSelf.refreshSuccessLabel.transform = CGAffineTransformMakeTranslation(0, 35);
+        weakSelf.refreshSuccessLabel.hidden = NO;;
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.9 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            weakSelf.refreshSuccessLabel.transform = CGAffineTransformIdentity;
+            weakSelf.refreshSuccessLabel.alpha = 0.0;
+        } completion:^(BOOL finished) {
+            weakSelf.refreshSuccessLabel.transform = CGAffineTransformIdentity;
+            weakSelf.refreshSuccessLabel.hidden = YES;;
+        }];
+
+    }];
+}
+
+
+#pragma mark --正则替换-NSRegularExpression
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSURL *url = [request URL];
     if ([[url scheme] isEqualToString:@"firstclick"]) {
@@ -390,7 +453,7 @@
     [pullView show];
 }
 
-#pragma mark - KSSideslipCellDelegate
+#pragma mark - KSSideslipCellDelegate 确认删除
 - (NSArray<KSSideslipCellAction *> *)sideslipCell:(KSSideslipCell *)sideslipCell editActionsForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    NSString *model = self.dataSource[indexPath.row];
     KSSideslipCellAction *action1 = [KSSideslipCellAction rowActionWithStyle:KSSideslipCellActionStyleNormal title:@"取消关注" handler:^(KSSideslipCellAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
@@ -599,6 +662,23 @@
     }
     return _tableView;
 }
+
+- (UILabel *)refreshSuccessLabel{
+    
+    if(!_refreshSuccessLabel){
+        _refreshSuccessLabel = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth * 0.25, knavHeight + 50, kScreenWidth * 0.5, 36)];
+        _refreshSuccessLabel.backgroundColor = RGB(72, 112, 176);
+        _refreshSuccessLabel.text = @"推荐职位已更新";
+        _refreshSuccessLabel.textAlignment = NSTextAlignmentCenter;
+        _refreshSuccessLabel.textColor = UIColor.whiteColor;
+        _refreshSuccessLabel.layer.cornerRadius = 18;
+        _refreshSuccessLabel.layer.masksToBounds = YES;
+        _refreshSuccessLabel.font = [UIFont systemFontOfSize:14];
+        [self.view addSubview:_refreshSuccessLabel];
+    }
+    return _refreshSuccessLabel;
+}
+
 
 - (void)_swipeRecognizerDidRecognize:(UISwipeGestureRecognizer *)swip {
 //    [_sureDeleteLabel removeFromSuperview];
