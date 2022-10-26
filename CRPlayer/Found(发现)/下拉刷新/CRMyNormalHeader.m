@@ -12,7 +12,6 @@
 
 @property (weak, nonatomic) UIActivityIndicatorView *loadingView;
 @property (assign, nonatomic) UIActivityIndicatorViewStyle activityIndicatorViewStyle MJRefreshDeprecated("first deprecated in 3.2.2 - Use `loadingView` property");
-//@property (nonatomic, strong) UILabel *endLabel;
 
 @end
 
@@ -36,20 +35,6 @@
     return _loadingView;
 }
 
-
-//- (UILabel *)endLabel{
-//    if(!_endLabel){
-//        _endLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.mj_w, 20)];
-//        _endLabel.text = @"推荐职位已刷新";
-//        _endLabel.backgroundColor = UIColor.clearColor;
-//        _endLabel.textColor = UIColor.whiteColor;
-//        _endLabel.font = [UIFont systemFontOfSize:14];
-//        _endLabel.textAlignment = NSTextAlignmentCenter;
-//        [self addSubview:_endLabel];
-//        _endLabel.hidden = YES;
-//    }
-//    return _endLabel;
-//}
 
 - (void)setActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)activityIndicatorViewStyle{
     _activityIndicatorViewStyle = activityIndicatorViewStyle;

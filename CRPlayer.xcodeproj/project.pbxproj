@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C84A37EC5D4F0C5CF857908 /* libPods-CRPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */; };
+		2E8C8E193015AA09945653F1 /* Pods_CRPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C501C79F06332EDD57B53368 /* Pods_CRPlayer.framework */; };
 		C702923B2721672F00F9FB7D /* UIView+NTES.m in Sources */ = {isa = PBXBuildFile; fileRef = C70292392721672F00F9FB7D /* UIView+NTES.m */; };
 		C70E4DCF2904CAA8006E4F31 /* CRMyNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C70E4DCE2904CAA8006E4F31 /* CRMyNormalHeader.m */; };
 		C70E4DD629052A93006E4F31 /* CRWaveLoadingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C70E4DD529052A93006E4F31 /* CRWaveLoadingHeader.m */; };
@@ -206,6 +206,11 @@
 		C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */; };
 		C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA4248F81C600F1CC5C /* icon.bundle */; };
 		C77D7DA8248F86B500F1CC5C /* shanghaiwaitan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */; };
+		C77FDABB29076EC200634B13 /* UIImage+SVGKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C77FDABA29076EC200634B13 /* UIImage+SVGKit.m */; };
+		C77FDABD2907757D00634B13 /* 中国结.svg in Resources */ = {isa = PBXBuildFile; fileRef = C77FDABC2907757D00634B13 /* 中国结.svg */; };
+		C77FDAC1290775B600634B13 /* system.caf in Resources */ = {isa = PBXBuildFile; fileRef = C77FDABF290775B600634B13 /* system.caf */; };
+		C77FDAC2290775B600634B13 /* msg.caf in Resources */ = {isa = PBXBuildFile; fileRef = C77FDAC0290775B600634B13 /* msg.caf */; };
+		C77FDAC4290786EA00634B13 /* 二维码扫描 in Resources */ = {isa = PBXBuildFile; fileRef = C77FDAC3290786EA00634B13 /* 二维码扫描 */; };
 		C794EB5828629B8E00CF8CB5 /* myXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C794EB5628629B8E00CF8CB5 /* myXibCell.m */; };
 		C794EB5928629B8E00CF8CB5 /* myXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C794EB5728629B8E00CF8CB5 /* myXibCell.xib */; };
 		C7A97C0027E9AF0100BE545E /* UIScrollView+CRRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A97BFF27E9AF0100BE545E /* UIScrollView+CRRefresh.m */; };
@@ -261,7 +266,7 @@
 		16A9E7B85A730C78DC16869B /* Pods-CRPlayer.scheme_debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.scheme_debug.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.scheme_debug.xcconfig"; sourceTree = "<group>"; };
 		898AF4C08579331230ED66B0 /* Pods-CRPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.debug.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		A28B292E24CE59B89C472283 /* Pods-CRPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CRPlayer.release.xcconfig"; path = "Target Support Files/Pods-CRPlayer/Pods-CRPlayer.release.xcconfig"; sourceTree = "<group>"; };
-		BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CRPlayer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C501C79F06332EDD57B53368 /* Pods_CRPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CRPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70292392721672F00F9FB7D /* UIView+NTES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NTES.m"; sourceTree = "<group>"; };
 		C702923A2721672F00F9FB7D /* UIView+NTES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTES.h"; sourceTree = "<group>"; };
 		C70E4DCD2904CAA8006E4F31 /* CRMyNormalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMyNormalHeader.h; sourceTree = "<group>"; };
@@ -562,6 +567,12 @@
 		C77D7DA2248F80A200F1CC5C /* GTVideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVideoPlayer.m; sourceTree = "<group>"; };
 		C77D7DA4248F81C600F1CC5C /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		C77D7DA7248F86B500F1CC5C /* shanghaiwaitan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shanghaiwaitan.mp4; sourceTree = "<group>"; };
+		C77FDAB929076EC200634B13 /* UIImage+SVGKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SVGKit.h"; sourceTree = "<group>"; };
+		C77FDABA29076EC200634B13 /* UIImage+SVGKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SVGKit.m"; sourceTree = "<group>"; };
+		C77FDABC2907757D00634B13 /* 中国结.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国结.svg"; sourceTree = "<group>"; };
+		C77FDABF290775B600634B13 /* system.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = system.caf; sourceTree = "<group>"; };
+		C77FDAC0290775B600634B13 /* msg.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = msg.caf; sourceTree = "<group>"; };
+		C77FDAC3290786EA00634B13 /* 二维码扫描 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "二维码扫描"; sourceTree = "<group>"; };
 		C794EB5528629B8E00CF8CB5 /* myXibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myXibCell.h; sourceTree = "<group>"; };
 		C794EB5628629B8E00CF8CB5 /* myXibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myXibCell.m; sourceTree = "<group>"; };
 		C794EB5728629B8E00CF8CB5 /* myXibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = myXibCell.xib; sourceTree = "<group>"; };
@@ -644,7 +655,7 @@
 				C766580125B976D60022F404 /* CoreData.framework in Frameworks */,
 				C76657FD25B976C20022F404 /* CoreMedia.framework in Frameworks */,
 				C76657FB25B976B60022F404 /* AVFoundation.framework in Frameworks */,
-				8C84A37EC5D4F0C5CF857908 /* libPods-CRPlayer.a in Frameworks */,
+				2E8C8E193015AA09945653F1 /* Pods_CRPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +1157,8 @@
 		C76A4CD62546A95900A960BE /* category(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				C77FDAB929076EC200634B13 /* UIImage+SVGKit.h */,
+				C77FDABA29076EC200634B13 /* UIImage+SVGKit.m */,
 				C702923A2721672F00F9FB7D /* UIView+NTES.h */,
 				C70292392721672F00F9FB7D /* UIView+NTES.m */,
 				C76A4CDA2546A9E500A960BE /* UIColor+CRAddtion.h */,
@@ -1277,6 +1290,15 @@
 			path = CRPlayerUITests;
 			sourceTree = "<group>";
 		};
+		C77FDABE290775A400634B13 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				C77FDAC0290775B600634B13 /* msg.caf */,
+				C77FDABF290775B600634B13 /* system.caf */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		C7AB863926A67F5D00F779D6 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1352,6 +1374,7 @@
 		C7D19AE228F7B5EC006543E0 /* tool(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				C77FDAC3290786EA00634B13 /* 二维码扫描 */,
 				C70E4DD729052D87006E4F31 /* 钥匙串 */,
 				C7630B0528F93CEA00B04873 /* 各种加密 */,
 				C7630AFE28F8FD3700B04873 /* 仿微信名字排序 */,
@@ -1404,6 +1427,7 @@
 		C7E4904924D8FC5900BB803E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C77FDABE290775A400634B13 /* audio */,
 				C71712AF281A974500F2B6F0 /* myhtml.html */,
 				C77D7DA4248F81C600F1CC5C /* icon.bundle */,
 				C71BC30E25CFC99D00A764D3 /* YYkit */,
@@ -1425,6 +1449,7 @@
 		C7E4904B24D8FC7100BB803E /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				C77FDABC2907757D00634B13 /* 中国结.svg */,
 				C71BC37E25CFCB8A00A764D3 /* d_hehe@2x.png */,
 				C7C09444251DE03A0031E01D /* cr_qrcode.png */,
 				C7CAE7CD24DBB23C002E00B1 /* baidu.png */,
@@ -1448,7 +1473,7 @@
 				C76657FE25B976CC0022F404 /* AssetsLibrary.framework */,
 				C76657FC25B976C20022F404 /* CoreMedia.framework */,
 				C76657FA25B976B60022F404 /* AVFoundation.framework */,
-				BD5BB6FB5CC8FDB0AC4BE26C /* libPods-CRPlayer.a */,
+				C501C79F06332EDD57B53368 /* Pods_CRPlayer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1464,7 +1489,7 @@
 				C77D7D62248F7E7100F1CC5C /* Sources */,
 				C77D7D63248F7E7100F1CC5C /* Frameworks */,
 				C77D7D64248F7E7100F1CC5C /* Resources */,
-				95A531ABA9D49CCFB38E3A05 /* [CP] Copy Pods Resources */,
+				8BEF7EE6DED7F774D692228A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1564,6 +1589,7 @@
 				C75ACCAF272FC40900B50259 /* ZSSh3@2x.png in Resources */,
 				C75ACCD5272FC40900B50259 /* ZSSitalic@2x.png in Resources */,
 				C77D7DA5248F81C600F1CC5C /* icon.bundle in Resources */,
+				C77FDAC2290775B600634B13 /* msg.caf in Resources */,
 				C75ACCC2272FC40900B50259 /* ZSSsubscript@2x.png in Resources */,
 				C75ACCB9272FC40900B50259 /* ZSSstrikethrough.png in Resources */,
 				C75ACCB7272FC40900B50259 /* ZSStextcolor@2x.png in Resources */,
@@ -1580,6 +1606,7 @@
 				C76B6F4924A1FF6300EEC7A8 /* 1242x2208.png in Resources */,
 				C75ACCC8272FC40900B50259 /* ZSSredo.png in Resources */,
 				C71BC35E25CFC9C900A764D3 /* Animated image support.txt in Resources */,
+				C77FDABD2907757D00634B13 /* 中国结.svg in Resources */,
 				C75ACCD0272FC40900B50259 /* ZSSviewsource.png in Resources */,
 				C75ACCB5272FC40900B50259 /* ZSStable@2x.png in Resources */,
 				C75ACCA2272FC40900B50259 /* ZSSimage@2x.png in Resources */,
@@ -1603,6 +1630,7 @@
 				C75ACCE8272FC40900B50259 /* ZSSunorderedlist.png in Resources */,
 				C75ACCE9272FC40900B50259 /* ZSSunlink.png in Resources */,
 				C75ACCC0272FC40900B50259 /* ZSSundo@2x.png in Resources */,
+				C77FDAC1290775B600634B13 /* system.caf in Resources */,
 				C75ACCA7272FC40900B50259 /* ZSSimage.png in Resources */,
 				C75ACCDE272FC40900B50259 /* ZSSinsertkeyword@2x.png in Resources */,
 				C75ACCCF272FC40900B50259 /* ZSSundo.png in Resources */,
@@ -1619,6 +1647,7 @@
 				C794EB5928629B8E00CF8CB5 /* myXibCell.xib in Resources */,
 				C75ACCAD272FC40900B50259 /* ZSSindent@2x.png in Resources */,
 				C75ACCA8272FC40900B50259 /* ZSSbold.png in Resources */,
+				C77FDAC4290786EA00634B13 /* 二维码扫描 in Resources */,
 				C75ACCCD272FC40900B50259 /* ZSSrightjustify.png in Resources */,
 				C75ACC4E272FC3DF00B50259 /* editor.html in Resources */,
 				C75ACCE3272FC40900B50259 /* ZSSh6@2x.png in Resources */,
@@ -1693,21 +1722,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		95A531ABA9D49CCFB38E3A05 /* [CP] Copy Pods Resources */ = {
+		8BEF7EE6DED7F774D692228A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CRPlayer/Pods-CRPlayer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1782,6 +1811,7 @@
 				C7E0A606251301B90099F418 /* CRNotificationManager.m in Sources */,
 				C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */,
 				C75ACD21272FC51700B50259 /* HRColorPickerViewController.m in Sources */,
+				C77FDABB29076EC200634B13 /* UIImage+SVGKit.m in Sources */,
 				C71BC37625CFC9C900A764D3 /* UIPasteboard+YYText.m in Sources */,
 				C75ACD27272FC57B00B50259 /* CRTextEditController.m in Sources */,
 				C7678F8328123D130053A557 /* KSSideslipCellProxy.m in Sources */,
@@ -1957,6 +1987,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNYK9DH23K;
 				ENABLE_BITCODE = YES;
@@ -1978,6 +2009,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myTeam.CRPlayer;
 				PRODUCT_NAME = "微信";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Scheme_Debug;
@@ -2134,6 +2166,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNYK9DH23K;
 				ENABLE_BITCODE = YES;
@@ -2150,6 +2183,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myTeam.CRPlayer;
 				PRODUCT_NAME = "微信";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2160,6 +2194,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CRPlayer/CRPlayer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNYK9DH23K;
 				ENABLE_BITCODE = YES;
@@ -2176,6 +2211,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myTeam.CRPlayer;
 				PRODUCT_NAME = "微信";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

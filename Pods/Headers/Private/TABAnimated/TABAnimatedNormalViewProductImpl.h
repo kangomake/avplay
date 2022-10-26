@@ -1,1 +1,0 @@
-../../../TABAnimated/TABAnimatedDemo/TABAnimated/Product/TABAnimatedNormalViewProductImpl.h

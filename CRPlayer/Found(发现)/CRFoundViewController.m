@@ -230,7 +230,7 @@
     __weak typeof(self) weakSelf = self;
     [self.tableView setHeaderRefresh:^{
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
             [weakSelf.dataSource removeAllObjects];
             for(int i = 0;i <20;i++){
@@ -256,10 +256,10 @@
         [weakSelf.view bringSubviewToFront:weakSelf.refreshSuccessLabel];
         weakSelf.refreshSuccessLabel.alpha = 1.0;
         weakSelf.refreshSuccessLabel.transform = CGAffineTransformMakeTranslation(0, 35);
-        weakSelf.refreshSuccessLabel.hidden = NO;;
+        weakSelf.refreshSuccessLabel.hidden = NO;
     } completion:^(BOOL finished) {
         
-        [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.9 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [UIView animateWithDuration:0.6 delay:0.1 usingSpringWithDamping:0.9 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             weakSelf.refreshSuccessLabel.transform = CGAffineTransformIdentity;
             weakSelf.refreshSuccessLabel.alpha = 0.0;
         } completion:^(BOOL finished) {

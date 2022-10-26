@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7376C5943C2C1C7E94ADE2B7B336945B"
-               BuildableName = "libPods-CRPlayer.a"
+               BuildableName = "Pods_CRPlayer.framework"
                BlueprintName = "Pods-CRPlayer"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

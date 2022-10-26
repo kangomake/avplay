@@ -51,7 +51,10 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
-
+//配置下当前App能支持的视图方向 下面使用代码的方式会覆盖第一种在Xcode中配置的方式
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    return UIInterfaceOrientationMaskAll;
+}
 
 
 @end

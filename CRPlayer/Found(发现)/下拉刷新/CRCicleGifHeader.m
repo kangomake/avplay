@@ -20,7 +20,7 @@
     
     // 设置普通状态的动画图片
     NSMutableArray *idleImages = [NSMutableArray array];
-    for (NSUInteger i = 1; i<=23; i++) {
+    for (NSUInteger i = 0; i<=23; i++) {
 //        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading_000%zd@3x", i] ofType:@"png"];
 //        UIImage *image = [UIImage imageWithContentsOfFile:path];
         
@@ -31,12 +31,8 @@
     
     // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
     NSMutableArray *refreshingImages = [NSMutableArray array];
-    for (NSUInteger i = 1; i<=23; i++) {
+    for (NSUInteger i = 0; i<=23; i++) {
         UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"loading_00%zd", i]];
-        
-//        NSString *path = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"loading_000%zd@3x", i] ofType:@"png"];
-//        UIImage *image = [UIImage imageWithContentsOfFile:path];
-        
         [refreshingImages addObject:image];
     }
     [self setImages:refreshingImages forState:MJRefreshStatePulling];

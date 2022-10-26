@@ -76,6 +76,16 @@
     return [[CRAnimationManager alloc] init];
 }
 
+//配置屏幕旋转
+//- (BOOL)shouldAutorotate{
+//    return [self.selectedViewController shouldAutorotate];
+//}
+//
+//- (NSUInteger)supportedInterfaceOrientations {
+// return [self.selectedViewController supportedInterfaceOrientations];
+//}
+
+
 /*
 #pragma mark - Navigation
 

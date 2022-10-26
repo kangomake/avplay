@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
   - KafkaRefresh (1.5.0):
     - KafkaRefresh/Category (= 1.5.0)
     - KafkaRefresh/Configuration (= 1.5.0)
@@ -54,6 +57,8 @@ PODS:
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
   - TABAnimated (2.4.6)
   - TZImagePickerController/Basic (3.8.3)
 
@@ -63,28 +68,33 @@ DEPENDENCIES:
   - Masonry
   - MJRefresh
   - SDWebImage (~> 4.0)
+  - SVGKit
   - TABAnimated
   - TZImagePickerController/Basic
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - CocoaLumberjack
     - KafkaRefresh
     - Masonry
     - MJRefresh
     - SDWebImage
+    - SVGKit
     - TABAnimated
     - TZImagePickerController
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
   KafkaRefresh: 01645b1509b8647809f6bb666629c80855bd3fdd
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   TABAnimated: 46b764df4fb4c3450a10dd2200d14382f62ca916
   TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
 
-PODFILE CHECKSUM: 8fd1acf4436dc8f5052e0513bd01acd9a9f1b22c
+PODFILE CHECKSUM: 727bcdd0f185cfb657d3edc47cfc293f282fb407
 
 COCOAPODS: 1.11.2
