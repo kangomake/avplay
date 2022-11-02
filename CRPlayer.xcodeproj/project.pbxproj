@@ -190,6 +190,9 @@
 		C77912CC272A324200AAF0DD /* MineEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912CB272A324200AAF0DD /* MineEditController.m */; };
 		C77912D3272A339D00AAF0DD /* MyEditFoldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */; };
 		C77B487E27CF661700C62CD2 /* CRPullView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77B487D27CF661700C62CD2 /* CRPullView.m */; };
+		C77CA5F729124A0C00C14ECF /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C77CA5F629124A0C00C14ECF /* MyTextField.m */; };
+		C77CA5FD291252D300C14ECF /* FHScrollTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C77CA5FB291252D300C14ECF /* FHScrollTextCell.m */; };
+		C77CA5FE291252D300C14ECF /* FHScrollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C77CA5FC291252D300C14ECF /* FHScrollTextView.m */; };
 		C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D4BF228041C8F0002AB41 /* keychainManager.m */; };
 		C77D673C284F4D41005FB2C2 /* CRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D673B284F4D41005FB2C2 /* CRPerson.m */; };
 		C77D673F284F4D5E005FB2C2 /* CRStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C77D673E284F4D5E005FB2C2 /* CRStudent.m */; };
@@ -537,6 +540,12 @@
 		C77912D2272A339D00AAF0DD /* MyEditFoldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyEditFoldCell.m; sourceTree = "<group>"; };
 		C77B487C27CF661700C62CD2 /* CRPullView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPullView.h; sourceTree = "<group>"; };
 		C77B487D27CF661700C62CD2 /* CRPullView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPullView.m; sourceTree = "<group>"; };
+		C77CA5F529124A0C00C14ECF /* MyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTextField.h; sourceTree = "<group>"; };
+		C77CA5F629124A0C00C14ECF /* MyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTextField.m; sourceTree = "<group>"; };
+		C77CA5F9291252D200C14ECF /* FHScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHScrollTextView.h; sourceTree = "<group>"; };
+		C77CA5FA291252D200C14ECF /* FHScrollTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHScrollTextCell.h; sourceTree = "<group>"; };
+		C77CA5FB291252D300C14ECF /* FHScrollTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHScrollTextCell.m; sourceTree = "<group>"; };
+		C77CA5FC291252D300C14ECF /* FHScrollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHScrollTextView.m; sourceTree = "<group>"; };
 		C77D4BF128041C8F0002AB41 /* keychainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keychainManager.h; sourceTree = "<group>"; };
 		C77D4BF228041C8F0002AB41 /* keychainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keychainManager.m; sourceTree = "<group>"; };
 		C77D673A284F4D41005FB2C2 /* CRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPerson.h; sourceTree = "<group>"; };
@@ -875,6 +884,7 @@
 		C727179D24B718360075B3BA /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				C77CA5F8291252AC00C14ECF /* 文字滚动 */,
 				C7689A2E289BAD1900D7AF9C /* calendar日历 */,
 				C70ECDF62518414F00D79383 /* 订餐购物车 */,
 				C7BE86B324F6077E00A901BB /* 购物车 */,
@@ -1209,6 +1219,19 @@
 				C728C00727D0B38000F8E564 /* CRMenuTableController.m */,
 			);
 			path = "下拉弹窗";
+			sourceTree = "<group>";
+		};
+		C77CA5F8291252AC00C14ECF /* 文字滚动 */ = {
+			isa = PBXGroup;
+			children = (
+				C77CA5F529124A0C00C14ECF /* MyTextField.h */,
+				C77CA5F629124A0C00C14ECF /* MyTextField.m */,
+				C77CA5FA291252D200C14ECF /* FHScrollTextCell.h */,
+				C77CA5FB291252D300C14ECF /* FHScrollTextCell.m */,
+				C77CA5F9291252D200C14ECF /* FHScrollTextView.h */,
+				C77CA5FC291252D300C14ECF /* FHScrollTextView.m */,
+			);
+			path = "文字滚动";
 			sourceTree = "<group>";
 		};
 		C77D7D5D248F7E7100F1CC5C = {
@@ -1784,6 +1807,7 @@
 				C75ACD09272FC4CE00B50259 /* CYRTextStorage.m in Sources */,
 				C77D7DA3248F80A200F1CC5C /* GTVideoPlayer.m in Sources */,
 				C72717A324B71C840075B3BA /* CRShopCartViewController.m in Sources */,
+				C77CA5FE291252D300C14ECF /* FHScrollTextView.m in Sources */,
 				C728C00827D0B38000F8E564 /* CRMenuTableController.m in Sources */,
 				C77D4BF328041C8F0002AB41 /* keychainManager.m in Sources */,
 				C7D0BC5924DD426700157443 /* CRVideoComplexControlBar.m in Sources */,
@@ -1861,9 +1885,11 @@
 				C7E4905124D9068B00BB803E /* YYWeakProxy.m in Sources */,
 				C7A97C0027E9AF0100BE545E /* UIScrollView+CRRefresh.m in Sources */,
 				C71BC36125CFC9C900A764D3 /* YYFrameImage.m in Sources */,
+				C77CA5F729124A0C00C14ECF /* MyTextField.m in Sources */,
 				C7B4F9C024F8E678000DA3E5 /* CRShopcartFormat.m in Sources */,
 				C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */,
 				C7678F8128123D120053A557 /* KSSideslipContainerView.m in Sources */,
+				C77CA5FD291252D300C14ECF /* FHScrollTextCell.m in Sources */,
 				C75ACC45272FC37500B50259 /* ZSSRichTextEditor.m in Sources */,
 				C71BC36025CFC9C900A764D3 /* YYImageCoder.m in Sources */,
 				C75ACD1F272FC51700B50259 /* HRBrightnessCursor.m in Sources */,

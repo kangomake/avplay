@@ -230,7 +230,7 @@
     __weak typeof(self) weakSelf = self;
     [self.tableView setHeaderRefresh:^{
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.8 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
             [weakSelf.dataSource removeAllObjects];
             for(int i = 0;i <20;i++){

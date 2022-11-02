@@ -24,8 +24,10 @@
 #import <objc/runtime.h>
 #import "CRCalendarController.h"
 #import "Tool_SelectPhoto.h"
+#import "CRScreen.h"
+#import "MyTextField.h"
 
-@interface CRHomeViewController ()<SKStoreProductViewControllerDelegate>
+@interface CRHomeViewController ()<SKStoreProductViewControllerDelegate,UITextFieldDelegate>
 @property (nonatomic, strong) UIButton *goShoppingButton;
 @property (nonatomic, strong) UIButton *alertButton;
 @property (strong, nonatomic) MPVolumeView *volumeView;
@@ -35,6 +37,8 @@
 @property (nonatomic, strong) UIButton *imagePickBtn;
 
 @property (nonatomic, strong) UITextField *timeTextField;
+@property (nonatomic, strong) MyTextField * scrollTextField;
+
 
 
 @end
@@ -156,6 +160,23 @@
 //    [self.view addSubview:self.timeTextField];
     
     
+    self.scrollTextField = [[MyTextField alloc]initWithFrame:CGRectMake((kScreenWidth -300)/2, 400, 300, 40)];
+    self.scrollTextField.backgroundColor = RGB(240, 240, 240);
+//    textField.placeholder = @"输入职位名/公司名";
+    self.scrollTextField.font = [UIFont systemFontOfSize:16];
+    self.scrollTextField.tintColor = [UIColor orangeColor];
+    self.scrollTextField.returnKeyType = UIReturnKeySearch;
+//    textField.enablesReturnKeyAutomatically = YES;
+    self.scrollTextField.clearButtonMode = YES;
+    self.scrollTextField.delegate = self;
+    [self.view addSubview:self.scrollTextField];
+    
+//    [self.scrollTextField setScrollData:@[@"0000000000",@"1111111111",@"2222222222",@"3333333333",@"4444444444"]];
+    [self.scrollTextField setScrollData:@[@"0000000000",@"1111111111",@"2222222222"]];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldChangeValue:) name:UITextFieldTextDidChangeNotification object:nil];
+
+    
     [self configDatePicker];
     
     [self volumeViewConfig];
@@ -172,6 +193,38 @@
     
     // Do any additional setup after loading the view.
 }
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+//    [self.scrollTextField hiddenCoverView:YES];
+}
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+//    [self.scrollTextField hiddenCoverView:NO];
+}
+- (void)textFieldChangeValue:(NSNotification *)na{
+//    self.searchCondition.keyword = ((UITextField *)na.object).text;
+    NSString *string = ((UITextField *)na.object).text;
+    if(string && string.length >0){
+        self.scrollTextField.hiddenCoverView = YES;
+    }else{
+        self.scrollTextField.hiddenCoverView = NO;
+    }
+}
+
+//点击Return（搜索）执行搜索方法
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if(self.scrollTextField.hiddenCoverView){
+        NSLog(@"search-%@",self.scrollTextField.text);
+    }else{
+        NSLog(@"scrollText-%@",self.scrollTextField.getScrollNowText);
+    }
+    
+//    [self searchRequest];
+    return [textField resignFirstResponder];
+}
+
 
 void run (id self, SEL _cmd){
     NSLog(@"%@-%@",self, NSStringFromSelector(_cmd));

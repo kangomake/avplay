@@ -23,11 +23,12 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
 
-//    self.urlStr = @"http://m.chenhr.com/act/2021/xgs/sdhk";
-    self.urlStr = @"http://m.buildhr.com/act/2022/zhwl/";
-//    self.urlStr = @"https://www.baidu.com/";
+//    self.urlStr = @"http://m.buildhr.com/act/2022/zhwl/";
+    self.urlStr = @"https://www.baidu.com/";
     WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc]init];
     config.preferences = [[WKPreferences alloc]init];
+    //设置UserAgent
+//    config.applicationNameForUserAgent = @"APP_WEBVIEW";
     config.userContentController = [[WKUserContentController alloc]init];
 
     //add
