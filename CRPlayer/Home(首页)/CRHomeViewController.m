@@ -27,6 +27,11 @@
 #import "CRScreen.h"
 #import "MyTextField.h"
 
+//广告
+#import <AdServices/AdServices.h>
+#import <iAd/iAd.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
+
 @interface CRHomeViewController ()<SKStoreProductViewControllerDelegate,UITextFieldDelegate>
 @property (nonatomic, strong) UIButton *goShoppingButton;
 @property (nonatomic, strong) UIButton *alertButton;
@@ -162,7 +167,6 @@
     
     self.scrollTextField = [[MyTextField alloc]initWithFrame:CGRectMake((kScreenWidth -300)/2, 400, 300, 40)];
     self.scrollTextField.backgroundColor = RGB(240, 240, 240);
-//    textField.placeholder = @"输入职位名/公司名";
     self.scrollTextField.font = [UIFont systemFontOfSize:16];
     self.scrollTextField.tintColor = [UIColor orangeColor];
     self.scrollTextField.returnKeyType = UIReturnKeySearch;
@@ -171,8 +175,7 @@
     self.scrollTextField.delegate = self;
     [self.view addSubview:self.scrollTextField];
     
-//    [self.scrollTextField setScrollData:@[@"0000000000",@"1111111111",@"2222222222",@"3333333333",@"4444444444"]];
-    [self.scrollTextField setScrollData:@[@"0000000000",@"1111111111",@"2222222222"]];
+    [self.scrollTextField setScrollData:@[@"0000000000",@"1111111111",@"2222222222",@"3333333333",@"4444444444"]];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldChangeValue:) name:UITextFieldTextDidChangeNotification object:nil];
 
@@ -186,13 +189,128 @@
 
     
     
-    
+    [self adservicesTest];
     
     
 //    [self runtimeTest];
     
-    // Do any additional setup after loading the view.
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 500, 100, 100)];
+    if (@available(iOS 13.0, *)) {
+//        imageView.image = [UIImage systemImageNamed:@"exclamationmark.octagon"];
+//        imageView.image = [UIImage systemImageNamed:@"signature"];
+        imageView.image = [UIImage systemImageNamed:@"touchid"];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        UIImageConfiguration *config = imageView.image.symbolConfiguration;
+//        imageView.image = [UIImage systemImageNamed:@"exclamationmark.octagon" withConfiguration:<#(nullable UIImageConfiguration *)#>];
+    }
+    [self.view addSubview:imageView];
+    
+    
 }
+
+#pragma mark --AdServices
+/**
+ 经测试，IDFA允许用户跟踪后，得到的数据是详细数据包
+ {
+ adGroupId = 1234567890;
+ attribution = 1;
+ campaignId = 1234567890;
+ clickDate = "2022-04-27T07:59Z";
+ conversionType = Download;
+ countryOrRegion = US;
+ creativeSetId = 1234567890;
+ keywordId = 12323222;
+ orgId = 1234567890;
+ }
+ 
+ 未允许，得到的数据是标准数据包，没有clickDate字段
+ {
+ "attribution": true,
+ "orgId": 40669820,
+ "campaignId": 542370539,
+ "conversionType": "Download",
+ "adGroupId": 542317095,
+ "countryOrRegion": "US",
+ "keywordId": 87675432,
+ "creativeSetId": 542317136
+ }
+ */
+
+
+- (void)adservicesTest{
+    
+    //在设备激活（首次打开并联网状态下）完成归因
+    if(@available(iOS 14.3, *)){
+        NSError *error;
+        NSString *token = [AAAttribution attributionTokenWithError:&error];
+        if(token != nil){
+            NSLog(@"token-%@",token);
+            [self sendToken:[self getANullableString:@"token" content:token] completeBlock:^(NSDictionary *dic) {
+                NSLog(@"attrData-%@", dic);
+            }];
+            
+            /**
+            用token请求苹果API获取归因数据包；也可以将token发送到server端。有service端完成归因
+             */
+        }
+    }else{
+        if([[ADClient sharedClient] respondsToSelector:@selector(requestAttributionDetailsWithBlock:)]){
+            NSLog(@"LogAds：iAd called");
+
+            [[ADClient sharedClient] requestAttributionDetailsWithBlock:^(NSDictionary *attrData, NSError *error) {
+            //异步，会延后
+            NSLog(@"成功：14- Dict: %@", attrData);
+            //可将数据发送给服务端
+            // ... ...
+            }];
+
+        }
+        
+    }
+    
+}
+
+- (nullable NSString *)getANullableString:(NSString *)desc content:(NSString *)content {
+    if (content == nil) {
+        return @"";
+    }
+
+    return [NSString stringWithFormat:@"%@", content];
+}
+
+- (void)sendToken:(NSString *)token completeBlock:(void (^)(NSDictionary *dic))completeBlock {
+    NSString *url = [NSString stringWithFormat:@"https://api-adservices.apple.com/api/v1/"];
+
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+    request.HTTPMethod = @"POST";
+    [request addValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+    NSData *postData = [token dataUsingEncoding:NSUTF8StringEncoding];
+    [request setHTTPBody:postData];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
+        NSDictionary *result = NULL;
+        if (error) {
+            NSLog(@"请求失败LogAds：sendToken ERR");
+            if (completeBlock) {
+                NSMutableDictionary *nulldict = [NSMutableDictionary dictionary];
+                completeBlock(nulldict);
+            }
+        } else {
+            // 请求成功
+            NSLog(@"请求成功");
+            NSError *resError;
+            NSMutableDictionary *resDic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&resError];
+            result = [[NSDictionary alloc] initWithDictionary:resDic];
+
+            if (completeBlock) {
+                completeBlock(result);
+            }
+        }
+    }];
+
+    [dataTask resume];
+}
+
 
 #pragma mark - UITextFieldDelegate
 
@@ -573,7 +691,7 @@ void run (id self, SEL _cmd){
     
     //设置时间格式
     formatter.dateFormat = @"yyyy年 MM月 dd日";
-    NSString *dateStr = [formatter  stringFromDate:datePicker.date];
+    NSString *dateStr = [formatter stringFromDate:datePicker.date];
     
 //    self.timeTextField.text = dateStr;
 }

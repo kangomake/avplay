@@ -220,6 +220,9 @@
 		C7AB863C26A67F7900F779D6 /* CRMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB863B26A67F7900F779D6 /* CRMineViewController.m */; };
 		C7AB864526A69B5700F779D6 /* MyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864426A69B5700F779D6 /* MyTableView.m */; };
 		C7AB864B26A69B8F00F779D6 /* CRTouchTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */; };
+		C7ADDD802914B677002254DC /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ADDD7F2914B677002254DC /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C7ADDD842914F31D002254DC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ADDD832914F31D002254DC /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C7ADDD862914F32D002254DC /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ADDD852914F32D002254DC /* iAd.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C7B4F9C024F8E678000DA3E5 /* CRShopcartFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B4F9BF24F8E678000DA3E5 /* CRShopcartFormat.m */; };
 		C7B9E9B526A7AEAF00CA8094 /* UserBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B9E9B426A7AEAF00CA8094 /* UserBuilder.m */; };
 		C7B9E9BB26A7AEE100CA8094 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B9E9BA26A7AEE100CA8094 /* User.m */; };
@@ -593,6 +596,9 @@
 		C7AB864426A69B5700F779D6 /* MyTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableView.m; sourceTree = "<group>"; };
 		C7AB864926A69B8F00F779D6 /* CRTouchTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRTouchTestCell.h; sourceTree = "<group>"; };
 		C7AB864A26A69B8F00F779D6 /* CRTouchTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRTouchTestCell.m; sourceTree = "<group>"; };
+		C7ADDD7F2914B677002254DC /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		C7ADDD832914F31D002254DC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C7ADDD852914F32D002254DC /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		C7B4F9BE24F8E678000DA3E5 /* CRShopcartFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRShopcartFormat.h; sourceTree = "<group>"; };
 		C7B4F9BF24F8E678000DA3E5 /* CRShopcartFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRShopcartFormat.m; sourceTree = "<group>"; };
 		C7B9E9B326A7AEAF00CA8094 /* UserBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserBuilder.h; sourceTree = "<group>"; };
@@ -651,6 +657,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7ADDD862914F32D002254DC /* iAd.framework in Frameworks */,
+				C7ADDD842914F31D002254DC /* AdSupport.framework in Frameworks */,
+				C7ADDD802914B677002254DC /* AdServices.framework in Frameworks */,
 				C71BC30B25CFC90D00A764D3 /* SystemConfiguration.framework in Frameworks */,
 				C71BC30925CFC90300A764D3 /* MobileCoreServices.framework in Frameworks */,
 				C71BC30725CFC8F800A764D3 /* Accelerate.framework in Frameworks */,
@@ -1483,6 +1492,9 @@
 		DFAFCD3A4BAB276CDEC270F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7ADDD852914F32D002254DC /* iAd.framework */,
+				C7ADDD832914F31D002254DC /* AdSupport.framework */,
+				C7ADDD7F2914B677002254DC /* AdServices.framework */,
 				C71BC30A25CFC90D00A764D3 /* SystemConfiguration.framework */,
 				C71BC30825CFC90300A764D3 /* MobileCoreServices.framework */,
 				C71BC30625CFC8F800A764D3 /* Accelerate.framework */,

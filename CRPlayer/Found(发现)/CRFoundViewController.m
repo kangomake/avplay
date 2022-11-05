@@ -121,7 +121,7 @@
     
     
     
-    [self refreshConfig];
+    [self initRefresh];
     
     [self pullDownMenuConfig];
 
@@ -226,7 +226,11 @@
 }
 
 #pragma mark -- 下拉刷新
-- (void)refreshConfig{
+- (void)initRefresh{
+    
+    [self.view addSubview:self.refreshSuccessLabel];
+
+    
     __weak typeof(self) weakSelf = self;
     [self.tableView setHeaderRefresh:^{
         
@@ -666,7 +670,7 @@
 - (UILabel *)refreshSuccessLabel{
     
     if(!_refreshSuccessLabel){
-        _refreshSuccessLabel = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth * 0.25, knavHeight + 50, kScreenWidth * 0.5, 36)];
+        _refreshSuccessLabel = [[UILabel alloc] initWithFrame:CGRectMake((kScreenWidth -150)/2, knavHeight + 50, 150, 36)];
         _refreshSuccessLabel.backgroundColor = RGB(72, 112, 176);
         _refreshSuccessLabel.text = @"推荐职位已更新";
         _refreshSuccessLabel.textAlignment = NSTextAlignmentCenter;
@@ -674,7 +678,8 @@
         _refreshSuccessLabel.layer.cornerRadius = 18;
         _refreshSuccessLabel.layer.masksToBounds = YES;
         _refreshSuccessLabel.font = [UIFont systemFontOfSize:14];
-        [self.view addSubview:_refreshSuccessLabel];
+        _refreshSuccessLabel.hidden = YES;
+//        [self.view addSubview:_refreshSuccessLabel];
     }
     return _refreshSuccessLabel;
 }
